@@ -1,0 +1,60 @@
+﻿using System;
+using System.Data;
+using System.Data.SqlClient;
+using System.Linq;
+using System.Web.Http;
+using WMS_WebAPI.Models;
+using WMS_WebAPI.Models.Context;
+
+namespace WMS_WebAPI.Controllers
+{
+    public class BillingCyclesController : ApiController
+    {
+        WMS_Entities _context = new WMS_Entities();
+        CommanListToDataTableConverter ConvertDataTable = new CommanListToDataTableConverter();
+        string connectionstring = System.Configuration.ConfigurationManager.ConnectionStrings["ConStr"].ConnectionString;
+        [HttpPost]
+        [Route("api/BillingCycles/BillingCycle_Insert_Update")]
+        public IHttpActionResult BillingCycle_Insert_Update(Cls_BillingCycles obj)
+        {
+            try
+            {
+                var data = _context.BillingCycle_Insert_Update(obj.BillingCycleID, obj.BillingCycleCode, obj.BillingCycleName,
+                    obj.IsActive, obj.CreatedBy, obj.ModifyBy).ToList();
+                if (data == null)
+                {
+                    return NotFound();
+                }
+                return Ok(data);
+            }
+            catch (System.Exception)
+            {
+
+                return BadRequest();
+            }
+           
+        }
+
+        [HttpGet]
+        [Route("api/BillingCycles/BillingCycle_Select")]
+        public IHttpActionResult BillingCycle_Select()
+        {
+            try
+            {
+                var data = _context.BillingCycle_Select().ToList();
+                if (data == null)
+                {
+                    return NotFound();
+                }
+                return Ok(data);
+            }
+            catch (System.Exception)
+            {
+
+                return BadRequest();
+            }
+
+        }
+
+    }
+}

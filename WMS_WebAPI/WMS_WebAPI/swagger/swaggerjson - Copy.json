@@ -1,0 +1,6951 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "v1"
+  },
+  "host": "localhost:50191",
+  "schemes": [ "http", "https" ],
+  "paths": {
+    "/api/Login": {
+      "post": {
+        "tags": [ "Account" ],
+        "summary": "user name  and password  filed  data  required",
+        "operationId": "Account_Login",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "user",
+            "in": "body",
+            "description": "Username,Password required",
+            "required": true,
+            "schema": { "$ref": "#/definitions/LoginModel" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/finantialYears": {
+      "post": {
+        "tags": [ "Account" ],
+        "summary": "Get GetfinantialYears Info",
+        "operationId": "Account_GetfinantialYears",
+        "consumes": [],
+        "produces": [ "application/json", "text/json" ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/AdditionalService/AdditionalServicesList": {
+      "get": {
+        "tags": [ "AdditionalService" ],
+        "operationId": "AdditionalService_AdditionalServicesList",
+        "consumes": [],
+        "produces": [ "application/json", "text/json" ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/AdditionalService/AdditionalServices_Insert": {
+      "post": {
+        "tags": [ "AdditionalService" ],
+        "summary": "all  parametr  are required",
+        "operationId": "AdditionalService_AdditionalServices_Insert",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "description": "",
+            "required": true,
+            "schema": { "$ref": "#/definitions/Cls_AdditionalService" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/AdditionalService/Rep_AdditionalServiceList": {
+      "post": {
+        "tags": [ "AdditionalService" ],
+        "operationId": "AdditionalService_Rep_AdditionalServiceList",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/Cls_AdditionalService" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/AdditionalService/Get_AdditionalServiceDetail": {
+      "post": {
+        "tags": [ "AdditionalService" ],
+        "operationId": "AdditionalService_Get_AdditionalServiceDetail",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/Cls_AdditionalService" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/AdditionalService/Rep_AdditionalServiceList_Labour": {
+      "post": {
+        "tags": [ "AdditionalService" ],
+        "operationId": "AdditionalService_Rep_AdditionalServiceList_Labour",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/Cls_AdditionalService" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/AdditionalService/Get_AdditionalServiceCharges": {
+      "post": {
+        "tags": [ "AdditionalService" ],
+        "operationId": "AdditionalService_Get_AdditionalServiceCharges",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/Cls_AdditionalService" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/BankAccountDetail/BankAccountDetail_insert": {
+      "post": {
+        "tags": [ "BankAccountDetail" ],
+        "summary": "parameter required",
+        "operationId": "BankAccountDetail_BankAccountDetail_insert",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "description": "",
+            "required": true,
+            "schema": { "$ref": "#/definitions/Cls_BankAccountDetail" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/BankAccountDetail/BankAccountDetail_Select": {
+      "get": {
+        "tags": [ "BankAccountDetail" ],
+        "operationId": "BankAccountDetail_BankAccountDetail_Select",
+        "consumes": [],
+        "produces": [ "application/json", "text/json" ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/BillEstimate/Rep_Invoice_Estimate_storage_summary": {
+      "post": {
+        "tags": [ "BillEstimate" ],
+        "operationId": "BillEstimate_Rep_Invoice_Estimate_storage_summary",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/cls_BillEstimate" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/BillEstimate/Rep_Invoice_Estimate_storage": {
+      "post": {
+        "tags": [ "BillEstimate" ],
+        "operationId": "BillEstimate_Rep_Invoice_Estimate_storage",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/cls_BillEstimate" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/BillEstimate/Rep_Invoice_Estimate_Labour": {
+      "post": {
+        "tags": [ "BillEstimate" ],
+        "operationId": "BillEstimate_Rep_Invoice_Estimate_Labour",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/cls_BillEstimate" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/BillingCycles/BillingCycle_Insert_Update": {
+      "post": {
+        "tags": [ "BillingCycles" ],
+        "operationId": "BillingCycles_BillingCycle_Insert_Update",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/Cls_BillingCycles" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/BillingCycles/BillingCycle_Select": {
+      "get": {
+        "tags": [ "BillingCycles" ],
+        "operationId": "BillingCycles_BillingCycle_Select",
+        "consumes": [],
+        "produces": [ "application/json", "text/json" ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/BillProcess/Invoice_Process_storage": {
+      "post": {
+        "tags": [ "BillProcess" ],
+        "operationId": "BillProcess_Invoice_Process_storage",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/Cls_BillProcess" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/BillProcess/Invoice_Process_Labour": {
+      "post": {
+        "tags": [ "BillProcess" ],
+        "operationId": "BillProcess_Invoice_Process_Labour",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/Cls_BillProcess" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/BillProcess/Invoice_Re_Process_storage": {
+      "post": {
+        "tags": [ "BillProcess" ],
+        "operationId": "BillProcess_Invoice_Re_Process_storage",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/Cls_BillProcess" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/BillProcess/Invoice_Process_Validation": {
+      "post": {
+        "tags": [ "BillProcess" ],
+        "operationId": "BillProcess_Invoice_Process_Validation",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/Cls_BillProcess" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/BillProcess/BillProcess_List": {
+      "post": {
+        "tags": [ "BillProcess" ],
+        "operationId": "BillProcess_BillProcess_List",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/Cls_BillProcess" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/BillProcess/BillReprocess_List": {
+      "post": {
+        "tags": [ "BillProcess" ],
+        "operationId": "BillProcess_BillReprocess_List",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/Cls_BillProcess" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/brand": {
+      "get": {
+        "tags": [ "Brand" ],
+        "operationId": "Brand_GetBrand",
+        "consumes": [],
+        "produces": [ "application/json", "text/json" ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/Brands/Brand_Insert_Update": {
+      "post": {
+        "tags": [ "Brands" ],
+        "operationId": "Brands_Brand_Insert_Update",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/Cls_Brands" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/Brands/Brand_Select": {
+      "get": {
+        "tags": [ "Brands" ],
+        "operationId": "Brands_Brand_Select",
+        "consumes": [],
+        "produces": [ "application/json", "text/json" ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/CheckListDetail/CheckListDetail_Insert": {
+      "post": {
+        "tags": [ "CheckListDetail" ],
+        "operationId": "CheckListDetail_CheckListDetail_Insert",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/cls_CheckListDetail" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/CheckListDetail/CheckListDetail_List": {
+      "post": {
+        "tags": [ "CheckListDetail" ],
+        "operationId": "CheckListDetail_CheckListDetail_List",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/cls_CheckListDetail" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/CheckListMaster/CheckListMaster_Insert": {
+      "post": {
+        "tags": [ "CheckListMaster" ],
+        "operationId": "CheckListMaster_CheckListMaster_Insert",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/cls_CheckListMaster" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/CheckListMaster/CheckListMaster_List": {
+      "get": {
+        "tags": [ "CheckListMaster" ],
+        "operationId": "CheckListMaster_CheckListMaster_List",
+        "consumes": [],
+        "produces": [ "application/json", "text/json" ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/City/Cities_Insert": {
+      "post": {
+        "tags": [ "City" ],
+        "operationId": "City_Cities_Insert",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/cls_City" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/City/Cities_Select": {
+      "get": {
+        "tags": [ "City" ],
+        "operationId": "City_Cities_Select",
+        "consumes": [],
+        "produces": [ "application/json", "text/json" ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/City/States_insert": {
+      "post": {
+        "tags": [ "City" ],
+        "operationId": "City_States_insert",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/States" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/City/States_Select": {
+      "get": {
+        "tags": [ "City" ],
+        "operationId": "City_States_Select",
+        "consumes": [],
+        "produces": [ "application/json", "text/json" ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/Company_Select/Company_Insert_Update": {
+      "post": {
+        "tags": [ "Company_Select" ],
+        "operationId": "Company_Select_Company_Insert_Update",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/cls_Company_Select" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/Company_Select/Company_Select": {
+      "get": {
+        "tags": [ "Company_Select" ],
+        "operationId": "Company_Select_Company_Select",
+        "consumes": [],
+        "produces": [ "application/json", "text/json" ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/CountMaster/CountMaster_Insert_Update": {
+      "post": {
+        "tags": [ "CountMaster" ],
+        "operationId": "CountMaster_CountMaster_Insert_Update",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/Cls_CountMaster" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/CountMaster/CountMaster_Select": {
+      "get": {
+        "tags": [ "CountMaster" ],
+        "operationId": "CountMaster_CountMaster_Select",
+        "consumes": [],
+        "produces": [ "application/json", "text/json" ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/Customer": {
+      "get": {
+        "tags": [ "Customer" ],
+        "operationId": "Customer_GetCustomer",
+        "consumes": [],
+        "produces": [ "application/json", "text/json" ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/Customer/GetCustomerbyid": {
+      "get": {
+        "tags": [ "Customer" ],
+        "operationId": "Customer_GetCustomerbyid",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj.warehouseID",
+            "in": "query",
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "obj.companyID",
+            "in": "query",
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "obj.warehouseName",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "obj.warehouseCode",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "obj.address1",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "obj.address2",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "obj.address3",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "obj.telNumber",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "obj.fax",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "obj.emailID",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "obj.cityId",
+            "in": "query",
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "obj.logo",
+            "in": "query",
+            "required": false,
+            "type": "string",
+            "format": "byte"
+          },
+          {
+            "name": "obj.createdby",
+            "in": "query",
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/CustomerAddOnServices/CustomerAddOnService_insert": {
+      "post": {
+        "tags": [ "CustomerAddOnServices" ],
+        "operationId": "CustomerAddOnServices_CustomerAddOnService_insert",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/cls_CustomerAddOnService" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/CustomerAddOnServices/CustomerAddOnServices_List": {
+      "post": {
+        "tags": [ "CustomerAddOnServices" ],
+        "operationId": "CustomerAddOnServices_CustomerAddOnServices_List",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/cls_CustomerAddOnService" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/CustomerContacts": {
+      "get": {
+        "tags": [ "CustomerContacts" ],
+        "operationId": "CustomerContacts_GetCustomerContacts",
+        "consumes": [],
+        "produces": [ "application/json", "text/json" ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/CustomerContacts/GetCustomerContactsList": {
+      "get": {
+        "tags": [ "CustomerContacts" ],
+        "operationId": "CustomerContacts_GetCustomerContactsList",
+        "consumes": [],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "CustomerID",
+            "in": "query",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/CustomerContacts/CustomerContractWarehouse_List": {
+      "post": {
+        "tags": [ "CustomerContacts" ],
+        "operationId": "CustomerContacts_CustomerContractWarehouse_List",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/cls_CustomerContractWarehouse" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/CustomerContacts/CustomerRateList_Insert": {
+      "post": {
+        "tags": [ "CustomerContacts" ],
+        "operationId": "CustomerContacts_CustomerRateList_Insert",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/cls_customerRateList" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/CustomerContacts/CustomerStorageArea_Select": {
+      "post": {
+        "tags": [ "CustomerContacts" ],
+        "operationId": "CustomerContacts_CustomerStorageArea_Select",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/cls_customerRateList" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/CustomerContacts/CustomerRateList_Service": {
+      "post": {
+        "tags": [ "CustomerContacts" ],
+        "operationId": "CustomerContacts_CustomerRateList_Service",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/cls_customerRateList" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/CustomerDocumentsVerification/CustomerVerifiedDocuments_insert": {
+      "post": {
+        "tags": [ "CustomerDocumentsVerification" ],
+        "operationId": "CustomerDocumentsVerification_CustomerVerifiedDocuments_insert",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/cls_CustomerDocumentsVerification" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/CustomerDocumentsVerification/GetCustomerDocumentVerification_List": {
+      "get": {
+        "tags": [ "CustomerDocumentsVerification" ],
+        "operationId": "CustomerDocumentsVerification_GetCustomerDocumentVerification_List",
+        "consumes": [],
+        "produces": [ "application/json", "text/json" ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/CustomerDocumentsVerification/CustomerVerifiedDocuments_List": {
+      "get": {
+        "tags": [ "CustomerDocumentsVerification" ],
+        "operationId": "CustomerDocumentsVerification_CustomerVerifiedDocuments_List",
+        "consumes": [],
+        "produces": [ "application/json", "text/json" ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/CustomerLimit/customerlimit_insert": {
+      "post": {
+        "tags": [ "CustomerLimit" ],
+        "operationId": "CustomerLimit_customerlimit_insert",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/cls_CustomerLimit" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/CustomerLimit/customerlimit_Select": {
+      "get": {
+        "tags": [ "CustomerLimit" ],
+        "operationId": "CustomerLimit_customerlimit_Select",
+        "consumes": [],
+        "produces": [ "application/json", "text/json" ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/CustomerParty": {
+      "get": {
+        "tags": [ "CustomerParty" ],
+        "operationId": "CustomerParty_GetItems",
+        "consumes": [],
+        "produces": [ "application/json", "text/json" ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/CustomerParty/CustomerPartysave": {
+      "post": {
+        "tags": [ "CustomerParty" ],
+        "operationId": "CustomerParty_PostItems",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "cp",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/CustomerParty" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/customerRateList/CustomerRateList_Insert": {
+      "post": {
+        "tags": [ "customerRateList" ],
+        "operationId": "customerRateList_CustomerRateList_Insert",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/cls_customerRateList" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/customerRateList/CustomerStorageArea_Select": {
+      "post": {
+        "tags": [ "customerRateList" ],
+        "operationId": "customerRateList_CustomerStorageArea_Select",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/cls_customerRateList" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/customerRateList/CustomerRateList_Service": {
+      "post": {
+        "tags": [ "customerRateList" ],
+        "operationId": "customerRateList_CustomerRateList_Service",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/cls_customerRateList" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/customerRateList/GetRateListByID": {
+      "post": {
+        "tags": [ "customerRateList" ],
+        "operationId": "customerRateList_GetRateListByID",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/cls_RateList" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/CustomersStock/CustomerView_GetData": {
+      "post": {
+        "tags": [ "CustomersStock" ],
+        "operationId": "CustomersStock_CustomerView_GetData",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/cls_CustomersStock" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/CustomerUsers/CustomerLogIn_insert": {
+      "post": {
+        "tags": [ "CustomerUsers" ],
+        "operationId": "CustomerUsers_CustomerLogIn_insert",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/cls_CustomerUsers" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/CustomerUsers/CustomerLogin_List": {
+      "get": {
+        "tags": [ "CustomerUsers" ],
+        "operationId": "CustomerUsers_CustomerLogin_List",
+        "consumes": [],
+        "produces": [ "application/json", "text/json" ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/DeliveryOrder/GetCustomerProducts": {
+      "get": {
+        "tags": [ "DeliveryOrder" ],
+        "operationId": "DeliveryOrder_BindProduct",
+        "consumes": [],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "customerid",
+            "in": "query",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "warehouseid",
+            "in": "query",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/DeliveryOrder/DOSearch": {
+      "post": {
+        "tags": [ "DeliveryOrder" ],
+        "operationId": "DeliveryOrder_DOSearch",
+        "consumes": [],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "CustomerID",
+            "in": "query",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "WarehouseID",
+            "in": "query",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/DeliveryOrder/DOList": {
+      "get": {
+        "tags": [ "DeliveryOrder" ],
+        "operationId": "DeliveryOrder_GetDOList",
+        "consumes": [],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "FinancialYearID",
+            "in": "query",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "WareHouseID",
+            "in": "query",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "UserID",
+            "in": "query",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/DeliveryOrder/AddParty": {
+      "post": {
+        "tags": [ "DeliveryOrder" ],
+        "operationId": "DeliveryOrder_AddParty",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "cp",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/CustomerParty" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/DeliveryOrder/DOValidation": {
+      "get": {
+        "tags": [ "DeliveryOrder" ],
+        "operationId": "DeliveryOrder_DOValidation",
+        "consumes": [],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "CustomerID",
+            "in": "query",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "WaherhouseID",
+            "in": "query",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/DeliveryOrder/SaveDO": {
+      "post": {
+        "tags": [ "DeliveryOrder" ],
+        "operationId": "DeliveryOrder_SaveDO",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "dod",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/DeliveryOrderSaveModel" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/DeliveryOrder/GetEditDelivryOrder": {
+      "get": {
+        "tags": [ "DeliveryOrder" ],
+        "operationId": "DeliveryOrder_GetEditDelivryOrder",
+        "consumes": [],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "DeliveryOrderID",
+            "in": "query",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/DeliveryOrder/CancelledDO": {
+      "post": {
+        "tags": [ "DeliveryOrder" ],
+        "operationId": "DeliveryOrder_CancelledDO",
+        "consumes": [],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "DeliveryOrderID",
+            "in": "query",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "CustomerId",
+            "in": "query",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "Remarks",
+            "in": "query",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "CreatedBy",
+            "in": "query",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/DeliveryOrder/PartiallyCancelled": {
+      "post": {
+        "tags": [ "DeliveryOrder" ],
+        "operationId": "DeliveryOrder_PartiallyCancelled",
+        "consumes": [],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "DeliveryOrderID",
+            "in": "query",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "CustomerId",
+            "in": "query",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "Remarks",
+            "in": "query",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "CreatedBy",
+            "in": "query",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/Department/Department_Insert_Update": {
+      "post": {
+        "tags": [ "Department" ],
+        "operationId": "Department_Department_Insert_Update",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/Cls_Department" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/Department/Department_Select": {
+      "get": {
+        "tags": [ "Department" ],
+        "operationId": "Department_Department_Select",
+        "consumes": [],
+        "produces": [ "application/json", "text/json" ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/Designation/Designation_Insert_Update": {
+      "post": {
+        "tags": [ "Designation" ],
+        "operationId": "Designation_Designation_Insert_Update",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/Cls_Designation" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/Designation/Designation_Select": {
+      "get": {
+        "tags": [ "Designation" ],
+        "operationId": "Designation_Designation_Select",
+        "consumes": [],
+        "produces": [ "application/json", "text/json" ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/Dispatch/DispatchSearch": {
+      "get": {
+        "tags": [ "Dispatch" ],
+        "operationId": "Dispatch_DispatchSearch",
+        "consumes": [],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "CustomerID",
+            "in": "query",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "WarehouseId",
+            "in": "query",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "CompanyID",
+            "in": "query",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/Dispatch/GetDispatchDetails": {
+      "get": {
+        "tags": [ "Dispatch" ],
+        "operationId": "Dispatch_GetDispatchDetail",
+        "consumes": [],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "DeliveryOrderID",
+            "in": "query",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "DeliveryOrderNo",
+            "in": "query",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/Dispatch/Dispatch_Select": {
+      "get": {
+        "tags": [ "Dispatch" ],
+        "operationId": "Dispatch_Dispatch_Select",
+        "consumes": [],
+        "produces": [ "application/json", "text/json" ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/Dispatch/Dispatch_Cancelled": {
+      "post": {
+        "tags": [ "Dispatch" ],
+        "operationId": "Dispatch_Dispatch_Cancelled",
+        "consumes": [],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "DispatchID",
+            "in": "query",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "Remark",
+            "in": "query",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "CreatedBy",
+            "in": "query",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/Dispatch/SaveDispatch": {
+      "post": {
+        "tags": [ "Dispatch" ],
+        "operationId": "Dispatch_SaveDispatch",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "dsm",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/DispatchSaveModel" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/DockMaster/Dock_Select": {
+      "get": {
+        "tags": [ "DockMaster" ],
+        "operationId": "DockMaster_Dock_Select",
+        "consumes": [],
+        "produces": [ "application/json", "text/json" ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/DockMaster/Dock_insert": {
+      "post": {
+        "tags": [ "DockMaster" ],
+        "operationId": "DockMaster_Dock_insert",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/cls_DockMaster" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/EmailSchedule/EmailSchedule_List": {
+      "get": {
+        "tags": [ "EmailSchedule" ],
+        "operationId": "EmailSchedule_EmailSchedule_List",
+        "consumes": [],
+        "produces": [ "application/json", "text/json" ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/EmailSchedule/Email_Report_insert": {
+      "post": {
+        "tags": [ "EmailSchedule" ],
+        "operationId": "EmailSchedule_Email_Report_insert",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/cls_EmailSchedule" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/EmailSchedule/EmailReport_Delete": {
+      "post": {
+        "tags": [ "EmailSchedule" ],
+        "operationId": "EmailSchedule_EmailReport_Delete",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/cls_EmailSchedule" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/FinancialYear/FinancialYears_Insert": {
+      "post": {
+        "tags": [ "FinancialYear" ],
+        "operationId": "FinancialYear_FinancialYears_Insert",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/cls_FinancialYears" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/GenerateReport/ReportDesigner_select": {
+      "get": {
+        "tags": [ "GenerateReport" ],
+        "operationId": "GenerateReport_ReportDesigner_select",
+        "consumes": [],
+        "produces": [ "application/json", "text/json" ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/InwardList": {
+      "post": {
+        "tags": [ "Inward" ],
+        "operationId": "Inward_getInwardList",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/cls_Inward" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/Inward/GetCustomerProducts": {
+      "post": {
+        "tags": [ "Inward" ],
+        "operationId": "Inward_BindProduct",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/cls_Inward" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/Inward/BindSericeType": {
+      "post": {
+        "tags": [ "Inward" ],
+        "operationId": "Inward_BindSericeType",
+        "consumes": [],
+        "produces": [ "application/json", "text/json" ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/Inward/GetInwardService": {
+      "post": {
+        "tags": [ "Inward" ],
+        "operationId": "Inward_GetInwardService",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/cls_Inward" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/Inward/GetInwardChallanData": {
+      "post": {
+        "tags": [ "Inward" ],
+        "operationId": "Inward_GetInwardChallanData",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/cls_Inward" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/Inward/GetCustomerContact": {
+      "post": {
+        "tags": [ "Inward" ],
+        "operationId": "Inward_GetCustomerContact",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/cls_Inward" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/Inward/GetLotNo": {
+      "post": {
+        "tags": [ "Inward" ],
+        "operationId": "Inward_GetLotNo",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/cls_Inward" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/Inward/GetAvailableStorageArea": {
+      "post": {
+        "tags": [ "Inward" ],
+        "operationId": "Inward_GetAvailableStorageArea",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "a",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/AvailbaleStorageArea" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/Inward/GetServiceId": {
+      "get": {
+        "tags": [ "Inward" ],
+        "operationId": "Inward_GetServiceId",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj.inwardID",
+            "in": "query",
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "obj.customerID",
+            "in": "query",
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "obj.remarks",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "obj.createdBy",
+            "in": "query",
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "obj.serviceID",
+            "in": "query",
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "obj.productID",
+            "in": "query",
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "obj.companyId",
+            "in": "query",
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "obj.warehouseId",
+            "in": "query",
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "obj.finantialYearId",
+            "in": "query",
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "obj.challan",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "obj.storageAreaMasterID",
+            "in": "query",
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "obj.financialYear",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/Inward/GetInwardProductRate": {
+      "get": {
+        "tags": [ "Inward" ],
+        "operationId": "Inward_GetInwardProductRate",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj.inwardID",
+            "in": "query",
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "obj.customerID",
+            "in": "query",
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "obj.remarks",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "obj.createdBy",
+            "in": "query",
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "obj.serviceID",
+            "in": "query",
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "obj.productID",
+            "in": "query",
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "obj.companyId",
+            "in": "query",
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "obj.warehouseId",
+            "in": "query",
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "obj.finantialYearId",
+            "in": "query",
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "obj.challan",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "obj.storageAreaMasterID",
+            "in": "query",
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "obj.financialYear",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/Inward/GetCustomerContacts": {
+      "get": {
+        "tags": [ "Inward" ],
+        "operationId": "Inward_GetCustomerContacts",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj.inwardID",
+            "in": "query",
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "obj.customerID",
+            "in": "query",
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "obj.remarks",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "obj.createdBy",
+            "in": "query",
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "obj.serviceID",
+            "in": "query",
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "obj.productID",
+            "in": "query",
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "obj.companyId",
+            "in": "query",
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "obj.warehouseId",
+            "in": "query",
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "obj.finantialYearId",
+            "in": "query",
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "obj.challan",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "obj.storageAreaMasterID",
+            "in": "query",
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "obj.financialYear",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/Inward/SaveInward": {
+      "post": {
+        "tags": [ "Inward" ],
+        "operationId": "Inward_SaveInward",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "ism",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/InwardSaveModel" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/Inward/GetInwardDetailsByID": {
+      "post": {
+        "tags": [ "Inward" ],
+        "operationId": "Inward_GetInwardDetailsByID",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/cls_Inward" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/Inward/GetAppliedStoargeArea": {
+      "post": {
+        "tags": [ "Inward" ],
+        "operationId": "Inward_GetAppliedStoargeArea",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "iga",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/InwardGetAvailableStorageArea" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/Inward/DeleteInward": {
+      "post": {
+        "tags": [ "Inward" ],
+        "operationId": "Inward_DeleteInward",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/cls_Inward" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/InwardUpdate/InwardUpdate_insert": {
+      "post": {
+        "tags": [ "InwardUpdate" ],
+        "operationId": "InwardUpdate_InwardUpdate_insert",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/cls_InwardUpdate" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/item/itemlist": {
+      "get": {
+        "tags": [ "Item" ],
+        "operationId": "Item_GetItems",
+        "consumes": [],
+        "produces": [ "application/json", "text/json" ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/item/itemType": {
+      "get": {
+        "tags": [ "Item" ],
+        "operationId": "Item_GetItemType",
+        "consumes": [],
+        "produces": [ "application/json", "text/json" ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/item/save": {
+      "post": {
+        "tags": [ "Item" ],
+        "operationId": "Item_PostItems",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "i",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/Item" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/item/Items_Select": {
+      "get": {
+        "tags": [ "Item" ],
+        "operationId": "Item_Items_Select",
+        "consumes": [],
+        "produces": [ "application/json", "text/json" ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/item/Items_Insert_Update": {
+      "post": {
+        "tags": [ "Item" ],
+        "operationId": "Item_Items_Insert_Update",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "i",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/Item" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/ItemTypeMaster/ItemTypeMaster_Insert_Update": {
+      "post": {
+        "tags": [ "ItemTypeMaster" ],
+        "operationId": "ItemTypeMaster_ItemTypeMaster_Insert_Update",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/Cls_ItemTypeMaster" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/ItemTypeMaster/ItemTypeMaster_Select": {
+      "get": {
+        "tags": [ "ItemTypeMaster" ],
+        "operationId": "ItemTypeMaster_ItemTypeMaster_Select",
+        "consumes": [],
+        "produces": [ "application/json", "text/json" ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/LabourContracter": {
+      "get": {
+        "tags": [ "LabourContracter" ],
+        "operationId": "LabourContracter_GetLabourContractor",
+        "consumes": [],
+        "produces": [ "application/json", "text/json" ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/LabourContracter/LabourContractors_Select": {
+      "get": {
+        "tags": [ "LabourContracter" ],
+        "operationId": "LabourContracter_LabourContractors_Select",
+        "consumes": [],
+        "produces": [ "application/json", "text/json" ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/LabourContracter/LabourContractor_Insert_Update": {
+      "post": {
+        "tags": [ "LabourContracter" ],
+        "operationId": "LabourContracter_LabourContractor_Insert_Update",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/cls_LabourContracter" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/Login/SP_Login": {
+      "post": {
+        "tags": [ "Login" ],
+        "operationId": "Login_SP_Login",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/cls_UserLogin" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/LotSearch/LotSearch_List": {
+      "post": {
+        "tags": [ "LotSearch" ],
+        "operationId": "LotSearch_LotSearch_List",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/cls_LotSearch" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/Menu": {
+      "get": {
+        "tags": [ "Menu" ],
+        "operationId": "Menu_GetMenu",
+        "consumes": [],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "userid",
+            "in": "query",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/ModifyProductRates/ModifyProductRate_Insert": {
+      "post": {
+        "tags": [ "ModifyProductRates" ],
+        "operationId": "ModifyProductRates_ModifyProductRate_Insert",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/cls_ModifyProductRates" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/Outward/GetOutwardList": {
+      "post": {
+        "tags": [ "Outward" ],
+        "operationId": "Outward_GetOutwardList",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/cls_Outward" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/Outward/OutWard_Cancelled": {
+      "post": {
+        "tags": [ "Outward" ],
+        "operationId": "Outward_OutWard_Cancelled",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/cls_Outward" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/Outward/Rep_GatePass": {
+      "post": {
+        "tags": [ "Outward" ],
+        "operationId": "Outward_Rep_GatePass",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/cls_Outward" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/Outward/Outward_Insert": {
+      "post": {
+        "tags": [ "Outward" ],
+        "operationId": "Outward_Outward_Insert",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/cls_Outward" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/OutWard_Update/OutwardUpdate_insert": {
+      "post": {
+        "tags": [ "OutWard_Update" ],
+        "operationId": "OutWard_Update_OutwardUpdate_insert",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/cls_OutWard_Update" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/PackingType/PackingType_Insert_Update": {
+      "post": {
+        "tags": [ "PackingType" ],
+        "operationId": "PackingType_PackingType_Insert_Update",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/Cls_PackingType" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/PackingType/PackingType_Select": {
+      "get": {
+        "tags": [ "PackingType" ],
+        "operationId": "PackingType_PackingType_Select",
+        "consumes": [],
+        "produces": [ "application/json", "text/json" ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/ProcessServices/ProcessServices_Insert": {
+      "post": {
+        "tags": [ "ProcessServices" ],
+        "operationId": "ProcessServices_ProcessServices_Insert",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/Cls_ProcessServices" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/Department/ProcessServices_Select": {
+      "post": {
+        "tags": [ "ProcessServices" ],
+        "operationId": "ProcessServices_ProcessServices_Select",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/Cls_ProcessServices" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/ProductTypes": {
+      "get": {
+        "tags": [ "Product" ],
+        "operationId": "Product_GetProductType",
+        "consumes": [],
+        "produces": [ "application/json", "text/json" ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/ProductGroups": {
+      "get": {
+        "tags": [ "Product" ],
+        "operationId": "Product_GetProductGroups",
+        "consumes": [],
+        "produces": [ "application/json", "text/json" ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/uomlist": {
+      "get": {
+        "tags": [ "Product" ],
+        "operationId": "Product_GetUOMs",
+        "consumes": [],
+        "produces": [ "application/json", "text/json" ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/GetBillingCycles": {
+      "get": {
+        "tags": [ "Product" ],
+        "operationId": "Product_GetBillingCycles",
+        "consumes": [],
+        "produces": [ "application/json", "text/json" ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/GetPackingTypes": {
+      "get": {
+        "tags": [ "Product" ],
+        "operationId": "Product_GetPackingTypes",
+        "consumes": [],
+        "produces": [ "application/json", "text/json" ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/TemperatureCategories": {
+      "get": {
+        "tags": [ "Product" ],
+        "operationId": "Product_GetTemperatureCategories",
+        "consumes": [],
+        "produces": [ "application/json", "text/json" ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/ProductList": {
+      "get": {
+        "tags": [ "Product" ],
+        "operationId": "Product_GetProductList",
+        "consumes": [],
+        "produces": [ "application/json", "text/json" ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/itemwisetempCategory": {
+      "get": {
+        "tags": [ "Product" ],
+        "operationId": "Product_Get_TemperatureCategory",
+        "consumes": [],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "itemid",
+            "in": "query",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/SaveProduct": {
+      "post": {
+        "tags": [ "Product" ],
+        "operationId": "Product_SaveProduct",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "p",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/ProductMaster" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/ProductTaxDetails/ProductTaxDetail_Select": {
+      "get": {
+        "tags": [ "ProductTaxDetails" ],
+        "operationId": "ProductTaxDetails_ProductTaxDetail_Select",
+        "consumes": [],
+        "produces": [ "application/json", "text/json" ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/ProductTaxDetails/ProductTaxDetails_insert": {
+      "post": {
+        "tags": [ "ProductTaxDetails" ],
+        "operationId": "ProductTaxDetails_ProductTaxDetails_insert",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/cls_ProductTaxDetails" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/Rate/RateList_Select": {
+      "get": {
+        "tags": [ "Rate" ],
+        "operationId": "Rate_RateList_Select",
+        "consumes": [],
+        "produces": [ "application/json", "text/json" ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/Rate/Ratelist_Insert": {
+      "post": {
+        "tags": [ "Rate" ],
+        "operationId": "Rate_Ratelist_Insert",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/cls_Rate" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/RateMaster/Rate_Select": {
+      "get": {
+        "tags": [ "RateMaster" ],
+        "operationId": "RateMaster_Rate_Select",
+        "consumes": [],
+        "produces": [ "application/json", "text/json" ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/RateMaster/Rate_Insert": {
+      "post": {
+        "tags": [ "RateMaster" ],
+        "operationId": "RateMaster_Rate_Insert",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/cls_RateMaster" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/Receipt/Receipt_Insert": {
+      "post": {
+        "tags": [ "Receipt" ],
+        "operationId": "Receipt_Receipt_Insert",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/Cls_Receipt" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/Receipt/GetPaymentReceiptList": {
+      "post": {
+        "tags": [ "Receipt" ],
+        "operationId": "Receipt_GetPaymentReceiptList",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/Cls_Receipt" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/Receipt/Receipt_Cancelled": {
+      "post": {
+        "tags": [ "Receipt" ],
+        "operationId": "Receipt_Receipt_Cancelled",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/Cls_Receipt" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/Receipt/Rep_PaymentReceiptReport": {
+      "post": {
+        "tags": [ "Receipt" ],
+        "operationId": "Receipt_Rep_PaymentReceiptReport",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/Cls_Receipt" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/Receipt/Receipt_Detail_Edit": {
+      "post": {
+        "tags": [ "Receipt" ],
+        "operationId": "Receipt_Receipt_Detail_Edit",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/Cls_Receipt" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/Receipt/Receipt_SelectInvoice": {
+      "post": {
+        "tags": [ "Receipt" ],
+        "operationId": "Receipt_Receipt_SelectInvoice",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/Cls_Receipt" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/Remarks/Remarks_List": {
+      "get": {
+        "tags": [ "Remarks" ],
+        "operationId": "Remarks_Remarks_List",
+        "consumes": [],
+        "produces": [ "application/json", "text/json" ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/Remarks/Remarks_insert": {
+      "post": {
+        "tags": [ "Remarks" ],
+        "operationId": "Remarks_Remarks_insert",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/cls_Remarks" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/RoleUI/RoleUI_Insert_Update": {
+      "post": {
+        "tags": [ "RoleUI" ],
+        "operationId": "RoleUI_RoleUI_Insert_Update",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/cls_RoleUI" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/RoleUI/RoleUI_Select": {
+      "post": {
+        "tags": [ "RoleUI" ],
+        "operationId": "RoleUI_RoleUI_Select",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/cls_RoleUI" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/service": {
+      "get": {
+        "tags": [ "Service" ],
+        "operationId": "Service_GetService",
+        "consumes": [],
+        "produces": [ "application/json", "text/json" ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/service/serviceType": {
+      "get": {
+        "tags": [ "Service" ],
+        "operationId": "Service_GetServiceType",
+        "consumes": [],
+        "produces": [ "application/json", "text/json" ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/service/InwardService": {
+      "get": {
+        "tags": [ "Service" ],
+        "operationId": "Service_GetProductWiseService",
+        "consumes": [],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "productID",
+            "in": "query",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "customerID",
+            "in": "query",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/Services/Service_Select": {
+      "get": {
+        "tags": [ "Services" ],
+        "operationId": "Services_Service_Select",
+        "consumes": [],
+        "produces": [ "application/json", "text/json" ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/Services/Services_Insert": {
+      "post": {
+        "tags": [ "Services" ],
+        "operationId": "Services_Services_Insert",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/cls_Services" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/Shifting/Shifting_insert": {
+      "post": {
+        "tags": [ "Shifting" ],
+        "operationId": "Shifting_Shifting_insert",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/cls_Shifting" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/Shifting/Shifting_List": {
+      "post": {
+        "tags": [ "Shifting" ],
+        "operationId": "Shifting_Shifting_List",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/cls_Shifting" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/Shifting/Shifting_Cancelled": {
+      "post": {
+        "tags": [ "Shifting" ],
+        "operationId": "Shifting_Shifting_Cancelled",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/cls_Shifting" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/Shifting/Rep_Shifting": {
+      "post": {
+        "tags": [ "Shifting" ],
+        "operationId": "Shifting_Rep_Shifting",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/cls_Shifting" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/Shifting/ShiftingEdit_List": {
+      "post": {
+        "tags": [ "Shifting" ],
+        "operationId": "Shifting_ShiftingEdit_List",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/cls_Shifting" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/SpecialRates/SpecialRate_List": {
+      "get": {
+        "tags": [ "SpecialRates" ],
+        "operationId": "SpecialRates_SpecialRate_List",
+        "consumes": [],
+        "produces": [ "application/json", "text/json" ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/SpecialRates/SpecialRatelist_Insert": {
+      "post": {
+        "tags": [ "SpecialRates" ],
+        "operationId": "SpecialRates_SpecialRatelist_Insert",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/cls_SpecialRates" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/StopDelivery/StopDeliveryOrder_insert": {
+      "post": {
+        "tags": [ "StopDelivery" ],
+        "operationId": "StopDelivery_StopDeliveryOrder_insert",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/cls_StopDelivery" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/StopDelivery/ReleaseDeliveryOrder_List": {
+      "post": {
+        "tags": [ "StopDelivery" ],
+        "operationId": "StopDelivery_ReleaseDeliveryOrder_List",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/cls_StopDelivery" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/StopDelivery/StopDeliveryOrder_List": {
+      "post": {
+        "tags": [ "StopDelivery" ],
+        "operationId": "StopDelivery_StopDeliveryOrder_List",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/cls_StopDelivery" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/Storage/StorageAreas_Insert": {
+      "post": {
+        "tags": [ "Storage" ],
+        "operationId": "Storage_StorageAreas_Insert",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/cls_Storage" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/Storage/StorageArea_Select": {
+      "post": {
+        "tags": [ "Storage" ],
+        "operationId": "Storage_StorageArea_Select",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/cls_Storage" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/StorageAreaMaster": {
+      "get": {
+        "tags": [ "StorageAreaMaster" ],
+        "operationId": "StorageAreaMaster_GetWarehouse",
+        "consumes": [],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "WarehouseID",
+            "in": "query",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/StorageAreaType/ServieceStorageAreaType": {
+      "get": {
+        "tags": [ "StorageAreaType" ],
+        "operationId": "StorageAreaType_ServieceStorageAreaType",
+        "consumes": [],
+        "produces": [ "application/json", "text/json" ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/StorageAreaType/StorageAreaType_Insert_Update": {
+      "post": {
+        "tags": [ "StorageAreaType" ],
+        "operationId": "StorageAreaType_StorageAreaType_Insert_Update",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/cls_StorageAreaType" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/StorageAreaType/StorageAreaType_Select": {
+      "get": {
+        "tags": [ "StorageAreaType" ],
+        "operationId": "StorageAreaType_StorageAreaType_Select",
+        "consumes": [],
+        "produces": [ "application/json", "text/json" ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/Taxes/Taxes_Insert": {
+      "post": {
+        "tags": [ "Taxes" ],
+        "operationId": "Taxes_Taxes_Insert",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/cls_Taxes" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/Taxes/TaxDetail_Select": {
+      "get": {
+        "tags": [ "Taxes" ],
+        "operationId": "Taxes_TaxDetail_Select",
+        "consumes": [],
+        "produces": [ "application/json", "text/json" ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/TaxType/TaxType_Insert_Update": {
+      "post": {
+        "tags": [ "TaxType" ],
+        "operationId": "TaxType_TaxType_Insert_Update",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/Cls_TaxType" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/TaxType/TaxType_Select": {
+      "get": {
+        "tags": [ "TaxType" ],
+        "operationId": "TaxType_TaxType_Select",
+        "consumes": [],
+        "produces": [ "application/json", "text/json" ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/TemperatureCategory/TemperatureCategories_Insert": {
+      "post": {
+        "tags": [ "TemperatureCategory" ],
+        "operationId": "TemperatureCategory_TemperatureCategories_Insert",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/cls_TemperatureCategories" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/TemperatureCategory/TemperatureCategories_Select": {
+      "get": {
+        "tags": [ "TemperatureCategory" ],
+        "operationId": "TemperatureCategory_TemperatureCategories_Select",
+        "consumes": [],
+        "produces": [ "application/json", "text/json" ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/Transfer/Transfer_Insert": {
+      "post": {
+        "tags": [ "Transfer" ],
+        "operationId": "Transfer_Transfer_Insert",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/cls_Transfer" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/Transfer/Transfer_List": {
+      "post": {
+        "tags": [ "Transfer" ],
+        "operationId": "Transfer_Transfer_List",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/cls_Transfer" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/Transfer/Transfer_Cancelled": {
+      "post": {
+        "tags": [ "Transfer" ],
+        "operationId": "Transfer_Transfer_Cancelled",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/cls_Transfer" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/Transfer/Rep_TransferReport": {
+      "post": {
+        "tags": [ "Transfer" ],
+        "operationId": "Transfer_Rep_TransferReport",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/cls_Transfer" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/UIMaster/UIMaster_Insert": {
+      "post": {
+        "tags": [ "UIMaster" ],
+        "operationId": "UIMaster_UIMaster_Insert",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/cls_UIMaster" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/UIMaster/UIMaster_Grid": {
+      "get": {
+        "tags": [ "UIMaster" ],
+        "operationId": "UIMaster_UIMaster_Grid",
+        "consumes": [],
+        "produces": [ "application/json", "text/json" ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/UserCompany/UserCompany_Insert": {
+      "post": {
+        "tags": [ "UserCompany" ],
+        "operationId": "UserCompany_UserCompany_Insert",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/cls_UserCompany" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/UserCompany/UserCompanyWareHouseList_select": {
+      "post": {
+        "tags": [ "UserCompany" ],
+        "operationId": "UserCompany_UserCompanyWareHouseList_select",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/cls_UserCompanyWareHouseList" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/Users/Users_Select": {
+      "get": {
+        "tags": [ "Users" ],
+        "operationId": "Users_Users_Select",
+        "consumes": [],
+        "produces": [ "application/json", "text/json" ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/Users/Users_Insert": {
+      "post": {
+        "tags": [ "Users" ],
+        "operationId": "Users_Users_Insert",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/cls_Users" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/dock": {
+      "get": {
+        "tags": [ "Values" ],
+        "operationId": "Values_GetDock",
+        "consumes": [],
+        "produces": [ "application/json", "text/json" ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/UnloadingBy": {
+      "get": {
+        "tags": [ "Values" ],
+        "operationId": "Values_UnloadingBy",
+        "consumes": [],
+        "produces": [ "application/json", "text/json" ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/Remarks": {
+      "get": {
+        "tags": [ "Values" ],
+        "operationId": "Values_GetRemarks",
+        "consumes": [],
+        "produces": [ "application/json", "text/json" ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/CountInPacket": {
+      "get": {
+        "tags": [ "Values" ],
+        "operationId": "Values_GetCountInPacket",
+        "consumes": [],
+        "produces": [ "application/json", "text/json" ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/TemperatureCategory": {
+      "get": {
+        "tags": [ "Values" ],
+        "operationId": "Values_GetTempCategory",
+        "consumes": [],
+        "produces": [ "application/json", "text/json" ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/Values/{id}": {
+      "delete": {
+        "tags": [ "Values" ],
+        "operationId": "Values_Delete",
+        "consumes": [],
+        "produces": [],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": { "204": { "description": "No Content" } }
+      }
+    },
+    "/api/Warehouse": {
+      "get": {
+        "tags": [ "Warehouse" ],
+        "operationId": "Warehouse_GetWarehouse",
+        "consumes": [],
+        "produces": [ "application/json", "text/json" ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/Warehouse/{id}": {
+      "get": {
+        "tags": [ "Warehouse" ],
+        "operationId": "Warehouse_GetWarehouseByID",
+        "consumes": [],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/Warehouse/userWarehouse": {
+      "get": {
+        "tags": [ "Warehouse" ],
+        "operationId": "Warehouse_GetUserWarehouses",
+        "consumes": [],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "userid",
+            "in": "query",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "companyId",
+            "in": "query",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/Warehouse/Warehouse_Insert_Update": {
+      "post": {
+        "tags": [ "Warehouse" ],
+        "operationId": "Warehouse_Warehouse_Insert_Update",
+        "consumes": [ "application/json", "text/json", "application/x-www-form-urlencoded" ],
+        "produces": [ "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/cls_Warehouse" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    },
+    "/api/Warehouse/Warehouses_Select": {
+      "get": {
+        "tags": [ "Warehouse" ],
+        "operationId": "Warehouse_Warehouses_Select",
+        "consumes": [],
+        "produces": [ "application/json", "text/json" ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": { "type": "object" }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "LoginModel": {
+      "type": "object",
+      "properties": {
+        "Username": { "type": "string" },
+        "Password": { "type": "string" },
+        "FinitialYearID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "WarehouseID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "RememberMe": { "type": "boolean" }
+      }
+    },
+    "Cls_AdditionalService": {
+      "type": "object",
+      "properties": {
+        "AdditionalServiceID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "WarehouseID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "CustomerID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "BillDate": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "BillNumber": { "type": "string" },
+        "AddonMonthlyBill": { "type": "boolean" },
+        "Remarks": { "type": "string" },
+        "CreatedBy": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "Mode": { "type": "string" },
+        "LTD_AdditionalServiceCharges": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/TD_AdditionalServiceCharges" }
+        },
+        "LTD_AdditionalServiceDetailS": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/TD_AdditionalServiceDetailS" }
+        }
+      }
+    },
+    "TD_AdditionalServiceCharges": {
+      "type": "object",
+      "properties": {
+        "AdditionalServiceChargeID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "AdditionalServiceDID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "ServiceID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "ServiceName": { "type": "string" },
+        "ProductID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "ProcuctName": { "type": "string" },
+        "Quantity": {
+          "format": "double",
+          "type": "number"
+        },
+        "Rate": {
+          "format": "double",
+          "type": "number"
+        },
+        "Rate_L": {
+          "format": "double",
+          "type": "number"
+        },
+        "Remarks": { "type": "string" }
+      }
+    },
+    "TD_AdditionalServiceDetailS": {
+      "type": "object",
+      "properties": {
+        "AdditionalServiceDID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "AdditionalServiceID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "ServiceID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "ServiceName": { "type": "string" },
+        "Quantity": {
+          "format": "double",
+          "type": "number"
+        },
+        "Description": { "type": "string" },
+        "StartTime": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "EndTime": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "TruckNo": { "type": "string" },
+        "ContainerNo": { "type": "string" },
+        "PerUnitCharges": {
+          "format": "double",
+          "type": "number"
+        },
+        "Charges": {
+          "format": "double",
+          "type": "number"
+        },
+        "Remarks": { "type": "string" },
+        "LabourContractorID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "LabourContractor": { "type": "string" }
+      }
+    },
+    "Cls_BankAccountDetail": {
+      "type": "object",
+      "properties": {
+        "BankAccountID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "WarehouseID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "LabourContractorID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "BankName": { "type": "string" },
+        "Branch": { "type": "string" },
+        "AccountNo": { "type": "string" },
+        "IFSCCode": { "type": "string" },
+        "CreatedBy": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "cls_BillEstimate": {
+      "type": "object",
+      "properties": {
+        "billStartDate": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "billEndDate": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "warehouseID": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "Cls_BillingCycles": {
+      "type": "object",
+      "properties": {
+        "BillingCycleID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "BillingCycleCode": { "type": "string" },
+        "BillingCycleName": { "type": "string" },
+        "IsActive": { "type": "boolean" },
+        "CreatedBy": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "ModifyBy": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "Cls_BillProcess": {
+      "type": "object",
+      "properties": {
+        "BillDate": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "BillStartDate": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "BillEndDate": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "WarehouseID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "CreatedBy": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "InCompanyName": { "type": "boolean" },
+        "customers": { "type": "string" },
+        "invoiceType": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "Cls_Brands": {
+      "type": "object",
+      "properties": {
+        "BrandID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "BrandName": { "type": "string" },
+        "IsActive": { "type": "boolean" },
+        "CreatedBy": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "cls_CheckListDetail": {
+      "type": "object",
+      "properties": {
+        "CheckListDetailID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "periodType": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "LTD_CheckListDetail": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/TD_CheckListDetail" }
+        }
+      }
+    },
+    "TD_CheckListDetail": {
+      "type": "object",
+      "properties": {
+        "CheckListDetailID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "WarehouseID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "WarehouseName": { "type": "string" },
+        "StorageAreaID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "StorageArea": { "type": "string" },
+        "CheckListID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "CheckedDate": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "CheckedBy": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "OptionValue": { "type": "string" },
+        "Remarks": { "type": "string" },
+        "CreatedBy": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "cls_CheckListMaster": {
+      "type": "object",
+      "properties": {
+        "CheckListID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "CheckListName": { "type": "string" },
+        "Description": { "type": "string" },
+        "PeriodTypeID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "Frequancy": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "IsOptional": { "type": "boolean" },
+        "OptionYesNo": { "type": "boolean" },
+        "CreatedBy": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "cls_City": {
+      "type": "object",
+      "properties": {
+        "CityID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "City": { "type": "string" },
+        "StateID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "CreatedBy": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "States": {
+      "type": "object",
+      "properties": {
+        "StateID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "State": { "type": "string" },
+        "StateCode": { "type": "string" },
+        "CreatedBy": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "GstCode": { "type": "string" }
+      }
+    },
+    "cls_Company_Select": {
+      "type": "object",
+      "properties": {
+        "CompanyID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "Companyname": { "type": "string" },
+        "CompanyCode": { "type": "string" },
+        "Address1": { "type": "string" },
+        "Address2": { "type": "string" },
+        "Address3": { "type": "string" },
+        "CityId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "Pincode": { "type": "string" },
+        "ContactNo": { "type": "string" },
+        "MobileNo": { "type": "string" },
+        "Gstno": { "type": "string" },
+        "Panno": { "type": "string" },
+        "ParentCompanyId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "createdby": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "Cls_CountMaster": {
+      "type": "object",
+      "properties": {
+        "CountID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "Counts": { "type": "string" },
+        "IsActive": { "type": "boolean" },
+        "CreatedBy": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "cls_Warehouse": {
+      "type": "object",
+      "properties": {
+        "WarehouseID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "CompanyID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "WarehouseName": { "type": "string" },
+        "WarehouseCode": { "type": "string" },
+        "Address1": { "type": "string" },
+        "Address2": { "type": "string" },
+        "Address3": { "type": "string" },
+        "TelNumber": { "type": "string" },
+        "Fax": { "type": "string" },
+        "EmailID": { "type": "string" },
+        "CityId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "Logo": {
+          "format": "byte",
+          "type": "string"
+        },
+        "createdby": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "cls_CustomerAddOnService": {
+      "type": "object",
+      "properties": {
+        "AddOnServiceID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "CustomerID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "WarehouseID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "ServiceID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "StartDate": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "EndDate": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "Rate": {
+          "format": "double",
+          "type": "number"
+        },
+        "BillingCycleID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "createdBy": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "cls_CustomerContractWarehouse": {
+      "type": "object",
+      "properties": {
+        "CustomerRateID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "Mode": { "type": "string" },
+        "WareHouseID": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "cls_customerRateList": {
+      "type": "object",
+      "properties": {
+        "CustomerRateListID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "CustomerID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "wefDate": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "FromDate": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "EndDate": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "RateID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "BillingCycleID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "LTD_CustomerRateList": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/TD_CustomerRateList" }
+        },
+        "LTD_CustomerStorageArea1": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/TD_CustomerStorageArea1" }
+        },
+        "LTD_CustomerAddOnServices1": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/TD_CustomerAddOnServices1" }
+        },
+        "LTD_WareHouses": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/TD_WareHouses" }
+        },
+        "createdBy": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "CompanyID": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "TD_CustomerRateList": {
+      "type": "object",
+      "properties": {
+        "CustomerRateListID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "ProductID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "ServiceID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "ServiceName": { "type": "string" },
+        "ChargedRate": {
+          "format": "double",
+          "type": "number"
+        },
+        "LabourRate": {
+          "format": "double",
+          "type": "number"
+        }
+      }
+    },
+    "TD_CustomerStorageArea1": {
+      "type": "object",
+      "properties": {
+        "StorageAreaID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "SpaceAllocationPercentage": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "StartDate": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "EndDate": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "Rate": {
+          "format": "double",
+          "type": "number"
+        },
+        "BillingCycleID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "IsUpdate": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "TD_CustomerAddOnServices1": {
+      "type": "object",
+      "properties": {
+        "ServiceID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "StartDate": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "EndDate": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "Rate": {
+          "format": "double",
+          "type": "number"
+        },
+        "BillingCycleID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "IsUpdate": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "TD_WareHouses": {
+      "type": "object",
+      "properties": {
+        "WarehouseID": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "cls_CustomerDocumentsVerification": {
+      "type": "object",
+      "properties": {
+        "CustomerVerifiedDocumentsID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "CustomerDocID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "CustomerID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "CreatedBy": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "cls_CustomerLimit": {
+      "type": "object",
+      "properties": {
+        "CustomerLimitID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "CustomerID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "WarehouseID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "LimitAmount": {
+          "format": "double",
+          "type": "number"
+        },
+        "CreatedBy": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "CustomerParty": {
+      "type": "object",
+      "properties": {
+        "CustomerPartyID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "CustomerID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "PartyName": { "type": "string" },
+        "ShippingAddress": { "type": "string" },
+        "ShippingAddress1": { "type": "string" },
+        "PinCode": { "type": "string" },
+        "CreatedBy": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "CreatedDate": {
+          "format": "date-time",
+          "type": "string"
+        }
+      }
+    },
+    "cls_RateList": {
+      "type": "object",
+      "properties": {
+        "ProductID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "RateID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "SrNo": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "cls_CustomersStock": {
+      "type": "object",
+      "properties": {
+        "CustomerID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "WarehouseID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "LotNo": { "type": "string" }
+      }
+    },
+    "cls_CustomerUsers": {
+      "type": "object",
+      "properties": {
+        "CustomerLoginID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "CustomerID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "UserName": { "type": "string" },
+        "Password": { "type": "string" },
+        "IsActive": { "type": "boolean" },
+        "CreatedBy": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "DeliveryOrderSaveModel": {
+      "type": "object",
+      "properties": {
+        "DeliveryOrderID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "DeliveryOrderDate": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "CustomerID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "WareHouseID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "CompanyID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "DeliverTo": { "type": "string" },
+        "CustomerPartyID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "ShippingAddress": { "type": "string" },
+        "OrderGivenBy": { "type": "string" },
+        "Remarks": { "type": "string" },
+        "CreatedBy": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "ByCustomer": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "IsDoDispatch": { "type": "boolean" },
+        "TruckNo": { "type": "string" },
+        "ContainerNo": { "type": "string" },
+        "DeliveryOrderDetailModel": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/DeliveryOrderDetail" }
+        }
+      }
+    },
+    "DeliveryOrderDetail": {
+      "type": "object",
+      "properties": {
+        "DeliveryOrderDID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "DeliveryOrderID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "ProductID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "InwardDID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "LotNo": { "type": "string" },
+        "DOQuantity": {
+          "format": "double",
+          "type": "number"
+        },
+        "DispatchedQuantity": {
+          "format": "double",
+          "type": "number"
+        },
+        "InwardLocationID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "StorageAreaID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "CancelledQuantity": {
+          "format": "double",
+          "type": "number"
+        }
+      }
+    },
+    "Cls_Department": {
+      "type": "object",
+      "properties": {
+        "DepartmentID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "DepartmentName": { "type": "string" },
+        "DepartmentCode": { "type": "string" },
+        "IsActive": { "type": "boolean" }
+      }
+    },
+    "Cls_Designation": {
+      "type": "object",
+      "properties": {
+        "DesignationID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "DesignationName": { "type": "string" },
+        "DesignationCode": { "type": "string" },
+        "IsActive": { "type": "boolean" }
+      }
+    },
+    "DispatchSaveModel": {
+      "type": "object",
+      "properties": {
+        "DispatchID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "CustomerID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "CustomerPartyID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "WareHouseID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "ShippingAddress": { "type": "string" },
+        "OrderGivenBy": { "type": "string" },
+        "Remarks": { "type": "string" },
+        "CreatedBy": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "DeliveryOrderID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "TruckNo": { "type": "string" },
+        "ContainerNo": { "type": "string" },
+        "DispatchDetailModel": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/DispatchDetail" }
+        }
+      }
+    },
+    "DispatchDetail": {
+      "type": "object",
+      "properties": {
+        "DispatchDID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "DispatchID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "DeliveryOrderDID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "ProductID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "InwardDID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "LotNo": { "type": "string" },
+        "DispatchQuantity": {
+          "format": "double",
+          "type": "number"
+        },
+        "InwardLocationID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "StorageAreaID": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "cls_DockMaster": {
+      "type": "object",
+      "properties": {
+        "dockID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "dockName": { "type": "string" },
+        "dockNo": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "isActive": { "type": "boolean" },
+        "wareHouseID": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "cls_EmailSchedule": {
+      "type": "object",
+      "properties": {
+        "reportID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "today": { "type": "boolean" },
+        "daily": { "type": "boolean" },
+        "weekly": { "type": "boolean" },
+        "weekly_Day": { "type": "string" },
+        "monthly": { "type": "boolean" },
+        "monthaly_day": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "emailTime": { "type": "string" },
+        "emailReportID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "emailSubject": { "type": "string" },
+        "emailText": { "type": "string" },
+        "wareHouseID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "emailReportName": { "type": "string" },
+        "createdBy": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "emailReportDID": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "cls_FinancialYears": {
+      "type": "object",
+      "properties": {
+        "FinancialYearID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "Year": { "type": "string" },
+        "StartDate": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "EndDate": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "IsActive": { "type": "boolean" },
+        "WareHouseID": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "cls_Inward": {
+      "type": "object",
+      "properties": {
+        "InwardID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "CustomerID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "Remarks": { "type": "string" },
+        "CreatedBy": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "serviceID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "ProductID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "CompanyId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "WarehouseId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "FinantialYearId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "challan": { "type": "string" },
+        "StorageAreaMasterID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "FinancialYear": { "type": "string" }
+      }
+    },
+    "AvailbaleStorageArea": {
+      "type": "object",
+      "properties": {
+        "WarehouseID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "CustomerID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "Mode": { "type": "string" },
+        "InwardID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "ChallanID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "Cproduct": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/ChallanProduct" }
+        },
+        "Clocation": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/ChallanLocations" }
+        }
+      }
+    },
+    "ChallanProduct": {
+      "type": "object",
+      "properties": {
+        "AddArea": { "type": "boolean" },
+        "Auto": { "type": "boolean" },
+        "ChallanDID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "ProductID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "ProductName": { "type": "string" },
+        "LotNo": { "type": "string" },
+        "BrandName": { "type": "string" },
+        "ItemsInPacket": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "InQuantity": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "StorageAreaTypeID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "StorageAreaType": { "type": "string" },
+        "Applied": { "type": "boolean" }
+      }
+    },
+    "ChallanLocations": {
+      "type": "object",
+      "properties": {
+        "InwardDID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "StorageAreaID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "StorageQuantity": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "LotNo": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "IsCustomerAreaSelected": { "type": "boolean" }
+      }
+    },
+    "InwardSaveModel": {
+      "type": "object",
+      "properties": {
+        "InwardID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "CustomerID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "CompanyID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "WarehouseID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "InwardDate": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "Remarks": { "type": "string" },
+        "FinancialYearID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "UserID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "ReceiptNo": { "type": "string" },
+        "dockID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "UnLoadingBy": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "StorageAreaMasterID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "InwardDetailModel": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/InwardDetailModel" }
+        },
+        "InwardChargesModel": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/InwardChargesModel" }
+        },
+        "InwardLocationModel": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/InwardLocationModel" }
+        },
+        "InwardTransperModel": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/InwardTransperModel" }
+        }
+      }
+    },
+    "InwardDetailModel": {
+      "type": "object",
+      "properties": {
+        "InwardDID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "ChallanID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "ChallanDID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "ProductID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "ProductName": { "type": "string" },
+        "LotNo": { "type": "string" },
+        "FirstLotNo": { "type": "string" },
+        "BrandID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "BrandName": { "type": "string" },
+        "ItemsInPacket": { "type": "string" },
+        "InQuantity": {
+          "format": "double",
+          "type": "number"
+        },
+        "ChallanQuantity": {
+          "format": "double",
+          "type": "number"
+        },
+        "OutQuantity": {
+          "format": "double",
+          "type": "number"
+        },
+        "InprocessQuantity": {
+          "format": "double",
+          "type": "number"
+        },
+        "BalanceQuantity": {
+          "format": "double",
+          "type": "number"
+        },
+        "MFGDate": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "ExpDate": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "Remarks": { "type": "string" },
+        "TransferDID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "LabourContractorID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "LabourContractorName": { "type": "string" },
+        "StorageAreaTypeID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "StorageAreaType": { "type": "string" },
+        "SelfLife": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "IsNew": { "type": "boolean" },
+        "Country": { "type": "string" },
+        "ServiceID": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "InwardChargesModel": {
+      "type": "object",
+      "properties": {
+        "InwardDID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "ServiceID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "ServiceName": { "type": "string" },
+        "C_Rate": {
+          "format": "double",
+          "type": "number"
+        },
+        "L_Rate": {
+          "format": "double",
+          "type": "number"
+        }
+      }
+    },
+    "InwardLocationModel": {
+      "type": "object",
+      "properties": {
+        "InwardDID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "StorageAreaID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "StorageQuantity": {
+          "format": "double",
+          "type": "number"
+        },
+        "LotNo": { "type": "string" },
+        "IsCustomerAreaSelected": { "type": "boolean" }
+      }
+    },
+    "InwardTransperModel": {
+      "type": "object",
+      "properties": {
+        "InwardDID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "LotNo": { "type": "string" },
+        "TransporterName": { "type": "string" },
+        "TruckNo": { "type": "string" },
+        "ContainerNo": { "type": "string" },
+        "Qty": {
+          "format": "double",
+          "type": "number"
+        }
+      }
+    },
+    "InwardGetAvailableStorageArea": {
+      "type": "object",
+      "properties": {
+        "InwardID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "WarehouseID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "CustomerID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "Mode": { "type": "string" },
+        "InwardDetailModel": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/InwardDetailModel" }
+        },
+        "InwardLocationModel": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/InwardLocationModel" }
+        },
+        "ChallanID": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "cls_InwardUpdate": {
+      "type": "object",
+      "properties": {
+        "inwardDID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "brandId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "itemsInPacket": { "type": "string" },
+        "inQuantity": {
+          "format": "double",
+          "type": "number"
+        },
+        "lotno": { "type": "string" },
+        "docID": { "type": "string" },
+        "unLoadingBy": { "type": "string" },
+        "remarks": { "type": "string" },
+        "truckNo": { "type": "string" },
+        "containerNo": { "type": "string" },
+        "inwardID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "storageAreaID": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "Item": {
+      "type": "object",
+      "properties": {
+        "ItemID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "ItemCode": { "type": "string" },
+        "ItemName": { "type": "string" },
+        "ItemTypeID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "MinTemperature": {
+          "format": "double",
+          "type": "number"
+        },
+        "MaxTemparature": {
+          "format": "double",
+          "type": "number"
+        },
+        "TemperatureCategoryID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "IsActive": { "type": "boolean" },
+        "CreatedBy": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "CreatedDate": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "ModifyBy": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "ModifyDate": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "ItemTypeMaster": { "$ref": "#/definitions/ItemTypeMaster" }
+      }
+    },
+    "ItemTypeMaster": {
+      "type": "object",
+      "properties": {
+        "ItemTypeID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "ItemTypeCode": { "type": "string" },
+        "ItemType": { "type": "string" },
+        "Items": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/Item" }
+        }
+      }
+    },
+    "Cls_ItemTypeMaster": {
+      "type": "object",
+      "properties": {
+        "ItemTypeID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "ItemTypeCode": { "type": "string" },
+        "ItemType": { "type": "string" }
+      }
+    },
+    "cls_LabourContracter": {
+      "type": "object",
+      "properties": {
+        "LabourContractorID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "ContractorName": { "type": "string" },
+        "Address1": { "type": "string" },
+        "Address2": { "type": "string" },
+        "ContactNo": { "type": "string" },
+        "PanCardNo": { "type": "string" },
+        "LicenceNo": { "type": "string" },
+        "DOJ": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "CreatedBy": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "BankName": { "type": "string" },
+        "Branch": { "type": "string" },
+        "AccountNo": { "type": "string" },
+        "IFSCCode": { "type": "string" },
+        "EmailID": { "type": "string" },
+        "GSTNo": { "type": "string" }
+      }
+    },
+    "cls_UserLogin": {
+      "type": "object",
+      "properties": {
+        "UserName": { "type": "string" },
+        "Password": { "type": "string" }
+      }
+    },
+    "cls_LotSearch": {
+      "type": "object",
+      "properties": {
+        "lotNo": { "type": "string" },
+        "wareHouseID": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "cls_ModifyProductRates": {
+      "type": "object",
+      "properties": {
+        "ProductID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "RateID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "serviceId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "Rate": {
+          "format": "double",
+          "type": "number"
+        },
+        "CreatedBy": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "CustomerID": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "cls_Outward": {
+      "type": "object",
+      "properties": {
+        "outwardID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "warehouseID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "outWardDate": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "billStartDate": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "deliveryOrderID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "customerPartyID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "truckNo": { "type": "string" },
+        "containerNo": { "type": "string" },
+        "transporterName": { "type": "string" },
+        "remarks": { "type": "string" },
+        "createdBy": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "customerID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "driverName": { "type": "string" },
+        "driverNo": { "type": "string" },
+        "docID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "loadingBy": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "transferID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "dispatchID": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "cls_OutWard_Update": {
+      "type": "object",
+      "properties": {
+        "outWardID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "docID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "truckNo": { "type": "string" },
+        "containerNo": { "type": "string" },
+        "loadingBy": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "customerPartyID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "remarks": { "type": "string" },
+        "labourContractorID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "customerID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "createdBy": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "Cls_PackingType": {
+      "type": "object",
+      "properties": {
+        "PackingTypeID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "PackingType": { "type": "string" },
+        "IsActive": { "type": "boolean" }
+      }
+    },
+    "Cls_ProcessServices": {
+      "type": "object",
+      "properties": {
+        "ProcessIDID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "LTD_ProcessServices": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/TD_ProcessServices" }
+        },
+        "CreatedBy": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "ProcessID": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "TD_ProcessServices": {
+      "type": "object",
+      "properties": {
+        "ProcessID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "ServiceID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "Selected": { "type": "boolean" },
+        "IsOptional": { "type": "boolean" },
+        "IsDefault": { "type": "boolean" }
+      }
+    },
+    "ProductMaster": {
+      "type": "object",
+      "properties": {
+        "ProductID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "ProductCode": { "type": "string" },
+        "ProductName": { "type": "string" },
+        "ItemID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "ProductGroupID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "PackingTypeID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "UOMID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "ItemUnit": { "type": "string" },
+        "ItemCount": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "ProductTypeID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "ProductTaxCategoryID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "TemperatureCategoryID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "WeightinKG": {
+          "format": "double",
+          "type": "number"
+        },
+        "Width": {
+          "format": "double",
+          "type": "number"
+        },
+        "Length": {
+          "format": "double",
+          "type": "number"
+        },
+        "Height": {
+          "format": "double",
+          "type": "number"
+        },
+        "CubicArea": {
+          "format": "double",
+          "type": "number"
+        },
+        "SelfLife": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "ApproxValue": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "BillingcycleID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "IsActive": { "type": "boolean" },
+        "CreatedBy": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "CreatedDate": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "ModifyBy": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "ModifyDate": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "UOM": { "$ref": "#/definitions/UOM" }
+      }
+    },
+    "UOM": {
+      "type": "object",
+      "properties": {
+        "UOMID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "UOMCode": { "type": "string" },
+        "UOMName": { "type": "string" },
+        "IsActive": { "type": "boolean" },
+        "CreatedBy": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "CreatedDate": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "ModifyBy": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "ModifyDate": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "ProductMasters": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/ProductMaster" }
+        }
+      }
+    },
+    "cls_ProductTaxDetails": {
+      "type": "object",
+      "properties": {
+        "ProductTaxID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "TaxID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "WefDate": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "LTD_ProductTaxDetailProductID": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/cls_TD_ProductTaxDetailProductID" }
+        },
+        "LTD_ProductTaxDetailServiesIDs": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/cls_TD_ProductTaxDetailServiesIDs" }
+        },
+        "CreatedBy": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "HSNCode": { "type": "string" }
+      }
+    },
+    "cls_TD_ProductTaxDetailProductID": {
+      "type": "object",
+      "properties": {
+        "ProductID": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "cls_TD_ProductTaxDetailServiesIDs": {
+      "type": "object",
+      "properties": {
+        "ServiesID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "StorageAreaTypeID": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "cls_Rate": {
+      "type": "object",
+      "properties": {
+        "RateListID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "RateID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "ProductID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "WarehouseID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "LTD_Rate": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/cls_TD_Rate" }
+        },
+        "TaxID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "CreatedBy": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "LTD_Customer": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/cls_TD_Customer" }
+        }
+      }
+    },
+    "cls_TD_Rate": {
+      "type": "object",
+      "properties": {
+        "ServiceID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "Rate": {
+          "format": "double",
+          "type": "number"
+        },
+        "L_Rate": {
+          "format": "double",
+          "type": "number"
+        },
+        "BillingCycleID": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "cls_TD_Customer": {
+      "type": "object",
+      "properties": {
+        "CustomerID": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "cls_RateMaster": {
+      "type": "object",
+      "properties": {
+        "RateID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "RateCode": { "type": "string" },
+        "RateDescription": { "type": "string" },
+        "StartDate": { "type": "string" },
+        "EndDate": { "type": "string" },
+        "CreatedBy": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "LTD_RateList": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/cls_TD_RateList" }
+        }
+      }
+    },
+    "cls_TD_RateList": {
+      "type": "object",
+      "properties": {
+        "RateID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "ProductID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "ProductName": { "type": "string" },
+        "ServiceID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "ServiceName": { "type": "string" },
+        "Rate": {
+          "format": "double",
+          "type": "number"
+        },
+        "L_Rate": {
+          "format": "double",
+          "type": "number"
+        },
+        "TaxID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "BillingCycleID": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "Cls_Receipt": {
+      "type": "object",
+      "properties": {
+        "ReceiptID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "WarehouseID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "ReceiptDate": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "Amount": {
+          "format": "double",
+          "type": "number"
+        },
+        "TDSAmount": {
+          "format": "double",
+          "type": "number"
+        },
+        "ReceiptTypeID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "CreatedBy": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "remarks": { "type": "string" },
+        "customerID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "LTD_ReceiptDetail": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/TD_ReceiptDetail" }
+        },
+        "LTD_ReceiptInvoiceDetail": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/TD_ReceiptInvoiceDetail" }
+        }
+      }
+    },
+    "TD_ReceiptDetail": {
+      "type": "object",
+      "properties": {
+        "ReceiptID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "PaymentModeID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "Amount": {
+          "format": "double",
+          "type": "number"
+        },
+        "ReferenceNo": { "type": "string" },
+        "BankName": { "type": "string" },
+        "Branch": { "type": "string" },
+        "ReferenceDate": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "Remarks": { "type": "string" }
+      }
+    },
+    "TD_ReceiptInvoiceDetail": {
+      "type": "object",
+      "properties": {
+        "ReceiptID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "InvoiceID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "ReceiptAmount": {
+          "format": "double",
+          "type": "number"
+        },
+        "TDSAmount": {
+          "format": "double",
+          "type": "number"
+        },
+        "DiscountAmount": {
+          "format": "double",
+          "type": "number"
+        }
+      }
+    },
+    "cls_Remarks": {
+      "type": "object",
+      "properties": {
+        "RemarksID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "Remarks": { "type": "string" },
+        "ProcessID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "IsActive": { "type": "boolean" },
+        "CreatedBy": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "cls_RoleUI": {
+      "type": "object",
+      "properties": {
+        "LTD_RolesUI": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/cls_TD_RolesUI" }
+        },
+        "RoleID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "LTD_RoleReport": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/cls_TD_RoleReport" }
+        },
+        "CreatedBy": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "cls_TD_RolesUI": {
+      "type": "object",
+      "properties": {
+        "RoleUIID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "RoleID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "UIMasterID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "New_flg": { "type": "boolean" },
+        "List_flg": { "type": "boolean" },
+        "Edit_flg": { "type": "boolean" },
+        "Delete_flg": { "type": "boolean" },
+        "Print_flg": { "type": "boolean" },
+        "Export_flg": { "type": "boolean" }
+      }
+    },
+    "cls_TD_RoleReport": {
+      "type": "object",
+      "properties": {
+        "ReportID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "isAssigned": { "type": "boolean" }
+      }
+    },
+    "cls_Services": {
+      "type": "object",
+      "properties": {
+        "ServiceID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "ServiceCode": { "type": "string" },
+        "ServiceName": { "type": "string" },
+        "ServiceTypeID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "HCNCode": { "type": "string" },
+        "BillingCycleID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "StorageAreaTypeID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "IsActive": { "type": "boolean" },
+        "TaxID": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "cls_Shifting": {
+      "type": "object",
+      "properties": {
+        "remarks": { "type": "string" },
+        "shiftingDID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "shiftingID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "warehouseID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "customerID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "createdBy": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "shiftingDate": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "loadingBy": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "cls_SpecialRates": {
+      "type": "object",
+      "properties": {
+        "SpecialRateID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "RateID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "ProductID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "WarehouseID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "L_TD_Rate": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/cls_TD_Rate" }
+        },
+        "TaxID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "CreatedBy": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "CustomerID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "wef": {
+          "format": "date-time",
+          "type": "string"
+        }
+      }
+    },
+    "cls_StopDelivery": {
+      "type": "object",
+      "properties": {
+        "stopDeliveryID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "waherhouseID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "customerID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "release": { "type": "boolean" },
+        "remarks": { "type": "string" },
+        "createdBy": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "cls_Storage": {
+      "type": "object",
+      "properties": {
+        "warehouseID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "StorageAreaID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "LTD_StorageAreaS": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/cls_TD_StorageAreaS" }
+        },
+        "createdBy": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "BlockID": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "cls_TD_StorageAreaS": {
+      "type": "object",
+      "properties": {
+        "StorageAreaID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "WareHouseID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "StorageAreaCode": { "type": "string" },
+        "StorageArea": { "type": "string" },
+        "StorageAreaMasterID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "StorageName": { "type": "string" },
+        "StorageAreaTypeID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "StorageAreaType": { "type": "string" },
+        "ParentStorageAreaID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "IsStorable": { "type": "boolean" },
+        "IsTemparatureControlled": { "type": "boolean" },
+        "Preference": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "MinTempareture": {
+          "format": "double",
+          "type": "number"
+        },
+        "MaxTempareture": {
+          "format": "double",
+          "type": "number"
+        },
+        "TemperatureCategoryID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "AreaLength": {
+          "format": "double",
+          "type": "number"
+        },
+        "AreaHeight": {
+          "format": "double",
+          "type": "number"
+        },
+        "AreaBreadth": {
+          "format": "double",
+          "type": "number"
+        },
+        "StorageCapacity": {
+          "format": "double",
+          "type": "number"
+        }
+      }
+    },
+    "cls_StorageAreaType": {
+      "type": "object",
+      "properties": {
+        "StorageAreaTypeID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "StorageAreaType": { "type": "string" },
+        "TemperatureCategoryID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "IsActive": { "type": "boolean" },
+        "CreatedBy": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "cls_Taxes": {
+      "type": "object",
+      "properties": {
+        "TaxID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "TaxCode": { "type": "string" },
+        "TaxDescription": { "type": "string" },
+        "IsActive": { "type": "boolean" },
+        "LTD_Taxes": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/TD_Taxes" }
+        }
+      }
+    },
+    "TD_Taxes": {
+      "type": "object",
+      "properties": {
+        "TaxTypeID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "Code": { "type": "string" },
+        "TaxRate": {
+          "format": "double",
+          "type": "number"
+        },
+        "WefDate": {
+          "format": "date-time",
+          "type": "string"
+        }
+      }
+    },
+    "Cls_TaxType": {
+      "type": "object",
+      "properties": {
+        "TaxTypeID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "Code": { "type": "string" },
+        "TaxTypeDescription": { "type": "string" },
+        "isActive": { "type": "boolean" }
+      }
+    },
+    "cls_TemperatureCategories": {
+      "type": "object",
+      "properties": {
+        "TempCategoryID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "TempCategory": { "type": "string" },
+        "MinTemp": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "MaxTemp": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "CreatedBy": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "cls_Transfer": {
+      "type": "object",
+      "properties": {
+        "transferID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "wareHouseID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "companyID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "fromCustomerID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "toCustomerID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "transferDate": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "orderGivenBy": { "type": "string" },
+        "remarks": { "type": "string" },
+        "createdBy": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "financialYearID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "storageAreaMasterID": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "cls_UIMaster": {
+      "type": "object",
+      "properties": {
+        "UIMasterID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "UIGroupID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "UIName": { "type": "string" },
+        "DisplayName": { "type": "string" },
+        "SequenceNo": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "Path": { "type": "string" },
+        "IsActive": { "type": "boolean" },
+        "CreatedBy": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "cls_UserCompany": {
+      "type": "object",
+      "properties": {
+        "UserCompanyID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "LTD_UserCompany": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/cls_TD_UserCompany" }
+        },
+        "CreatedBy": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "cls_TD_UserCompany": {
+      "type": "object",
+      "properties": {
+        "UserID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "CompanyID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "WarehouseID": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "cls_UserCompanyWareHouseList": {
+      "type": "object",
+      "properties": {
+        "UserID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "CompanyID": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "cls_Users": {
+      "type": "object",
+      "properties": {
+        "UserID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "UserName": { "type": "string" },
+        "UserDetail": { "type": "string" },
+        "Password": { "type": "string" },
+        "RoleID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "UserTypeID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "CreatedBy": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "Lcls_TD_Users": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/cls_TD_Users" }
+        }
+      }
+    },
+    "cls_TD_Users": {
+      "type": "object",
+      "properties": {
+        "CompanyID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "WarehouseID": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    }
+  }
+}

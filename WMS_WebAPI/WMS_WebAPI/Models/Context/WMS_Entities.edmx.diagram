@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="39bad1b47f4a4e6fb0047d4686022720" Name="Diagram1" ZoomLevel="98">
+        <EntityTypeShape EntityType="WMS_EntitiesModel.AdditionalServiceCharge" Width="1.5" PointX="8.75" PointY="11" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.AdditionalServiceDetail" Width="1.5" PointX="10.75" PointY="24" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.AdditionalService" Width="1.5" PointX="12.75" PointY="24" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.BankAccountDetail" Width="1.5" PointX="23.75" PointY="18" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.BankDetail" Width="1.5" PointX="5.75" PointY="16" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.BarCode" Width="1.5" PointX="14.75" PointY="27" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.BillingCycle" Width="1.5" PointX="0.75" PointY="15.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.Booking" Width="1.5" PointX="23.75" PointY="22" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.BookingDetail" Width="1.5" PointX="20.75" PointY="13" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.BookingLocation" Width="1.5" PointX="2.75" PointY="19" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.Brand" Width="1.5" PointX="23.75" PointY="26" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.Challan" Width="1.5" PointX="16.75" PointY="28" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.ChallanDetail" Width="1.5" PointX="18.75" PointY="28" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.ChallanLocation" Width="1.5" PointX="20.75" PointY="28" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.ChallanTransport" Width="1.5" PointX="0.75" PointY="29" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.CheckListDetail" Width="1.5" PointX="26" PointY="13.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.CheckListMaster" Width="1.5" PointX="23.75" PointY="13.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.City" Width="1.5" PointX="2.75" PointY="29" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.CompanyMaster" Width="1.5" PointX="4.75" PointY="29" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.ContractDetail" Width="1.5" PointX="10.25" PointY="19.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.ContractType" Width="1.5" PointX="5.75" PointY="20.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.CountMaster" Width="1.5" PointX="25.75" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.Country" Width="1.5" PointX="20.75" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.CustomerActivation" Width="1.5" PointX="10.75" PointY="29" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.CustomerAddOnService" Width="1.5" PointX="25.75" PointY="18" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.CustomerCart" Width="1.5" PointX="25.75" PointY="22" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.CustomerContact" Width="1.5" PointX="18" PointY="10.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.CustomerContract" Width="1.5" PointX="8" PointY="19.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.CustomerCreditNote" Width="1.5" PointX="25.75" PointY="26" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.CustomerDocument" Width="1.5" PointX="22.75" PointY="29" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.CustomerLedger" Width="1.5" PointX="6.75" PointY="30" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.CustomerLimit" Width="1.5" PointX="27.75" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.CustomerLogin" Width="1.5" PointX="27.75" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.CustomerLogInHistory" Width="1.5" PointX="27.75" PointY="18" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.CustomerParty" Width="1.5" PointX="27.75" PointY="22" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.CustomerRateListHistory" Width="1.5" PointX="27.75" PointY="26" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.CustomerRate" Width="1.5" PointX="24.75" PointY="31" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.Customer" Width="1.5" PointX="26.75" PointY="31" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.Customers_Demo" Width="1.5" PointX="0.75" PointY="32" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.CustomerStorageArea" Width="1.5" PointX="28.75" PointY="11" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.CustomerType" Width="1.5" PointX="8.75" PointY="32" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.DashboardDesigner" Width="1.5" PointX="10.75" PointY="32" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.DayClosing" Width="1.5" PointX="12.75" PointY="32" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.DayStockRegister" Width="1.5" PointX="20.75" PointY="32" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.DeliveryOrder" Width="1.5" PointX="28.75" PointY="31" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.DeliveryOrderCancelled" Width="1.5" PointX="29.75" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.DeliveryOrderDetail" Width="1.5" PointX="29.75" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.Department" Width="1.5" PointX="15.75" PointY="11.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.Designation" Width="1.5" PointX="15.75" PointY="14.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.Designer" Width="1.5" PointX="29.75" PointY="16" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.Dispatch" Width="1.5" PointX="14.75" PointY="33" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.DispatchCancelled" Width="1.5" PointX="29.75" PointY="19" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.DispatchDetail" Width="1.5" PointX="16.75" PointY="33" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.DockMaster" Width="1.5" PointX="29.75" PointY="22" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.DocumentMaster" Width="1.5" PointX="25.75" PointY="11" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.EditEntry" Width="1.5" PointX="29.75" PointY="26" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.Email_report" Width="1.5" PointX="30.75" PointY="11" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.EmailNotification" Width="1.5" PointX="30.75" PointY="30" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.EmailReportDetail" Width="1.5" PointX="31.75" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.EstimateStorage" Width="1.5" PointX="2.75" PointY="35" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.Export" Width="1.5" PointX="4.75" PointY="35" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.ExportCharge" Width="1.5" PointX="31.75" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.ExportDetail" Width="1.5" PointX="10.75" PointY="35" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.FinancialYear" Width="1.5" PointX="31.75" PointY="16" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.HoldDeliveryOrder" Width="1.5" PointX="31.75" PointY="19" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.InitiatePayment" Width="1.5" PointX="31.75" PointY="23" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.InvoiceAddonService" Width="1.5" PointX="22.75" PointY="35" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.InvoiceLabour" Width="1.5" PointX="30.75" PointY="35" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.InvoiceProcess" Width="1.5" PointX="6.75" PointY="36" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.InvoiceStorage" Width="1.5" PointX="32.75" PointY="28" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.InvoiceTax" Width="1.5" PointX="22.75" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.InvoiceTaxDetail" Width="1.5" PointX="25" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.InvoiceType" Width="1.5" PointX="32.75" PointY="10" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.Inward" Width="1.5" PointX="32.75" PointY="36" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.InwardCancelled" Width="1.5" PointX="32.75" PointY="13" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.InwardChallan" Width="1.5" PointX="33.75" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.InwardCharge" Width="1.5" PointX="33.75" PointY="16" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.InwardDetail" Width="1.5" PointX="33.75" PointY="20" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.InwardLocation" Width="1.5" PointX="16.75" PointY="37" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.InwardNotification" Width="1.5" PointX="34.75" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.InwardTrasport" Width="1.5" PointX="34.75" PointY="11" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.Item" Width="1.5" PointX="8" PointY="25.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.ItemTypeMaster" Width="1.5" PointX="5.75" PointY="26.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.LabourContractor" Width="1.5" PointX="8.75" PointY="38" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.LotStock" Width="1.5" PointX="10.75" PointY="38" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.MaxNumber" Width="1.5" PointX="12.75" PointY="38" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.MessageApp" Width="1.5" PointX="18.75" PointY="38" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.MessageEmail" Width="1.5" PointX="34.75" PointY="27" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.MessageSM" Width="1.5" PointX="24.75" PointY="38" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.MessageTemplate" Width="1.5" PointX="26.75" PointY="38" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.MessageWeb" Width="1.5" PointX="34.75" PointY="31" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.OutWard" Width="1.5" PointX="34.75" PointY="35" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.OutwardCancelled" Width="1.5" PointX="35.75" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.OutwardCharge" Width="1.5" PointX="35.75" PointY="15" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.OutwardDetail" Width="1.5" PointX="35.75" PointY="18" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.PackingType" Width="1.5" PointX="35.75" PointY="21" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.PageSize" Width="1.5" PointX="35.75" PointY="24" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.Pallet" Width="1.5" PointX="36.75" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.PaymentMode" Width="1.5" PointX="11" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.PaymentStatusMaster" Width="1.5" PointX="36.75" PointY="11" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.Pellet" Width="1.5" PointX="36.75" PointY="27" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.PeriodType" Width="1.5" PointX="36.75" PointY="31" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.PlugIn" Width="1.5" PointX="36.75" PointY="34" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.Process" Width="1.5" PointX="3.75" PointY="25.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.ProcessService" Width="1.5" PointX="6" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.ProductGroup" Width="1.5" PointX="36.75" PointY="39" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.ProductMaster" Width="1.5" PointX="21" PointY="16.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.ProductTaxCategory" Width="1.5" PointX="37.75" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.ProductTaxDetail" Width="1.5" PointX="37.75" PointY="14" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.ProductType" Width="1.5" PointX="37.75" PointY="18" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.RateList" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.Rate" Width="1.5" PointX="0.75" PointY="25.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.Receipt" Width="1.5" PointX="11" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.ReceiptDetail" Width="1.5" PointX="13.25" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.ReceiptInvoiceDetail" Width="1.5" PointX="13.25" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.ReceiptReco" Width="1.5" PointX="37.75" PointY="21" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.ReceiptTypeMaster" Width="1.5" PointX="8.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.Remark" Width="1.5" PointX="20.75" PointY="41" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.Repacking" Width="1.5" PointX="15.75" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.RepackingCharge" Width="1.5" PointX="20.25" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.RepackingDetail" Width="1.5" PointX="18" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.ReportCopy" Width="1.5" PointX="38.75" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.ReportDesigner" Width="1.5" PointX="38.75" PointY="10" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.ReportDesigner_Updated" Width="1.5" PointX="10.75" PointY="42" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.Report" Width="1.5" PointX="12.75" PointY="42" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.RichText" Width="1.5" PointX="14.75" PointY="42" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.RoleReport" Width="1.5" PointX="16.75" PointY="42" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.Role" Width="1.5" PointX="13.75" PointY="20.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.RoleUI" Width="1.5" PointX="16" PointY="18.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.Service" Width="1.5" PointX="0.75" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.ServiceTypeMaster" Width="1.5" PointX="38.75" PointY="25" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.ServiveCharge" Width="1.5" PointX="22.75" PointY="42" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.Shifting" Width="1.5" PointX="38.75" PointY="28" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.ShiftingCancelled" Width="1.5" PointX="24.75" PointY="42" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.ShiftingCharge" Width="1.5" PointX="21" PointY="24.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.ShiftingDetail" Width="1.5" PointX="18.75" PointY="24.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.SMSNotification" Width="1.5" PointX="26.75" PointY="42" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.State" Width="1.5" PointX="23" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.StatusMaster" Width="1.5" PointX="38.75" PointY="32" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.StockChecking" Width="1.5" PointX="28.75" PointY="42" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.StockCheckingDetail" Width="1.5" PointX="30.75" PointY="42" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.StockRegister" Width="1.5" PointX="38.75" PointY="35" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.StopDeliveryOrder" Width="1.5" PointX="32.75" PointY="42" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.StorageAreaItem" Width="1.5" PointX="38.75" PointY="42" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.StorageAreaMaster" Width="1.5" PointX="3.75" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.StorageArea" Width="1.5" PointX="6" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.StorageAreaType" Width="1.5" PointX="3.75" PointY="15" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.StorageOccupancy" Width="1.5" PointX="4.75" PointY="43" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.StorageTransaction" Width="1.5" PointX="39.75" PointY="13" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.sysdiagram" Width="1.5" PointX="39.75" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.syssetup" Width="1.5" PointX="39.75" PointY="17" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.TaxMaster" Width="1.5" PointX="39.75" PointY="21" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.TemperatureCategory" Width="1.5" PointX="34.75" PointY="43" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.Them" Width="1.5" PointX="0.75" PointY="44" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.Transfer" Width="1.5" PointX="8.75" PointY="14.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.TransferCancelled" Width="1.5" PointX="40.75" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.TransferCharge" Width="1.5" PointX="13.25" PointY="15.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.TransferDetail" Width="1.5" PointX="11" PointY="14.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.UIGroup" Width="1.5" PointX="6.75" PointY="44" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.UIMaster" Width="1.5" PointX="18.75" PointY="44" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.UOM" Width="1.5" PointX="18.75" PointY="18.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.Update_Outward" Width="1.5" PointX="40.75" PointY="25" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.UserCompany" Width="1.5" PointX="3" PointY="21.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.User" Width="1.5" PointX="16" PointY="22.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.UserType" Width="1.5" PointX="40.75" PointY="10" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.Warehouse" Width="1.5" PointX="0.75" PointY="9.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.C_StockRegister" Width="1.5" PointX="46.75" PointY="17" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.Calendar" Width="1.5" PointX="48.75" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.CustomerRateList_New" Width="1.5" PointX="48.75" PointY="15" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.Exception" Width="1.5" PointX="48.75" PointY="20" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.Product" Width="1.5" PointX="48.75" PointY="45" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.Reports1" Width="1.5" PointX="46.75" PointY="52" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.TaxDetail" Width="1.5" PointX="49.75" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.Tax" Width="1.5" PointX="49.75" PointY="10" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.TaxType" Width="1.5" PointX="10.75" PointY="53" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.testingtable" Width="1.5" PointX="12.75" PointY="53" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.CompanyMaster_Select" Width="1.5" PointX="18.75" PointY="53" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.Customer_view" Width="1.5" PointX="20.75" PointY="53" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.Departments_view" Width="1.5" PointX="30.75" PointY="53" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.Designation_view" Width="1.5" PointX="36.75" PointY="53" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.GetCompanyName" Width="1.5" PointX="50.75" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.GetParentCompany" Width="1.5" PointX="0.75" PointY="54" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.Items_view" Width="1.5" PointX="50.75" PointY="13" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.PackingType_View" Width="1.5" PointX="50.75" PointY="16" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.ParentStorageList" Width="1.5" PointX="50.75" PointY="19" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.ProductMasters_view" Width="1.5" PointX="50.75" PointY="22" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.ProductTaxCategory_View" Width="1.5" PointX="50.75" PointY="25" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.Rate_view" Width="1.5" PointX="22.75" PointY="54" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.Service_view" Width="1.5" PointX="50.75" PointY="28" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.ServicesView_Select" Width="1.5" PointX="50.75" PointY="31" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.ServiceTypeMaster_View" Width="1.5" PointX="50.75" PointY="34" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.StorageAreaType_View" Width="1.5" PointX="50.75" PointY="37" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.Taxes_view" Width="1.5" PointX="50.75" PointY="40" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.Users_View" Width="1.5" PointX="50.75" PointY="43" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.View_PaymentModes" Width="1.5" PointX="50.75" PointY="46" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.Warehouse_Select" Width="1.5" PointX="50.75" PointY="49" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMS_EntitiesModel.Warehouse_view" Width="1.5" PointX="50.75" PointY="53" IsExpanded="true" />
+        <AssociationConnector Association="WMS_EntitiesModel.FK_RateList_BillingCycles" ManuallyRouted="false" />
+        <AssociationConnector Association="WMS_EntitiesModel.FK_CheckListDetail_CheckListMaster" ManuallyRouted="false" />
+        <AssociationConnector Association="WMS_EntitiesModel.FK_ContractDetail_CustomerContract" ManuallyRouted="false" />
+        <AssociationConnector Association="WMS_EntitiesModel.FK_CustomerContract_ContractType" ManuallyRouted="false" />
+        <AssociationConnector Association="WMS_EntitiesModel.FK_States_Countries" ManuallyRouted="false" />
+        <AssociationConnector Association="WMS_EntitiesModel.FK_CustomerContacts_Departments" ManuallyRouted="false" />
+        <AssociationConnector Association="WMS_EntitiesModel.FK_CustomerContacts_Designations" ManuallyRouted="false" />
+        <AssociationConnector Association="WMS_EntitiesModel.FK_InvoiceTaxDetail_InvoiceTax" ManuallyRouted="false" />
+        <AssociationConnector Association="WMS_EntitiesModel.FK_Items_ItemTypeMaster" ManuallyRouted="false" />
+        <AssociationConnector Association="WMS_EntitiesModel.FK_ReceiptDetail_PaymentModes" ManuallyRouted="false" />
+        <AssociationConnector Association="WMS_EntitiesModel.FK_ProcessServices_Process" ManuallyRouted="false" />
+        <AssociationConnector Association="WMS_EntitiesModel.FK_ProcessServices_Services" ManuallyRouted="false" />
+        <AssociationConnector Association="WMS_EntitiesModel.FK_ProductMaster_UOM" ManuallyRouted="false" />
+        <AssociationConnector Association="WMS_EntitiesModel.FK_RateList_Rates" ManuallyRouted="false" />
+        <AssociationConnector Association="WMS_EntitiesModel.FK_RateList_Services" ManuallyRouted="false" />
+        <AssociationConnector Association="WMS_EntitiesModel.FK_Receipt_ReceiptTypeMaster" ManuallyRouted="false" />
+        <AssociationConnector Association="WMS_EntitiesModel.FK_ReceiptDetail_Receipt" ManuallyRouted="false" />
+        <AssociationConnector Association="WMS_EntitiesModel.FK_ReceiptInvoiceDetail_Receipt" ManuallyRouted="false" />
+        <AssociationConnector Association="WMS_EntitiesModel.FK_RepackingDetail_Repacking" ManuallyRouted="false" />
+        <AssociationConnector Association="WMS_EntitiesModel.FK_RepackingCharges_RepackingDetail" ManuallyRouted="false" />
+        <AssociationConnector Association="WMS_EntitiesModel.FK_RoleUI_Roles" ManuallyRouted="false" />
+        <AssociationConnector Association="WMS_EntitiesModel.FK_Users_Roles" ManuallyRouted="false" />
+        <AssociationConnector Association="WMS_EntitiesModel.FK_ShiftingCharges_ShiftingDetail" ManuallyRouted="false" />
+        <AssociationConnector Association="WMS_EntitiesModel.FK_StorageAreas_StorageAreaMaster" ManuallyRouted="false" />
+        <AssociationConnector Association="WMS_EntitiesModel.FK_StorageAreas_StorageAreaType" ManuallyRouted="false" />
+        <AssociationConnector Association="WMS_EntitiesModel.FK_StorageAreas_WareHouses" ManuallyRouted="false" />
+        <AssociationConnector Association="WMS_EntitiesModel.FK_TransferDetail_Transfer" ManuallyRouted="false" />
+        <AssociationConnector Association="WMS_EntitiesModel.FK_TransferCharges_TransferDetail" ManuallyRouted="false" />
+        <AssociationConnector Association="WMS_EntitiesModel.FK_UserCompany_WareHouses" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,732 @@
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\WMS_WebAPI.dll.config
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\WMS_WebAPI.dll
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\WMS_WebAPI.pdb
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\roslyn\csc.exe
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\roslyn\csc.exe.config
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\roslyn\csc.rsp
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\roslyn\csi.exe
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\roslyn\csi.exe.config
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\roslyn\csi.rsp
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\roslyn\Microsoft.Managed.Core.targets
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\roslyn\Microsoft.Win32.Primitives.dll
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.AppContext.dll
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Collections.Immutable.dll
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Console.dll
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Diagnostics.StackTrace.dll
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Globalization.Calendars.dll
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.IO.Compression.dll
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.IO.Compression.ZipFile.dll
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.IO.FileSystem.dll
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.IO.FileSystem.Primitives.dll
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Net.Http.dll
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Net.Sockets.dll
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Reflection.Metadata.dll
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Security.Cryptography.Encoding.dll
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Security.Cryptography.Primitives.dll
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Text.Encoding.CodePages.dll
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Threading.Tasks.Extensions.dll
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.ValueTuple.dll
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Xml.ReaderWriter.dll
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Xml.XmlDocument.dll
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Xml.XPath.dll
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Xml.XPath.XDocument.dll
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\roslyn\vbc.exe
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\roslyn\vbc.exe.config
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\roslyn\vbc.rsp
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\roslyn\VBCSCompiler.exe
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\roslyn\VBCSCompiler.exe.config
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\Antlr3.Runtime.dll
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\EntityFramework.dll
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\EntityFramework.SqlServer.dll
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Web.Infrastructure.dll
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\Newtonsoft.Json.dll
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\System.Net.Http.Formatting.dll
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\System.Web.Helpers.dll
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\System.Web.Http.dll
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\System.Web.Http.WebHost.dll
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\System.Web.Mvc.dll
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\System.Web.Optimization.dll
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\System.Web.Razor.dll
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\System.Web.WebPages.Deployment.dll
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\System.Web.WebPages.dll
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\System.Web.WebPages.Razor.dll
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\WebGrease.dll
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\EntityFramework.xml
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\EntityFramework.SqlServer.xml
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\Newtonsoft.Json.xml
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\System.Net.Http.Formatting.xml
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\System.Web.Helpers.xml
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\System.Web.Http.xml
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\System.Web.Http.WebHost.xml
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\System.Web.Mvc.xml
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\System.Web.Optimization.xml
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\System.Web.Razor.xml
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\System.Web.WebPages.xml
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\System.Web.WebPages.Deployment.xml
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\System.Web.WebPages.Razor.xml
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\Antlr3.Runtime.pdb
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\obj\Debug\WMS_WebAPI.csproj.CoreCompileInputs.cache
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\obj\Debug\WMS_WebAPI.csproj.CopyComplete
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\obj\Debug\WMS_WebAPI.dll
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\obj\Debug\WMS_WebAPI.pdb
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.IdentityModel.Logging.dll
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.IdentityModel.Tokens.dll
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\System.IdentityModel.Tokens.Jwt.dll
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.IdentityModel.Logging.xml
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.IdentityModel.Tokens.xml
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\System.IdentityModel.Tokens.Jwt.xml
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.AspNet.Identity.Core.dll
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.AspNet.Identity.Owin.dll
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.AspNetCore.Cors.dll
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.AspNetCore.Http.Abstractions.dll
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.AspNetCore.Http.Extensions.dll
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.AspNetCore.Http.Features.dll
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Extensions.Configuration.Abstractions.dll
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Extensions.FileProviders.Abstractions.dll
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Extensions.Logging.Abstractions.dll
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Extensions.Options.dll
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Extensions.Primitives.dll
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Net.Http.Headers.dll
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Owin.dll
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Owin.Security.Cookies.dll
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Owin.Security.dll
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Owin.Security.OAuth.dll
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\Owin.dll
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\System.Buffers.dll
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\System.ComponentModel.Annotations.dll
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\System.Memory.dll
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\System.Numerics.Vectors.dll
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\System.Runtime.CompilerServices.Unsafe.dll
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\System.Text.Encodings.Web.dll
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\System.Web.Cors.dll
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\System.Web.Http.Cors.dll
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.AspNet.Identity.Core.xml
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.AspNet.Identity.Owin.xml
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.AspNetCore.Cors.xml
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.AspNetCore.Http.Abstractions.xml
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.AspNetCore.Http.Extensions.xml
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.AspNetCore.Http.Features.xml
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Extensions.Configuration.Abstractions.xml
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Extensions.FileProviders.Abstractions.xml
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Extensions.Logging.Abstractions.xml
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Extensions.Options.xml
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Extensions.Primitives.xml
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Net.Http.Headers.xml
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Owin.xml
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Owin.Security.xml
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Owin.Security.Cookies.xml
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Owin.Security.OAuth.xml
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\System.Buffers.xml
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\System.Memory.xml
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\System.Numerics.Vectors.xml
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\System.Runtime.CompilerServices.Unsafe.xml
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\System.Text.Encodings.Web.xml
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\bin\System.Web.Http.Cors.xml
+F:\Sudarshan\Project\WMS\WMS_WebAPI\WMS_WebAPI\obj\Debug\WMS_WebAPI.csproj.AssemblyReference.cache
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\WMS_WebAPI.dll.config
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\WMS_WebAPI.dll
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\WMS_WebAPI.pdb
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\csc.exe
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\csc.exe.config
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\csc.rsp
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\csi.exe
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\csi.exe.config
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\csi.rsp
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.AppContext.dll
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Collections.Immutable.dll
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Console.dll
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Globalization.Calendars.dll
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.IO.Compression.dll
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.IO.FileSystem.dll
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Net.Http.dll
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Net.Sockets.dll
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Reflection.Metadata.dll
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.ValueTuple.dll
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Xml.XPath.dll
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\vbc.exe
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\vbc.exe.config
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\vbc.rsp
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\VBCSCompiler.exe
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\VBCSCompiler.exe.config
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\Antlr3.Runtime.dll
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\EntityFramework.dll
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\EntityFramework.SqlServer.dll
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.AspNetCore.Cors.dll
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.AspNetCore.Http.Abstractions.dll
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.AspNetCore.Http.Extensions.dll
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.AspNetCore.Http.Features.dll
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Extensions.FileProviders.Abstractions.dll
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Extensions.Options.dll
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Extensions.Primitives.dll
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.IdentityModel.Logging.dll
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.IdentityModel.Tokens.dll
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Net.Http.Headers.dll
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Owin.dll
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Owin.Security.dll
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Web.Infrastructure.dll
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\Newtonsoft.Json.dll
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\Owin.dll
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\System.Buffers.dll
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\System.ComponentModel.Annotations.dll
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\System.IdentityModel.Tokens.Jwt.dll
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\System.Memory.dll
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\System.Net.Http.Formatting.dll
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\System.Numerics.Vectors.dll
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\System.Text.Encodings.Web.dll
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\System.Web.Cors.dll
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\System.Web.Helpers.dll
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\System.Web.Http.Cors.dll
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\System.Web.Http.dll
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\System.Web.Http.WebHost.dll
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\System.Web.Mvc.dll
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\System.Web.Optimization.dll
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\System.Web.Razor.dll
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\System.Web.WebPages.Deployment.dll
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\System.Web.WebPages.dll
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\System.Web.WebPages.Razor.dll
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\WebGrease.dll
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\EntityFramework.xml
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\EntityFramework.SqlServer.xml
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.AspNetCore.Cors.xml
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.AspNetCore.Http.Abstractions.xml
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.AspNetCore.Http.Extensions.xml
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.AspNetCore.Http.Features.xml
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Extensions.Configuration.Abstractions.xml
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Extensions.FileProviders.Abstractions.xml
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Extensions.Logging.Abstractions.xml
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Extensions.Options.xml
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Extensions.Primitives.xml
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.IdentityModel.Logging.xml
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.IdentityModel.Tokens.xml
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Net.Http.Headers.xml
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Owin.xml
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Owin.Security.xml
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\System.Buffers.xml
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\System.IdentityModel.Tokens.Jwt.xml
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\System.Memory.xml
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\System.Numerics.Vectors.xml
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\System.Text.Encodings.Web.xml
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\System.Web.Http.Cors.xml
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\Newtonsoft.Json.xml
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\System.Net.Http.Formatting.xml
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\System.Web.Helpers.xml
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\System.Web.Http.xml
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\System.Web.Http.WebHost.xml
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\System.Web.Mvc.xml
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\System.Web.Optimization.xml
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\System.Web.Razor.xml
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\System.Web.WebPages.xml
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\System.Web.WebPages.Deployment.xml
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\System.Web.WebPages.Razor.xml
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\Antlr3.Runtime.pdb
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\obj\Debug\WMS_WebAPI.csproj.CoreCompileInputs.cache
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\obj\Debug\WMS_WebAPI.csproj.CopyComplete
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\obj\Debug\WMS_WebAPI.dll
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\obj\Debug\WMS_WebAPI.pdb
+D:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\obj\Debug\WMS_WebAPI.csprojAssemblyReference.cache
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\WMS_WebAPI.dll.config
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\WMS_WebAPI.dll
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\WMS_WebAPI.pdb
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\csc.exe
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\csc.exe.config
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\csc.rsp
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\csi.exe
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\csi.exe.config
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\csi.rsp
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\Microsoft.Managed.Core.targets
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.AppContext.dll
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Collections.Immutable.dll
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Console.dll
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Globalization.Calendars.dll
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.IO.Compression.dll
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.IO.Compression.ZipFile.dll
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.IO.FileSystem.dll
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Net.Http.dll
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Net.Sockets.dll
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Reflection.Metadata.dll
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Threading.Tasks.Extensions.dll
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.ValueTuple.dll
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Xml.XmlDocument.dll
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Xml.XPath.dll
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\vbc.exe
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\vbc.exe.config
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\vbc.rsp
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\VBCSCompiler.exe
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\roslyn\VBCSCompiler.exe.config
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\Antlr3.Runtime.dll
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\EntityFramework.dll
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\EntityFramework.SqlServer.dll
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.AspNet.Identity.Core.dll
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.AspNetCore.Cors.dll
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.AspNetCore.Http.Abstractions.dll
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.AspNetCore.Http.Extensions.dll
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.AspNetCore.Http.Features.dll
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Extensions.Configuration.Abstractions.dll
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Extensions.FileProviders.Abstractions.dll
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Extensions.Logging.Abstractions.dll
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Extensions.Options.dll
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Extensions.Primitives.dll
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.IdentityModel.Logging.dll
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.IdentityModel.Tokens.dll
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Net.Http.Headers.dll
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Owin.dll
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Owin.Security.Cookies.dll
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Owin.Security.dll
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Owin.Security.OAuth.dll
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Web.Infrastructure.dll
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\Newtonsoft.Json.dll
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\Owin.dll
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\System.Buffers.dll
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\System.ComponentModel.Annotations.dll
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\System.IdentityModel.Tokens.Jwt.dll
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\System.Memory.dll
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\System.Net.Http.Formatting.dll
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\System.Numerics.Vectors.dll
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\System.Runtime.CompilerServices.Unsafe.dll
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\System.Text.Encodings.Web.dll
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\System.Web.Cors.dll
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\System.Web.Helpers.dll
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\System.Web.Http.Cors.dll
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\System.Web.Http.dll
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\System.Web.Http.WebHost.dll
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\System.Web.Mvc.dll
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\System.Web.Optimization.dll
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\System.Web.Razor.dll
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\System.Web.WebPages.Deployment.dll
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\System.Web.WebPages.dll
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\System.Web.WebPages.Razor.dll
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\WebGrease.dll
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\EntityFramework.xml
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\EntityFramework.SqlServer.xml
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.AspNet.Identity.Core.xml
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.AspNetCore.Cors.xml
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.AspNetCore.Http.Abstractions.xml
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.AspNetCore.Http.Extensions.xml
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.AspNetCore.Http.Features.xml
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Extensions.Configuration.Abstractions.xml
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Extensions.FileProviders.Abstractions.xml
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Extensions.Logging.Abstractions.xml
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Extensions.Options.xml
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Extensions.Primitives.xml
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.IdentityModel.Logging.xml
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.IdentityModel.Tokens.xml
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Net.Http.Headers.xml
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Owin.xml
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Owin.Security.xml
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Owin.Security.Cookies.xml
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Owin.Security.OAuth.xml
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\System.Buffers.xml
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\System.IdentityModel.Tokens.Jwt.xml
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\System.Memory.xml
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\System.Numerics.Vectors.xml
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\System.Runtime.CompilerServices.Unsafe.xml
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\System.Text.Encodings.Web.xml
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\System.Web.Http.Cors.xml
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\Newtonsoft.Json.xml
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\System.Net.Http.Formatting.xml
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\System.Web.Helpers.xml
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\System.Web.Http.xml
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\System.Web.Http.WebHost.xml
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\System.Web.Mvc.xml
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\System.Web.Optimization.xml
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\System.Web.Razor.xml
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\System.Web.WebPages.xml
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\System.Web.WebPages.Deployment.xml
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\System.Web.WebPages.Razor.xml
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\Antlr3.Runtime.pdb
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\obj\Debug\WMS_WebAPI.csproj.CoreCompileInputs.cache
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\obj\Debug\WMS_WebAPI.csproj.CopyComplete
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\obj\Debug\WMS_WebAPI.dll
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\obj\Debug\WMS_WebAPI.pdb
+E:\Ravi\Projects\Development\Angular\WMS_WebAPI\WMS_WebAPI\obj\Debug\WMS_WebAPI.csprojAssemblyReference.cache
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\WMS_WebAPI.dll.config
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\WMS_WebAPI.dll
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\WMS_WebAPI.pdb
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\roslyn\csc.exe
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\roslyn\csc.exe.config
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\roslyn\csc.rsp
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\roslyn\csi.exe
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\roslyn\csi.exe.config
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\roslyn\csi.rsp
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.AppContext.dll
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Collections.Immutable.dll
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Console.dll
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Globalization.Calendars.dll
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.IO.Compression.dll
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.IO.FileSystem.dll
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Net.Http.dll
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Net.Sockets.dll
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Reflection.Metadata.dll
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.ValueTuple.dll
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Xml.XPath.dll
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\roslyn\vbc.exe
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\roslyn\vbc.exe.config
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\roslyn\vbc.rsp
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\roslyn\VBCSCompiler.exe
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\roslyn\VBCSCompiler.exe.config
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\Antlr3.Runtime.dll
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\EntityFramework.dll
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\EntityFramework.SqlServer.dll
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.AspNetCore.Cors.dll
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.AspNetCore.Http.Abstractions.dll
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.AspNetCore.Http.Extensions.dll
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.AspNetCore.Http.Features.dll
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Extensions.FileProviders.Abstractions.dll
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Extensions.Options.dll
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Extensions.Primitives.dll
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.IdentityModel.Logging.dll
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.IdentityModel.Tokens.dll
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Net.Http.Headers.dll
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Owin.dll
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Owin.Security.dll
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Web.Infrastructure.dll
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\Newtonsoft.Json.dll
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\Owin.dll
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\System.Buffers.dll
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\System.ComponentModel.Annotations.dll
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\System.IdentityModel.Tokens.Jwt.dll
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\System.Memory.dll
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\System.Net.Http.Formatting.dll
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\System.Numerics.Vectors.dll
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\System.Text.Encodings.Web.dll
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\System.Web.Cors.dll
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\System.Web.Helpers.dll
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\System.Web.Http.Cors.dll
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\System.Web.Http.dll
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\System.Web.Http.WebHost.dll
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\System.Web.Mvc.dll
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\System.Web.Optimization.dll
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\System.Web.Razor.dll
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\System.Web.WebPages.Deployment.dll
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\System.Web.WebPages.dll
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\System.Web.WebPages.Razor.dll
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\WebGrease.dll
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\EntityFramework.xml
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\EntityFramework.SqlServer.xml
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.AspNetCore.Cors.xml
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.AspNetCore.Http.Abstractions.xml
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.AspNetCore.Http.Extensions.xml
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.AspNetCore.Http.Features.xml
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Extensions.Configuration.Abstractions.xml
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Extensions.FileProviders.Abstractions.xml
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Extensions.Logging.Abstractions.xml
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Extensions.Options.xml
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Extensions.Primitives.xml
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.IdentityModel.Logging.xml
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.IdentityModel.Tokens.xml
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Net.Http.Headers.xml
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Owin.xml
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Owin.Security.xml
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\System.Buffers.xml
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\System.IdentityModel.Tokens.Jwt.xml
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\System.Memory.xml
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\System.Numerics.Vectors.xml
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\System.Text.Encodings.Web.xml
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\System.Web.Http.Cors.xml
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\Newtonsoft.Json.xml
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\System.Net.Http.Formatting.xml
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\System.Web.Helpers.xml
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\System.Web.Http.xml
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\System.Web.Http.WebHost.xml
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\System.Web.Mvc.xml
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\System.Web.Optimization.xml
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\System.Web.Razor.xml
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\System.Web.WebPages.xml
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\System.Web.WebPages.Deployment.xml
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\System.Web.WebPages.Razor.xml
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\Antlr3.Runtime.pdb
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\obj\Debug\WMS_WebAPI.csproj.CoreCompileInputs.cache
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\obj\Debug\WMS_WebAPI.csproj.CopyComplete
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\obj\Debug\WMS_WebAPI.dll
+D:\Dharmendra\Ravi\WMS_WebAPI\WMS_WebAPI\WMS_WebAPI\obj\Debug\WMS_WebAPI.pdb
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\WMS_WebAPI.dll.config
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\WMS_WebAPI.xml
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\WMS_WebAPI.dll
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\WMS_WebAPI.pdb
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\roslyn\csc.exe
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\roslyn\csc.exe.config
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\roslyn\csc.rsp
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\roslyn\csi.exe
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\roslyn\csi.exe.config
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\roslyn\csi.rsp
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.AppContext.dll
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Collections.Immutable.dll
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Console.dll
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Globalization.Calendars.dll
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.IO.Compression.dll
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.IO.FileSystem.dll
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Net.Http.dll
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Net.Sockets.dll
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Reflection.Metadata.dll
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.ValueTuple.dll
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Xml.XPath.dll
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\roslyn\vbc.exe
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\roslyn\vbc.exe.config
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\roslyn\vbc.rsp
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\roslyn\VBCSCompiler.exe
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\roslyn\VBCSCompiler.exe.config
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\Antlr3.Runtime.dll
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\EntityFramework.dll
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\EntityFramework.SqlServer.dll
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.AspNetCore.Cors.dll
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.AspNetCore.Http.Abstractions.dll
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.AspNetCore.Http.Extensions.dll
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.AspNetCore.Http.Features.dll
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Extensions.FileProviders.Abstractions.dll
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Extensions.Options.dll
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Extensions.Primitives.dll
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.IdentityModel.Logging.dll
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.IdentityModel.Tokens.dll
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Net.Http.Headers.dll
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Owin.dll
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Owin.Security.dll
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Web.Infrastructure.dll
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\Newtonsoft.Json.dll
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\Owin.dll
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\Swashbuckle.Core.dll
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\System.Buffers.dll
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\System.ComponentModel.Annotations.dll
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\System.IdentityModel.Tokens.Jwt.dll
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\System.Memory.dll
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\System.Net.Http.Formatting.dll
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\System.Numerics.Vectors.dll
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\System.Text.Encodings.Web.dll
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\System.Web.Cors.dll
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\System.Web.Helpers.dll
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\System.Web.Http.Cors.dll
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\System.Web.Http.dll
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\System.Web.Http.WebHost.dll
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\System.Web.Mvc.dll
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\System.Web.Optimization.dll
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\System.Web.Razor.dll
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\System.Web.WebPages.Deployment.dll
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\System.Web.WebPages.dll
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\System.Web.WebPages.Razor.dll
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\WebActivatorEx.dll
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\WebGrease.dll
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\EntityFramework.xml
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\EntityFramework.SqlServer.xml
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.AspNetCore.Cors.xml
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.AspNetCore.Http.Abstractions.xml
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.AspNetCore.Http.Extensions.xml
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.AspNetCore.Http.Features.xml
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Extensions.Configuration.Abstractions.xml
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Extensions.FileProviders.Abstractions.xml
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Extensions.Logging.Abstractions.xml
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Extensions.Options.xml
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Extensions.Primitives.xml
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.IdentityModel.Logging.xml
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.IdentityModel.Tokens.xml
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Net.Http.Headers.xml
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Owin.xml
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Owin.Security.xml
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\System.Buffers.xml
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\System.IdentityModel.Tokens.Jwt.xml
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\System.Memory.xml
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\System.Numerics.Vectors.xml
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\System.Text.Encodings.Web.xml
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\System.Web.Http.Cors.xml
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\Newtonsoft.Json.xml
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\System.Net.Http.Formatting.xml
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\System.Web.Helpers.xml
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\System.Web.Http.xml
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\System.Web.Http.WebHost.xml
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\System.Web.Mvc.xml
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\System.Web.Optimization.xml
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\System.Web.Razor.xml
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\System.Web.WebPages.xml
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\System.Web.WebPages.Deployment.xml
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\System.Web.WebPages.Razor.xml
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\Antlr3.Runtime.pdb
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\obj\Debug\WMS_WebAPI.csproj.CoreCompileInputs.cache
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\obj\Debug\WMS_WebAPI.csproj.CopyComplete
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\obj\Debug\WMS_WebAPI.dll
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\obj\Debug\WMS_WebAPI.pdb
+D:\Dharmendra\Ravi\WMS_WebAPI - Copy\WMS_WebAPI\WMS_WebAPI\obj\Debug\WMS_WebAPI.csprojAssemblyReference.cache
