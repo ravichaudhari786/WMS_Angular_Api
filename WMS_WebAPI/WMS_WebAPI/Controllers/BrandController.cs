@@ -8,7 +8,7 @@ using WMS_WebAPI.Models.Context;
 
 namespace WMS_WebAPI.Controllers
 {
-    [Authorize]
+    ////[Authorize]
     [RoutePrefix("api/brand")]
     public class BrandController : ApiController
     {

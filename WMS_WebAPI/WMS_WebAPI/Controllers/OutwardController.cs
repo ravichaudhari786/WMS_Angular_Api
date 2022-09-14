@@ -93,7 +93,22 @@ namespace WMS_WebAPI.Controllers
 
                 return BadRequest();
             }
+        }
 
+        [HttpPost]
+        [Route("api/Outward/GetDeliveryOrderByID")]
+        public IHttpActionResult GetDeliveryOrderByID(Cls_GetDeliveryOrderByID obj)
+        {
+            try
+            {
+                var data = _context.GetDeliveryOrderByID(obj.CustomerID, obj.WarehouseId,obj.CompanyID);
+                return Ok(data);
+            }
+            catch (System.Exception)
+            {
+
+                return BadRequest();
+            }
         }
     }
 }

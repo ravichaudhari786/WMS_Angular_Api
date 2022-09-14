@@ -397,6 +397,7 @@
     <Compile Include="Models\cls_EmailSchedule.cs" />
     <Compile Include="Models\cls_FinancialYears.cs" />
     <Compile Include="Models\cls_GenerateReport.cs" />
+    <Compile Include="Models\Cls_GetDeliveryOrderByID.cs" />
     <Compile Include="Models\cls_Inward.cs" />
     <Compile Include="Models\cls_InwardUpdate.cs" />
     <Compile Include="Models\Cls_ItemTypeMaster.cs" />
