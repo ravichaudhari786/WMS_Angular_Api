@@ -1,7 +1,7 @@
 {
   "swagger": "2.0",
   "info": {
-    "version": "v1"
+    //"version": "v1"
   },
   "host": "localhost:50191",
   "schemes": [ "http", "https" ],
