@@ -4267,6 +4267,7 @@ warning 6002: The table/view 'Demo.dbo.Warehouse_view' does not have a primary k
           <Parameter Name="WarehouseID" Type="int" Mode="In" />
         </Function>
         <Function Name="GetPlugInList" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="GetProcess" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
         <Function Name="GetProductByID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="CustomerID" Type="int" Mode="In" />
           <Parameter Name="WarehouseID" Type="int" Mode="In" />
@@ -12333,6 +12334,7 @@ warning 6002: The table/view 'Demo.dbo.Warehouse_view' does not have a primary k
             <Parameter Name="CreatedBy" Mode="In" Type="Int32" />
             <Parameter Name="CustomerID" Mode="In" Type="Int32" />
           </FunctionImport>
+          <FunctionImport Name="GetProcess" ReturnType="Collection(WMS_EntitiesModel.GetProcess_Result)" />
         </EntityContainer>
         <ComplexType Name="f_GetCustomer_Result">
           <Property Type="Int32" Name="CustomerID" Nullable="false" />
@@ -15527,6 +15529,16 @@ warning 6002: The table/view 'Demo.dbo.Warehouse_view' does not have a primary k
           <Property Type="String" Name="TaxDescription" Nullable="true" MaxLength="25" />
           <Property Type="String" Name="BillingCyclesName" Nullable="false" MaxLength="1" />
           <Property Type="DateTime" Name="WefDate" Nullable="true" Precision="23" />
+        </ComplexType>
+        <ComplexType Name="GetProcess_Result">
+          <Property Type="Int32" Name="ProcessID" Nullable="false" />
+          <Property Type="String" Name="ProcessCode" Nullable="true" MaxLength="10" />
+          <Property Type="String" Name="ProcessName" Nullable="true" MaxLength="50" />
+          <Property Type="Boolean" Name="IsActive" Nullable="true" />
+          <Property Type="Int32" Name="CreatedBy" Nullable="true" />
+          <Property Type="DateTime" Name="CreatedDate" Nullable="true" Precision="23" />
+          <Property Type="Int32" Name="ModifyBy" Nullable="true" />
+          <Property Type="DateTime" Name="ModifyDate" Nullable="true" Precision="23" />
         </ComplexType>
       </Schema>
     </edmx:ConceptualModels>
@@ -23049,6 +23061,20 @@ warning 6002: The table/view 'Demo.dbo.Warehouse_view' does not have a primary k
             </ResultMapping>
           </FunctionImportMapping>
           <FunctionImportMapping FunctionImportName="ModifyProductRate_Insert" FunctionName="WMS_EntitiesModel.Store.ModifyProductRate_Insert" />
+          <FunctionImportMapping FunctionImportName="GetProcess" FunctionName="WMS_EntitiesModel.Store.GetProcess">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="WMS_EntitiesModel.GetProcess_Result">
+                <ScalarProperty Name="ProcessID" ColumnName="ProcessID" />
+                <ScalarProperty Name="ProcessCode" ColumnName="ProcessCode" />
+                <ScalarProperty Name="ProcessName" ColumnName="ProcessName" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="ModifyBy" ColumnName="ModifyBy" />
+                <ScalarProperty Name="ModifyDate" ColumnName="ModifyDate" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>

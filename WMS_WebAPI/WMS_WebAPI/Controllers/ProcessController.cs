@@ -4,36 +4,37 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using WMS_WebAPI.Models;
+using WMS_WebAPI.Models.Context;
 
 namespace WMS_WebAPI.Controllers
 {
     public class ProcessController : ApiController
     {
-        // GET api/<controller>
-        public IEnumerable<string> Get()
+        WMS_Entities _context = new WMS_Entities();
+        CommanListToDataTableConverter CommanListToDataTableConverter = new CommanListToDataTableConverter();
+        string connectionstring = System.Configuration.ConfigurationManager.ConnectionStrings["ConStr"].ConnectionString;
+
+        [HttpGet]
+        [Route("api/Process/GetProcess")]
+        public IHttpActionResult GetProcess()
         {
-            return new string[] { "value1", "value2" };
+            try
+            {
+                var data = _context.GetProcess().ToList();
+                if (data == null)
+                {
+                    return NotFound();
+                }
+                return Ok(data);
+            }
+            catch (System.Exception)
+            {
+
+                return BadRequest();
+            }
+
         }
 
-        // GET api/<controller>/5
-        public string Get(int id)
-        {
-            return "value";
-        }
-
-        // POST api/<controller>
-        public void Post([FromBody] string value)
-        {
-        }
-
-        // PUT api/<controller>/5
-        public void Put(int id, [FromBody] string value)
-        {
-        }
-
-        // DELETE api/<controller>/5
-        public void Delete(int id)
-        {
-        }
     }
 }

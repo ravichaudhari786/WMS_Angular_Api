@@ -9301,5 +9301,10 @@ namespace WMS_WebAPI.Models.Context
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("ModifyProductRate_Insert", productIDParameter, rateIDParameter, serviceIdParameter, rateParameter, createdByParameter, customerIDParameter);
         }
+    
+        public virtual ObjectResult<GetProcess_Result> GetProcess()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<GetProcess_Result>("GetProcess");
+        }
     }
 }

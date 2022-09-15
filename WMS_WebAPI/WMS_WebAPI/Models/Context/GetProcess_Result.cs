@@ -10,17 +10,16 @@
 namespace WMS_WebAPI.Models.Context
 {
     using System;
-    using System.Collections.Generic;
     
-    public partial class CustomerParty
+    public partial class GetProcess_Result
     {
-        public int CustomerPartyID { get; set; }
-        public Nullable<int> CustomerID { get; set; }
-        public string PartyName { get; set; }
-        public string ShippingAddress { get; set; }
-        public string ShippingAddress1 { get; set; }
-        public string PinCode { get; set; }
+        public int ProcessID { get; set; }
+        public string ProcessCode { get; set; }
+        public string ProcessName { get; set; }
+        public Nullable<bool> IsActive { get; set; }
         public Nullable<int> CreatedBy { get; set; }
         public Nullable<System.DateTime> CreatedDate { get; set; }
+        public Nullable<int> ModifyBy { get; set; }
+        public Nullable<System.DateTime> ModifyDate { get; set; }
     }
 }

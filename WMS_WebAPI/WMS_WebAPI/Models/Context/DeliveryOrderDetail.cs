@@ -14,10 +14,10 @@ namespace WMS_WebAPI.Models.Context
     
     public partial class DeliveryOrderDetail
     {
-        public Nullable<int> DeliveryOrderDID { get; set; }
+        public int DeliveryOrderDID { get; set; }
         public Nullable<int> DeliveryOrderID { get; set; }
         public Nullable<int> ProductID { get; set; }
-        public Nullable<int> InwardDID { get; set; }
+        public int InwardDID { get; set; }
         public string LotNo { get; set; }
         public Nullable<decimal> DOQuantity { get; set; }
         public Nullable<decimal> DispatchedQuantity { get; set; }
