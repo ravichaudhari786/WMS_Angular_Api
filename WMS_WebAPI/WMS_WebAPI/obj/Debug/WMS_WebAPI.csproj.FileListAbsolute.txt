@@ -1023,8 +1023,8 @@ D:\Dharmendra\GitHub\WMS_ANGULAR_API\WMS_Angular_Api\WMS_WebAPI\WMS_WebAPI\bin\S
 D:\Dharmendra\GitHub\WMS_ANGULAR_API\WMS_Angular_Api\WMS_WebAPI\WMS_WebAPI\bin\System.Web.WebPages.Razor.xml
 D:\Dharmendra\GitHub\WMS_ANGULAR_API\WMS_Angular_Api\WMS_WebAPI\WMS_WebAPI\bin\Antlr3.Runtime.pdb
 D:\Dharmendra\GitHub\WMS_ANGULAR_API\WMS_Angular_Api\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-D:\Dharmendra\GitHub\WMS_ANGULAR_API\WMS_Angular_Api\WMS_WebAPI\WMS_WebAPI\obj\Debug\WMS_WebAPI.csproj.AssemblyReference.cache
 D:\Dharmendra\GitHub\WMS_ANGULAR_API\WMS_Angular_Api\WMS_WebAPI\WMS_WebAPI\obj\Debug\WMS_WebAPI.csproj.CoreCompileInputs.cache
 D:\Dharmendra\GitHub\WMS_ANGULAR_API\WMS_Angular_Api\WMS_WebAPI\WMS_WebAPI\obj\Debug\WMS_WebAPI.csproj.CopyComplete
 D:\Dharmendra\GitHub\WMS_ANGULAR_API\WMS_Angular_Api\WMS_WebAPI\WMS_WebAPI\obj\Debug\WMS_WebAPI.dll
 D:\Dharmendra\GitHub\WMS_ANGULAR_API\WMS_Angular_Api\WMS_WebAPI\WMS_WebAPI\obj\Debug\WMS_WebAPI.pdb
+D:\Dharmendra\GitHub\WMS_ANGULAR_API\WMS_Angular_Api\WMS_WebAPI\WMS_WebAPI\obj\Debug\WMS_WebAPI.csprojAssemblyReference.cache

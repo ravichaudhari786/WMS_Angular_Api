@@ -8,6 +8,7 @@ using WMS_WebAPI.Models.Context;
 
 namespace WMS_WebAPI.Controllers
 {
+
     public class FinancialYearController : ApiController
     {
         WMS_Entities _context = new WMS_Entities();
@@ -19,7 +20,7 @@ namespace WMS_WebAPI.Controllers
         {
             try
             {
-                var data = _context.FinancialYears_Insert(obj.FinancialYearID,obj.Year,obj.StartDate,obj.EndDate,obj.IsActive,obj.WareHouseID).ToList();
+                var data = _context.FinancialYears_Insert(obj.FinancialYearID,obj.FY_Name,obj.StartDate,obj.EndDate,obj.IsActive,obj.WareHouseID).ToList();
                 if (data == null)
                 {
                     return NotFound();
