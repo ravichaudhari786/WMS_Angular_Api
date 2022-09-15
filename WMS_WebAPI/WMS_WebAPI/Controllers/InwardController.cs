@@ -19,7 +19,7 @@ namespace WMS_WebAPI.Controllers
         WMS_Entities _context = new WMS_Entities();
         CommanListToDataTableConverter CommanListToDataTableConverter = new CommanListToDataTableConverter();
         string connectionstring = System.Configuration.ConfigurationManager.ConnectionStrings["ConStr"].ConnectionString;
-
+        //ravi
         [HttpPost]
         [Route("api/InwardList")]
         public IHttpActionResult getInwardList(cls_Inward obj)
