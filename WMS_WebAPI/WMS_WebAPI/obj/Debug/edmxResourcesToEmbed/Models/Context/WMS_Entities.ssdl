@@ -4260,6 +4260,7 @@ warning 6002: The table/view 'Demo.dbo.Warehouse_view' does not have a primary k
     <Parameter Name="WarehouseID" Type="int" Mode="In" />
   </Function>
   <Function Name="GetPlugInList" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="GetProcess" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
   <Function Name="GetProductByID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
     <Parameter Name="CustomerID" Type="int" Mode="In" />
     <Parameter Name="WarehouseID" Type="int" Mode="In" />

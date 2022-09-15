@@ -7516,5 +7516,19 @@
       </ResultMapping>
     </FunctionImportMapping>
     <FunctionImportMapping FunctionImportName="ModifyProductRate_Insert" FunctionName="WMS_EntitiesModel.Store.ModifyProductRate_Insert" />
+    <FunctionImportMapping FunctionImportName="GetProcess" FunctionName="WMS_EntitiesModel.Store.GetProcess">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WMS_EntitiesModel.GetProcess_Result">
+          <ScalarProperty Name="ProcessID" ColumnName="ProcessID" />
+          <ScalarProperty Name="ProcessCode" ColumnName="ProcessCode" />
+          <ScalarProperty Name="ProcessName" ColumnName="ProcessName" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifyBy" ColumnName="ModifyBy" />
+          <ScalarProperty Name="ModifyDate" ColumnName="ModifyDate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
   </EntityContainerMapping>
 </Mapping>

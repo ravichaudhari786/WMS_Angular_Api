@@ -6044,6 +6044,7 @@
       <Parameter Name="CreatedBy" Mode="In" Type="Int32" />
       <Parameter Name="CustomerID" Mode="In" Type="Int32" />
     </FunctionImport>
+    <FunctionImport Name="GetProcess" ReturnType="Collection(WMS_EntitiesModel.GetProcess_Result)" />
   </EntityContainer>
   <ComplexType Name="f_GetCustomer_Result">
     <Property Type="Int32" Name="CustomerID" Nullable="false" />
@@ -9238,5 +9239,15 @@
     <Property Type="String" Name="TaxDescription" Nullable="true" MaxLength="25" />
     <Property Type="String" Name="BillingCyclesName" Nullable="false" MaxLength="1" />
     <Property Type="DateTime" Name="WefDate" Nullable="true" Precision="23" />
+  </ComplexType>
+  <ComplexType Name="GetProcess_Result">
+    <Property Type="Int32" Name="ProcessID" Nullable="false" />
+    <Property Type="String" Name="ProcessCode" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="ProcessName" Nullable="true" MaxLength="50" />
+    <Property Type="Boolean" Name="IsActive" Nullable="true" />
+    <Property Type="Int32" Name="CreatedBy" Nullable="true" />
+    <Property Type="DateTime" Name="CreatedDate" Nullable="true" Precision="23" />
+    <Property Type="Int32" Name="ModifyBy" Nullable="true" />
+    <Property Type="DateTime" Name="ModifyDate" Nullable="true" Precision="23" />
   </ComplexType>
 </Schema>

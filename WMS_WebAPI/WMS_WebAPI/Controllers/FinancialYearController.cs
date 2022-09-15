@@ -34,5 +34,26 @@ namespace WMS_WebAPI.Controllers
 
         }
 
+        [HttpPost]
+        [Route("api/FinancialYear/Finacialyear_Select")]
+        public IHttpActionResult Finacialyear_Select()
+        {
+            try
+            {
+                var data = _context.Finacialyear_Select().ToList();
+                if (data == null)
+                {
+                    return NotFound();
+                }
+                return Ok(data);
+            }
+            catch (System.Exception)
+            {
+
+                return BadRequest();
+            }
+
+        }
+
     }
 }
