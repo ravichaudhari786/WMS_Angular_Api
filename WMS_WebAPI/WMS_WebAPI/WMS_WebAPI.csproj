@@ -1993,6 +1993,7 @@
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
     <EmbeddedResource Include="Content\swagger-custom.css" />
+    <EmbeddedResource Include="swagger\ui\index.html" />
     <EntityDeploy Include="Models\Context\WMS_Entities.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>WMS_Entities.Designer.cs</LastGenOutput>
@@ -2007,7 +2008,7 @@
     <Content Include="Scripts\jquery-3.4.1.slim.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <EmbeddedResource Include="swagger\ui\css\screen-css.css" />
-    <EmbeddedResource Include="swagger\ui\index.html" />
+    <EmbeddedResource Include="swagger\ui\index - Copy.html" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
