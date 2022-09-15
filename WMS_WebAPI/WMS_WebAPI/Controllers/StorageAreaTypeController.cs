@@ -29,7 +29,6 @@ namespace WMS_WebAPI.Controllers
             {
                 return NotFound();
             }
-
             return Ok(data);
         }
 
