@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="css/swagger-ui.css" rel="stylesheet" />
+
+    <link href="css/Indexcss.css" rel="stylesheet" />
+
+    
+    <link rel="icon" type="image/x-icon"href="images/Favicon/android-chrome-192x192.png">
+</head>
+
+<body>
+    <div class="top-nav-bar">
+        <a class="nav-bar-icon"><img src="images/ApaarLogo.png" style="width:100px;" /></a>
+        <a class="nav-bar-title">
+            Apaar Information Systems
+        </a>
+        <select class="classic nav-bar-select" id="service-selector" onchange="changeSwaggerUI()">
+            <option value="./swagger.json">Web Api</option>
+        </select>
+    </div>
+    <div style="margin-top: 100px" id="swagger-ui"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/3.24.2/swagger-ui-bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/3.24.2/swagger-ui-standalone-preset.js"></script>
+    <script>
+        function changeSwaggerUI() {
+            let selected_service_swaggerURL = document.getElementById("service-selector").value;
+            loadUI(selected_service_swaggerURL);
+        }
+
+        function loadUI(swaggerJsonURL) {
+            // Begin Swagger UI call region
+            const ui = SwaggerUIBundle({
+                url: swaggerJsonURL,
+                validatorUrl: "",
+                dom_id: '#swagger-ui',
+                deepLinking: true,
+                docExpansion: 'none',
+                presets: [
+                    SwaggerUIBundle.presets.apis,
+                    SwaggerUIStandalonePreset
+                ],
+                plugins: [
+                    CustomTopbarPlugin
+                ],
+                layout: "StandaloneLayout"
+            });
+            // End Swagger UI call region
+
+            window.ui = ui
+        }
+
+        function CustomTopbarPlugin() {
+            // this plugin overrides the Topbar component to return nothing
+            return {
+                components: {
+                    Topbar: () => null
+                }
+            }
+        }
+
+        window.onload = function () {
+            //loadUI("http://localhost:50191/swagger/docs/v1");
+            loadUI("../swaggerjson.json");
+
+        }
+    </script>
+    <footer>
+        
+        <p class="centertext"><a href="https://apaarinfosystems.com"><span>CopyWrite2022@</span>apaarinfosystems.com</a></p>
+    </footer>
+</body>
+</html>
