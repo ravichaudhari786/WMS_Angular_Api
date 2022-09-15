@@ -1875,6 +1875,20 @@
                 }
             }
         },
+        "/api/FinancialYear/Finacialyear_Select": {
+            "post": {
+                "tags": [ "FinancialYear" ],
+                "operationId": "FinancialYear_Finacialyear_Select",
+                "consumes": [],
+                "produces": [ "application/json", "text/json" ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": { "type": "object" }
+                    }
+                }
+            }
+        },
         "/api/GenerateReport/ReportDesigner_select": {
             "get": {
                 "tags": [ "GenerateReport" ],
