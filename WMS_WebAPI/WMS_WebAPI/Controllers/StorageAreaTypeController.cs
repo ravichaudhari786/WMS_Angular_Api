@@ -33,6 +33,7 @@ namespace WMS_WebAPI.Controllers
         }
 
 
+
         [HttpPost]
         [Route("api/StorageAreaType/StorageAreaType_Insert_Update")]
         public IHttpActionResult StorageAreaType_Insert_Update(cls_StorageAreaType obj)
