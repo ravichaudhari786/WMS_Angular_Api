@@ -110,5 +110,37 @@ namespace WMS_WebAPI.Controllers
                 return BadRequest();
             }
         }
+        [HttpPost]
+        [Route("api/Outward/GetDeliveryOrderDetail")]
+        public IHttpActionResult GetDeliveryOrderDetail(cls_Outward obj)
+        {
+            try
+            {
+                var data = _context.GetDeliveryOrderDetail(obj.dispatchID);
+                return Ok(data);
+            }
+            catch (System.Exception)
+            {
+
+                return BadRequest();
+            }
+        }
+        [HttpPost]
+        [Route("api/Outward/GetOutwardServices")]
+        public IHttpActionResult GetOutwardServices(Cls_GetDeliveryOrderByID obj)
+        {
+            try
+            {
+                var data = _context.GetOutwardServices(obj.CustomerID,obj.ProductID,obj.WarehouseId);
+                return Ok(data);
+            }
+            catch (System.Exception)
+            {
+
+                return BadRequest();
+            }
+        }
+        
+        
     }
 }
