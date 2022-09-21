@@ -10,5 +10,6 @@ namespace WMS_WebAPI.Models
         public Nullable<int> CustomerID { get; set; }
         public Nullable<int> WarehouseId { get; set; }
         public Nullable<int> CompanyID { get; set; }
+        public Nullable<int> ProductID { get; set; }
     }
 }
