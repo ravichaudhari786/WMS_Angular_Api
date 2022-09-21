@@ -55,5 +55,30 @@ namespace WMS_WebAPI.Controllers
 
         }
 
+
+        [HttpPost]
+        [Route("api/TemperatureCategory/Get_MinMax_Temp")]
+        public IHttpActionResult Get_MinMax_Temp(cls_TemperatureCategories obj)
+        {
+            try
+            {
+                var data = _context.Get_MinMax_Temp(obj.TempCategoryID).ToList();
+                if (data == null)
+                {
+                    return NotFound();
+                }
+                return Ok(data);
+            }
+            catch (System.Exception)
+            {
+
+                return BadRequest();
+            }
+
+        }
+
+
+
+
     }
 }
