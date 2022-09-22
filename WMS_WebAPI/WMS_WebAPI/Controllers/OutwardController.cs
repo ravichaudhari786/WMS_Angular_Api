@@ -13,8 +13,8 @@ namespace WMS_WebAPI.Controllers
 {
     public class OutwardController : ApiController
     {
-        WMS_Entities _context = new WMS_Entities();
-        CommanListToDataTableConverter ConvertDataTable = new CommanListToDataTableConverter();
+        WMS_Entities _context = new WMS_Entities();        
+        CommanListToDataTableConverter CommanListToDataTableConverter = new CommanListToDataTableConverter();
         string connectionstring = System.Configuration.ConfigurationManager.ConnectionStrings["ConStr"].ConnectionString;
         [HttpPost]
         [Route("api/Outward/GetOutwardList")]
@@ -85,8 +85,13 @@ namespace WMS_WebAPI.Controllers
         {
             DataTable dtOutDetail = CommanListToDataTableConverter.ConvertToDataTable(osm.OutwardDetailModel);
             DataView dv = new DataView(dtOutDetail);
-            DataTable dtn = dv.ToTable(false, "DeliveryOrderID", "ProductID", "InwardDID", "LotNO", "DOQuantity", "InwardLocationID", "StorageAreaID");
+            DataTable dtDetail = dv.ToTable(false, "OutwardDID", "DeliveryOrderDID", "DispatchDID", "OutQuantity", "LabourContractorID");
+            
+            DataTable dtOutCharges = CommanListToDataTableConverter.ConvertToDataTable(osm.OutwardDetailModel);
+            DataView dvcharges = new DataView(dtOutCharges);
+            DataTable dtCharge = dv.ToTable(false, "OutwardDID", "ServiceID", "ServiceName", "Rate", "L_Rate");
             DataSet ds = new DataSet();
+    
             using (SqlConnection connection = new SqlConnection(connectionstring))
             {
                 using (SqlCommand command = new SqlCommand("DeliveryOrder_Insert", connection))
@@ -105,8 +110,8 @@ namespace WMS_WebAPI.Controllers
                     param[9] = new SqlParameter("@Remarks", osm.Remarks);
                     param[10] = new SqlParameter("@CreatedBy", osm.CreatedBy);
                     param[11] = new SqlParameter("@CustomerID", Convert.ToInt32(osm.CustomerID));
-                    param[12] = new SqlParameter("@TD_OutwardDetail", dtn);
-                    param[13] = new SqlParameter("@TD_OutwardCharges", Convert.ToBoolean(osm.OutwardChargeModel));
+                    param[12] = new SqlParameter("@TD_OutwardDetail", dtDetail);
+                    param[13] = new SqlParameter("@TD_OutwardCharges", dtCharge);
                     param[14] = new SqlParameter("@DriverName", osm.DriverName);
                     param[15] = new SqlParameter("@DriverNo", osm.DriverNo);
                     param[16] = new SqlParameter("@DocID", osm.DocID);
