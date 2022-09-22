@@ -1942,6 +1942,7 @@
     <Compile Include="Models\InwardSaveModel.cs" />
     <Compile Include="Models\InwardTransperModel.cs" />
     <Compile Include="Models\LoginModel.cs" />
+    <Compile Include="Models\OutwardSaveModel.cs" />
     <Compile Include="Models\TokenValidationHandler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WMSExceptionFilter.cs" />
