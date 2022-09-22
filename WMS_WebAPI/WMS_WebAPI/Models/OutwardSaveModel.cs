@@ -27,6 +27,6 @@ namespace WMS_WebAPI.Models
         public Nullable<int> TransferID { get; set; }
         public Nullable<int> DispatchID { get; set; }
         public List<OutwardDetail> OutwardDetailModel { get; set; }
-        static List<OutwardCharge> OutwardChargeModel { get; set; }
+        public List<OutwardCharge> OutwardChargeModel { get; set; }
     }
 }
