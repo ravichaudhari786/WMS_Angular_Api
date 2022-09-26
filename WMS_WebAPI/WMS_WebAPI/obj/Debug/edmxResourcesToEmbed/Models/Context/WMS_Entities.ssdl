@@ -4547,6 +4547,11 @@ warning 6002: The table/view 'Demo.dbo.Warehouse_view' does not have a primary k
     <Parameter Name="TransferID" Type="int" Mode="In" />
     <Parameter Name="DispatchID" Type="int" Mode="In" />
   </Function>
+  <Function Name="OutwardStatus_validation" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="OutWardID" Type="int" Mode="In" />
+    <Parameter Name="WarehouseID" Type="int" Mode="In" />
+    <Parameter Name="StatusID" Type="int" Mode="In" />
+  </Function>
   <Function Name="OutwardUpdate_insert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
     <Parameter Name="OutWardID" Type="int" Mode="In" />
     <Parameter Name="DocID" Type="int" Mode="In" />

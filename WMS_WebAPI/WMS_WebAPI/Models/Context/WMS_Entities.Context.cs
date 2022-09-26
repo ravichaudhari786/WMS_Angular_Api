@@ -9306,5 +9306,22 @@ namespace WMS_WebAPI.Models.Context
         {
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<GetProcess_Result>("GetProcess");
         }
+    
+        public virtual ObjectResult<Nullable<int>> OutwardStatus_validation(Nullable<int> outWardID, Nullable<int> warehouseID, Nullable<int> statusID)
+        {
+            var outWardIDParameter = outWardID.HasValue ?
+                new ObjectParameter("OutWardID", outWardID) :
+                new ObjectParameter("OutWardID", typeof(int));
+    
+            var warehouseIDParameter = warehouseID.HasValue ?
+                new ObjectParameter("WarehouseID", warehouseID) :
+                new ObjectParameter("WarehouseID", typeof(int));
+    
+            var statusIDParameter = statusID.HasValue ?
+                new ObjectParameter("StatusID", statusID) :
+                new ObjectParameter("StatusID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Nullable<int>>("OutwardStatus_validation", outWardIDParameter, warehouseIDParameter, statusIDParameter);
+        }
     }
 }

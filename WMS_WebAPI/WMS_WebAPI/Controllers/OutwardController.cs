@@ -190,7 +190,23 @@ namespace WMS_WebAPI.Controllers
                 return BadRequest();
             }
         }
-        
-        
+
+        [HttpPost]
+        [Route("api/Outward/OutwardStatus_validation")]
+        public IHttpActionResult OutwardStatus_validation(cls_Outward obj)
+        {
+            try
+            {
+                var data = _context.OutwardStatus_validation(obj.outwardID,obj.warehouseID,obj.StatusID);
+                return Ok(data);
+            }
+            catch (System.Exception)
+            {
+
+                return BadRequest();
+            }
+        }
+
+
     }
 }

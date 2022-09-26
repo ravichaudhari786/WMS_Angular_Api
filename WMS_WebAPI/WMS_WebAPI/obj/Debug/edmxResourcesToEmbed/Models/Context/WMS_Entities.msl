@@ -7530,5 +7530,6 @@
         </ComplexTypeMapping>
       </ResultMapping>
     </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="OutwardStatus_validation" FunctionName="WMS_EntitiesModel.Store.OutwardStatus_validation" />
   </EntityContainerMapping>
 </Mapping>

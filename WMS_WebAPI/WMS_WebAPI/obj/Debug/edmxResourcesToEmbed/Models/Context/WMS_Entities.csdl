@@ -6045,6 +6045,11 @@
       <Parameter Name="CustomerID" Mode="In" Type="Int32" />
     </FunctionImport>
     <FunctionImport Name="GetProcess" ReturnType="Collection(WMS_EntitiesModel.GetProcess_Result)" />
+    <FunctionImport Name="OutwardStatus_validation" ReturnType="Collection(Int32)">
+      <Parameter Name="OutWardID" Mode="In" Type="Int32" />
+      <Parameter Name="WarehouseID" Mode="In" Type="Int32" />
+      <Parameter Name="StatusID" Mode="In" Type="Int32" />
+    </FunctionImport>
   </EntityContainer>
   <ComplexType Name="f_GetCustomer_Result">
     <Property Type="Int32" Name="CustomerID" Nullable="false" />

@@ -25,5 +25,6 @@ namespace WMS_WebAPI.Models
         public Nullable<int> loadingBy { get; set; }
         public Nullable<int> transferID { get; set; }
         public Nullable<int> dispatchID { get; set; }
+        public Nullable<int> StatusID { get; set; }
     }
 }

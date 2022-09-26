@@ -4554,6 +4554,11 @@ warning 6002: The table/view 'Demo.dbo.Warehouse_view' does not have a primary k
           <Parameter Name="TransferID" Type="int" Mode="In" />
           <Parameter Name="DispatchID" Type="int" Mode="In" />
         </Function>
+        <Function Name="OutwardStatus_validation" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="OutWardID" Type="int" Mode="In" />
+          <Parameter Name="WarehouseID" Type="int" Mode="In" />
+          <Parameter Name="StatusID" Type="int" Mode="In" />
+        </Function>
         <Function Name="OutwardUpdate_insert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="OutWardID" Type="int" Mode="In" />
           <Parameter Name="DocID" Type="int" Mode="In" />
@@ -12335,6 +12340,11 @@ warning 6002: The table/view 'Demo.dbo.Warehouse_view' does not have a primary k
             <Parameter Name="CustomerID" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="GetProcess" ReturnType="Collection(WMS_EntitiesModel.GetProcess_Result)" />
+          <FunctionImport Name="OutwardStatus_validation" ReturnType="Collection(Int32)">
+            <Parameter Name="OutWardID" Mode="In" Type="Int32" />
+            <Parameter Name="WarehouseID" Mode="In" Type="Int32" />
+            <Parameter Name="StatusID" Mode="In" Type="Int32" />
+          </FunctionImport>
         </EntityContainer>
         <ComplexType Name="f_GetCustomer_Result">
           <Property Type="Int32" Name="CustomerID" Nullable="false" />
@@ -23075,6 +23085,7 @@ warning 6002: The table/view 'Demo.dbo.Warehouse_view' does not have a primary k
               </ComplexTypeMapping>
             </ResultMapping>
           </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="OutwardStatus_validation" FunctionName="WMS_EntitiesModel.Store.OutwardStatus_validation" />
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>
