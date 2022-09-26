@@ -87,17 +87,17 @@ namespace WMS_WebAPI.Controllers
             DataView dv = new DataView(dtOutDetail);
             DataTable dtDetail = dv.ToTable(false, "OutwardDID", "DeliveryOrderDID", "DispatchDID", "OutQuantity", "LabourContractorID");
             
-            DataTable dtOutCharges = CommanListToDataTableConverter.ConvertToDataTable(osm.OutwardDetailModel);
+            DataTable dtOutCharges = CommanListToDataTableConverter.ConvertToDataTable(osm.OutwardChargeModel);
             DataView dvcharges = new DataView(dtOutCharges);
-            DataTable dtCharge = dv.ToTable(false, "OutwardDID", "ServiceID", "ServiceName", "Rate", "L_Rate");
+            DataTable dtCharge = dvcharges.ToTable(false, "OutwardDID", "ServiceID", "ServiceName", "Rate", "L_Rate");
             DataSet ds = new DataSet();
     
             using (SqlConnection connection = new SqlConnection(connectionstring))
             {
-                using (SqlCommand command = new SqlCommand("DeliveryOrder_Insert", connection))
+                using (SqlCommand command = new SqlCommand("Outward_Insert", connection))
                 {
                     command.CommandType = System.Data.CommandType.StoredProcedure;
-                    SqlParameter[] param = new SqlParameter[16];
+                    SqlParameter[] param = new SqlParameter[20];
                     param[0] = new SqlParameter("@OutwardID", osm.OutwardID);
                     param[1] = new SqlParameter("@WarehouseID", Convert.ToInt32(osm.WarehouseID));
                     param[2] = new SqlParameter("@OutWardDate", Convert.ToDateTime(osm.OutWardDate));
@@ -112,8 +112,8 @@ namespace WMS_WebAPI.Controllers
                     param[11] = new SqlParameter("@CustomerID", Convert.ToInt32(osm.CustomerID));
                     param[12] = new SqlParameter("@TD_OutwardDetail", dtDetail);
                     param[13] = new SqlParameter("@TD_OutwardCharges", dtCharge);
-                    param[14] = new SqlParameter("@DriverName", osm.DriverName);
-                    param[15] = new SqlParameter("@DriverNo", osm.DriverNo);
+                    param[14] = new SqlParameter("@DriverName", Convert.ToString(osm.DriverName));
+                    param[15] = new SqlParameter("@DriverNo", Convert.ToString(osm.DriverNo));
                     param[16] = new SqlParameter("@DocID", osm.DocID);
                     param[17] = new SqlParameter("@LoadingBy", osm.LoadingBy);
                     param[18] = new SqlParameter("@TransferID", osm.TransferID);
