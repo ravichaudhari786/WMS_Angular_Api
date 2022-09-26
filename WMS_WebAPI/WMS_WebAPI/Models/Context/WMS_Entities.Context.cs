@@ -9307,7 +9307,7 @@ namespace WMS_WebAPI.Models.Context
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<GetProcess_Result>("GetProcess");
         }
     
-        public virtual ObjectResult<Nullable<int>> OutwardStatus_validation(Nullable<int> outWardID, Nullable<int> warehouseID, Nullable<int> statusID)
+        public virtual ObjectResult<OutwardStatus_validation_Result> OutwardStatus_validation(Nullable<int> outWardID, Nullable<int> warehouseID, Nullable<int> statusID)
         {
             var outWardIDParameter = outWardID.HasValue ?
                 new ObjectParameter("OutWardID", outWardID) :
@@ -9321,7 +9321,7 @@ namespace WMS_WebAPI.Models.Context
                 new ObjectParameter("StatusID", statusID) :
                 new ObjectParameter("StatusID", typeof(int));
     
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Nullable<int>>("OutwardStatus_validation", outWardIDParameter, warehouseIDParameter, statusIDParameter);
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<OutwardStatus_validation_Result>("OutwardStatus_validation", outWardIDParameter, warehouseIDParameter, statusIDParameter);
         }
     }
 }

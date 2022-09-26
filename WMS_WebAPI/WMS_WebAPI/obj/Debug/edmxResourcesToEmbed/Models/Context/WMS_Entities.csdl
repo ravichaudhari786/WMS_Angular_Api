@@ -6045,7 +6045,7 @@
       <Parameter Name="CustomerID" Mode="In" Type="Int32" />
     </FunctionImport>
     <FunctionImport Name="GetProcess" ReturnType="Collection(WMS_EntitiesModel.GetProcess_Result)" />
-    <FunctionImport Name="OutwardStatus_validation" ReturnType="Collection(Int32)">
+    <FunctionImport Name="OutwardStatus_validation" ReturnType="Collection(WMS_EntitiesModel.OutwardStatus_validation_Result)">
       <Parameter Name="OutWardID" Mode="In" Type="Int32" />
       <Parameter Name="WarehouseID" Mode="In" Type="Int32" />
       <Parameter Name="StatusID" Mode="In" Type="Int32" />
@@ -9254,5 +9254,8 @@
     <Property Type="DateTime" Name="CreatedDate" Nullable="true" Precision="23" />
     <Property Type="Int32" Name="ModifyBy" Nullable="true" />
     <Property Type="DateTime" Name="ModifyDate" Nullable="true" Precision="23" />
+  </ComplexType>
+  <ComplexType Name="OutwardStatus_validation_Result">
+    <Property Type="Int32" Name="Count" Nullable="true" />
   </ComplexType>
 </Schema>

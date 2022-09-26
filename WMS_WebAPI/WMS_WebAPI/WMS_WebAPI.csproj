@@ -1378,6 +1378,9 @@
     <Compile Include="Models\Context\OutwardDetail.cs">
       <DependentUpon>WMS_Entities.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\Context\OutwardStatus_validation_Result.cs">
+      <DependentUpon>WMS_Entities.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\Context\Outword_CustomerParties_Result.cs">
       <DependentUpon>WMS_Entities.tt</DependentUpon>
     </Compile>

@@ -12340,7 +12340,7 @@ warning 6002: The table/view 'Demo.dbo.Warehouse_view' does not have a primary k
             <Parameter Name="CustomerID" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="GetProcess" ReturnType="Collection(WMS_EntitiesModel.GetProcess_Result)" />
-          <FunctionImport Name="OutwardStatus_validation" ReturnType="Collection(Int32)">
+          <FunctionImport Name="OutwardStatus_validation" ReturnType="Collection(WMS_EntitiesModel.OutwardStatus_validation_Result)">
             <Parameter Name="OutWardID" Mode="In" Type="Int32" />
             <Parameter Name="WarehouseID" Mode="In" Type="Int32" />
             <Parameter Name="StatusID" Mode="In" Type="Int32" />
@@ -15549,6 +15549,9 @@ warning 6002: The table/view 'Demo.dbo.Warehouse_view' does not have a primary k
           <Property Type="DateTime" Name="CreatedDate" Nullable="true" Precision="23" />
           <Property Type="Int32" Name="ModifyBy" Nullable="true" />
           <Property Type="DateTime" Name="ModifyDate" Nullable="true" Precision="23" />
+        </ComplexType>
+        <ComplexType Name="OutwardStatus_validation_Result">
+          <Property Type="Int32" Name="Count" Nullable="true" />
         </ComplexType>
       </Schema>
     </edmx:ConceptualModels>
@@ -23085,7 +23088,13 @@ warning 6002: The table/view 'Demo.dbo.Warehouse_view' does not have a primary k
               </ComplexTypeMapping>
             </ResultMapping>
           </FunctionImportMapping>
-          <FunctionImportMapping FunctionImportName="OutwardStatus_validation" FunctionName="WMS_EntitiesModel.Store.OutwardStatus_validation" />
+          <FunctionImportMapping FunctionImportName="OutwardStatus_validation" FunctionName="WMS_EntitiesModel.Store.OutwardStatus_validation" >
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="WMS_EntitiesModel.OutwardStatus_validation_Result">
+                <ScalarProperty Name="Count" ColumnName="Count" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>
