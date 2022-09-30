@@ -114,10 +114,50 @@ namespace WMS_WebAPI.Controllers
             }
             catch (System.Exception)
             {
+                return BadRequest();
+            }
+        }
+
+        [HttpPost]
+        [Route("api/Shifting/GetInwardDetails")]
+        public IHttpActionResult GetInwardDetails(cls_Shifting obj)
+        {
+            try
+            {
+                var data = _context.GetInwardDetails(obj.customerID,obj.LotNo).ToList();
+                if (data == null)
+                {
+                    return NotFound();
+                }
+                return Ok(data);
+            }
+            catch (System.Exception)
+            {
 
                 return BadRequest();
             }
-
         }
+
+        [HttpGet]
+        [Route("api/Shifting/Shifting_services")]
+        public IHttpActionResult Shifting_services()
+        {
+            try
+            {
+                var data = _context.Shifting_services().ToList();
+                if (data == null)
+                {
+                    return NotFound();
+                }
+                return Ok(data);
+            }
+            catch (System.Exception)
+            {
+
+                return BadRequest();
+            }
+        }
+
+
     }
 }

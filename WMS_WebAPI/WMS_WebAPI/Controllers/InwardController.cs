@@ -26,9 +26,6 @@ namespace WMS_WebAPI.Controllers
         {
             try
             {
-
-               //Ravi
-               //Vishal
                 var data = _context.GetInwardList(obj.CompanyId, obj.WarehouseId, obj.FinantialYearId).ToList();
                 if (data == null)
                 {

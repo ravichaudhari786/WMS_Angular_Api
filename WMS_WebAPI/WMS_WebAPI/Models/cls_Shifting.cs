@@ -14,6 +14,7 @@ namespace WMS_WebAPI.Models
         public Nullable<int> customerID{get;set;}
         public Nullable<int> createdBy{get;set;}
         public Nullable<System.DateTime> shiftingDate{get;set;}
-        public Nullable<int> loadingBy { get; set; }
+        public Nullable<int> loadingBy { get; set; }        
+        public string LotNo { get; set; }
     }
 }
