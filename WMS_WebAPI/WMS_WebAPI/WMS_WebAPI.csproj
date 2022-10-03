@@ -1999,7 +1999,6 @@
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
     <EmbeddedResource Include="Content\swagger-custom.css" />
-    <EmbeddedResource Include="swagger\ui\index.html" />
     <EntityDeploy Include="Models\Context\WMS_Entities.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>WMS_Entities.Designer.cs</LastGenOutput>

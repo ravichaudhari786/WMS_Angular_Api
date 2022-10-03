@@ -9,7 +9,7 @@ using WMS_WebAPI.Models.Context;
 
 namespace WMS_WebAPI.Controllers
 {
-    [Authorize]
+    //[Authorize]
     [RoutePrefix("api/Warehouse")]
     public class WarehouseController : ApiController
     {
@@ -34,11 +34,11 @@ namespace WMS_WebAPI.Controllers
             return Ok(data);
         }
 
-        [HttpGet]
-        [Route("{id}")]
-        public IHttpActionResult GetWarehouseByID(int id)
+        [HttpPost]
+        [Route("api/Warehouse/GetWarehouses")]
+        public IHttpActionResult GetWarehouseByID(cls_whinfo obj)
         {
-            var data = _context.Warehouses_Select().Where(w => w.WareHouseID == id).FirstOrDefault();
+            var data = _context.Warehouses_Select().Where(w => w.WareHouseID == obj.id).FirstOrDefault();
             if (data == null)
             {
                 return NotFound();
