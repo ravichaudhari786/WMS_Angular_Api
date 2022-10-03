@@ -20,7 +20,7 @@ namespace WMS_WebAPI.Controllers
             _context = new WMS_Entities();
         }
 
-        
+
         [HttpGet]
         [Route("")]
         public IHttpActionResult GetWarehouse()
@@ -49,7 +49,7 @@ namespace WMS_WebAPI.Controllers
 
         [HttpGet]
         [Route("userWarehouse")]
-        public IHttpActionResult GetUserWarehouses(int userid,int companyId)
+        public IHttpActionResult GetUserWarehouses(int userid, int companyId)
         {
             var data = _context.UserCompanyWareHouseList_select(userid, companyId).ToList();
             if (data == null)
@@ -106,5 +106,7 @@ namespace WMS_WebAPI.Controllers
         }
 
         #endregion
+
+       
     }
 }

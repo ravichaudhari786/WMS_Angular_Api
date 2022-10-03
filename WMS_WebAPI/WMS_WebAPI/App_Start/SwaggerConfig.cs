@@ -38,7 +38,7 @@ namespace WMS_WebAPI
                         // hold additional metadata for an API. Version and title are required but you can also provide
                         // additional fields by chaining methods off SingleApiVersion.
                         // main line ravi
-                        //c.SingleApiVersion("v1", "WMS_WebAPI"); 
+                        c.SingleApiVersion("v1", "WMS_WebAPI"); 
 
                         // If you want the output Swagger docs to be indented properly, enable the "PrettyPrint" option.
                         //
