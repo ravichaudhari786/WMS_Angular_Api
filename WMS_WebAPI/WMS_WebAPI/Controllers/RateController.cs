@@ -90,5 +90,37 @@ namespace WMS_WebAPI.Controllers
             }
 
         }
+        [HttpPost]
+        [Route("api/Rate/Rate_Services")]
+        public IHttpActionResult Rate_Services(cls_SpecialRates obj)
+        {
+            DataSet ds = new DataSet();
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(connectionstring))
+                {
+                    using (SqlCommand command = new SqlCommand("Rate_Services", connection))
+                    {
+
+                        command.CommandType = System.Data.CommandType.StoredProcedure;
+                        SqlParameter[] param = new SqlParameter[2];
+                        param[0] = new SqlParameter("@ProductID", Convert.ToInt32(obj.ProductID));
+                        param[1] = new SqlParameter("@RateID", Convert.ToInt32(obj.RateID));
+                        command.Parameters.AddRange(param);
+                        connection.Open();
+                        using (SqlDataAdapter da = new SqlDataAdapter(command))
+                        {
+                            da.Fill(ds);
+                        }
+                        connection.Close();
+                    }
+                    return Ok(ds);
+                }
+            }
+            catch (System.Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
     }
 }
