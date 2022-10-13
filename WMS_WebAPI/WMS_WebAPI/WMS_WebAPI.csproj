@@ -312,11 +312,14 @@
     <Compile Include="Controllers\CustomerContactsController.cs" />
     <Compile Include="Controllers\CustomerController.cs" />
     <Compile Include="Controllers\CustomerDocumentsVerificationController.cs" />
+    <Compile Include="Controllers\customerFixStorageAreaController.cs" />
     <Compile Include="Controllers\CustomerLimitController.cs" />
     <Compile Include="Controllers\CustomerPartyController.cs" />
     <Compile Include="Controllers\customerRateListController.cs" />
     <Compile Include="Controllers\CustomersStockController.cs" />
+    <Compile Include="Controllers\CustomerTypesController.cs" />
     <Compile Include="Controllers\CustomerUsersController.cs" />
+    <Compile Include="Controllers\customerViewController.cs" />
     <Compile Include="Controllers\DeliveryOrderController.cs" />
     <Compile Include="Controllers\DepartmentController.cs" />
     <Compile Include="Controllers\DesignationController.cs" />
@@ -385,12 +388,14 @@
     <Compile Include="Models\cls_City.cs" />
     <Compile Include="Models\cls_Company_Select.cs" />
     <Compile Include="Models\Cls_CountMaster.cs" />
+    <Compile Include="Models\cls_Customer.cs" />
     <Compile Include="Models\cls_CustomerAddOnService.cs" />
     <Compile Include="Models\cls_CustomerContract.cs" />
     <Compile Include="Models\cls_CustomerDocumentsVerification.cs" />
     <Compile Include="Models\cls_CustomerLimit.cs" />
     <Compile Include="Models\cls_customerRateList.cs" />
     <Compile Include="Models\cls_CustomersStock.cs" />
+    <Compile Include="Models\cls_CustomerStorageArea.cs" />
     <Compile Include="Models\cls_CustomerUsers.cs" />
     <Compile Include="Models\Cls_Department.cs" />
     <Compile Include="Models\Cls_Designation.cs" />
@@ -399,6 +404,7 @@
     <Compile Include="Models\cls_FinancialYears.cs" />
     <Compile Include="Models\cls_GenerateReport.cs" />
     <Compile Include="Models\Cls_GetDeliveryOrderByID.cs" />
+    <Compile Include="Models\cls_GstStateCode.cs" />
     <Compile Include="Models\cls_Inward.cs" />
     <Compile Include="Models\cls_InwardUpdate.cs" />
     <Compile Include="Models\Cls_ItemTypeMaster.cs" />

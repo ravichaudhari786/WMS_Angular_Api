@@ -173,6 +173,29 @@ namespace WMS_WebAPI.Controllers
 
         }
 
+        [HttpGet]
+        [Route("api/CustomerContacts/CustomerContact_Select")]
+        public IHttpActionResult CustomerContact_Select(cls_CustomerUsers obj)
+        {
+            try
+            {
+                var data = _context.CustomerContact_Select(obj.CustomerID).ToList();
+                if (data == null)
+                {
+                    return NotFound();
+                }
+
+                return Ok(data);
+            }
+            catch (System.Exception)
+            {
+
+                return BadRequest();
+            }
+
+        }
+
+
         #endregion
 
     }

@@ -159,6 +159,7 @@ namespace WMS_WebAPI.Controllers
         [Route("api/AdditionalService/Get_AdditionalServiceCharges")]
         public IHttpActionResult Get_AdditionalServiceCharges(Cls_AdditionalService obj)
         {
+           
             try
             {
                 var data = _context.Get_AdditionalServiceCharges(obj.CustomerID, obj.AdditionalServiceID).ToList();
@@ -175,8 +176,89 @@ namespace WMS_WebAPI.Controllers
             }
         }
 
+        [HttpGet]
+        [Route("api/AdditionalService/GetServiceIDfor_AddServiceCharges")]
+        public IHttpActionResult GetServiceIDfor_AddServiceCharges()
+        {
+            try
+            {
+                var data = _context.GetServiceIDfor_AddServiceCharges().ToList();
+                if (data == null)
+                {
+                    return NotFound();
+                }
+                return Ok(data);
+            }
+            catch (System.Exception)
+            {
+
+                return BadRequest();
+            }
+        }
+
+        [HttpGet]
+        [Route("api/AdditionalService/GetServiceID")]
+        public IHttpActionResult GetServiceID()
+        {
+            try
+            {
+                var data = _context.GetServiceID().ToList();
+                if (data == null)
+                {
+                    return NotFound();
+                }
+                return Ok(data);
+            }
+            catch (System.Exception)
+            {
+
+                return BadRequest();
+            }
+        }
 
 
+        [HttpGet]
+        [Route("api/AdditionalService/ServiesCharges_List")]
+        public IHttpActionResult ServiesCharges_List(cls_GstStateCode obj)
+        {
+            try
+            {
+                var data = _context.ServiesCharges_List(obj.serviceID).ToList();
+                if (data == null)
+                {
+                    return NotFound();
+                }
+                return Ok(data);
+            }
+            catch (System.Exception)
+            {
+
+                return BadRequest();
+            }
+        }
+
+
+
+
+        [HttpGet]
+        [Route("api/AdditionalService/GetAdditionalServiceLabourCharges")]
+        public IHttpActionResult GetAdditionalServiceLabourCharges(cls_GstStateCode obj)
+        {
+            try
+            {
+                var data = _context.GetAdditionalServiceLabourCharges(obj.customerID,obj.productID,obj.serviceID).ToList();
+                if (data == null)
+                {
+                    return NotFound();
+                }
+                return Ok(data);
+            }
+            catch (System.Exception)
+            {
+
+                return BadRequest();
+            }
+        }
 
     }
 }
