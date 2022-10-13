@@ -4090,6 +4090,7 @@ warning 6002: The table/view 'Demo.dbo.Warehouse_view' does not have a primary k
   <Function Name="Get_CustomerPartyName" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="varchar">
     <Parameter Name="CustomerPartyID" Type="int" Mode="In" />
   </Function>
+  <Function Name="Get_CustomerTypes" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
   <Function Name="Get_GststateCode" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
     <Parameter Name="StateID" Type="int" Mode="In" />
   </Function>

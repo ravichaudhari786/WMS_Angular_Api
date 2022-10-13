@@ -1027,7 +1027,6 @@ D:\Dharmendra\GitHub\WMS_ANGULAR_API\WMS_Angular_Api\WMS_WebAPI\WMS_WebAPI\obj\D
 D:\Dharmendra\GitHub\WMS_ANGULAR_API\WMS_Angular_Api\WMS_WebAPI\WMS_WebAPI\obj\Debug\WMS_WebAPI.csproj.CopyComplete
 D:\Dharmendra\GitHub\WMS_ANGULAR_API\WMS_Angular_Api\WMS_WebAPI\WMS_WebAPI\obj\Debug\WMS_WebAPI.dll
 D:\Dharmendra\GitHub\WMS_ANGULAR_API\WMS_Angular_Api\WMS_WebAPI\WMS_WebAPI\obj\Debug\WMS_WebAPI.pdb
-D:\Dharmendra\GitHub\WMS_ANGULAR_API\WMS_Angular_Api\WMS_WebAPI\WMS_WebAPI\obj\Debug\WMS_WebAPI.csprojAssemblyReference.cache
 E:\Ravi\Projects\Development\Angular\Dharmendra_Wms_Api\WMS_Angular_Api\WMS_WebAPI\WMS_WebAPI\bin\WMS_WebAPI.dll.config
 E:\Ravi\Projects\Development\Angular\Dharmendra_Wms_Api\WMS_Angular_Api\WMS_WebAPI\WMS_WebAPI\bin\WMS_WebAPI.xml
 E:\Ravi\Projects\Development\Angular\Dharmendra_Wms_Api\WMS_Angular_Api\WMS_WebAPI\WMS_WebAPI\bin\WMS_WebAPI.dll
@@ -1326,3 +1325,4 @@ D:\Dharmendra\GitHub\WMS_ANGULAR_API\WMS_Angular_Api\WMS_WebAPI\WMS_Angular_Api\
 D:\Dharmendra\GitHub\WMS_ANGULAR_API\WMS_Angular_Api\WMS_WebAPI\WMS_Angular_Api\WMS_WebAPI\WMS_WebAPI\obj\Debug\WMS_WebAPI.csproj.CopyComplete
 D:\Dharmendra\GitHub\WMS_ANGULAR_API\WMS_Angular_Api\WMS_WebAPI\WMS_Angular_Api\WMS_WebAPI\WMS_WebAPI\obj\Debug\WMS_WebAPI.dll
 D:\Dharmendra\GitHub\WMS_ANGULAR_API\WMS_Angular_Api\WMS_WebAPI\WMS_Angular_Api\WMS_WebAPI\WMS_WebAPI\obj\Debug\WMS_WebAPI.pdb
+D:\Dharmendra\GitHub\WMS_ANGULAR_API\WMS_Angular_Api\WMS_WebAPI\WMS_WebAPI\obj\Debug\WMS_WebAPI.csprojAssemblyReference.cache

@@ -9323,5 +9323,10 @@ namespace WMS_WebAPI.Models.Context
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<OutwardStatus_validation_Result>("OutwardStatus_validation", outWardIDParameter, warehouseIDParameter, statusIDParameter);
         }
+    
+        public virtual ObjectResult<Get_CustomerTypes_Result> Get_CustomerTypes()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Get_CustomerTypes_Result>("Get_CustomerTypes");
+        }
     }
 }
