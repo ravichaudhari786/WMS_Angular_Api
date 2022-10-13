@@ -9328,5 +9328,66 @@ namespace WMS_WebAPI.Models.Context
         {
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Get_CustomerTypes_Result>("Get_CustomerTypes");
         }
+    
+        public virtual ObjectResult<string> AllCustomerGroup(Nullable<int> warehousrID)
+        {
+            var warehousrIDParameter = warehousrID.HasValue ?
+                new ObjectParameter("WarehousrID", warehousrID) :
+                new ObjectParameter("WarehousrID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("AllCustomerGroup", warehousrIDParameter);
+        }
+    
+        public virtual int GetProductMaster_Rate(Nullable<int> rateID)
+        {
+            var rateIDParameter = rateID.HasValue ?
+                new ObjectParameter("RateID", rateID) :
+                new ObjectParameter("RateID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("GetProductMaster_Rate", rateIDParameter);
+        }
+    
+        public virtual ObjectResult<Nullable<int>> GetserviceId_ByserviceName(string servicename)
+        {
+            var servicenameParameter = servicename != null ?
+                new ObjectParameter("Servicename", servicename) :
+                new ObjectParameter("Servicename", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Nullable<int>>("GetserviceId_ByserviceName", servicenameParameter);
+        }
+    
+        public virtual ObjectResult<string> ProductMasterRate_Insert(Nullable<int> productID, Nullable<int> rateID, Nullable<int> serviceId, Nullable<decimal> rate, Nullable<int> createdBy, Nullable<int> typeID)
+        {
+            var productIDParameter = productID.HasValue ?
+                new ObjectParameter("ProductID", productID) :
+                new ObjectParameter("ProductID", typeof(int));
+    
+            var rateIDParameter = rateID.HasValue ?
+                new ObjectParameter("RateID", rateID) :
+                new ObjectParameter("RateID", typeof(int));
+    
+            var serviceIdParameter = serviceId.HasValue ?
+                new ObjectParameter("serviceId", serviceId) :
+                new ObjectParameter("serviceId", typeof(int));
+    
+            var rateParameter = rate.HasValue ?
+                new ObjectParameter("Rate", rate) :
+                new ObjectParameter("Rate", typeof(decimal));
+    
+            var createdByParameter = createdBy.HasValue ?
+                new ObjectParameter("CreatedBy", createdBy) :
+                new ObjectParameter("CreatedBy", typeof(int));
+    
+            var typeIDParameter = typeID.HasValue ?
+                new ObjectParameter("TypeID", typeID) :
+                new ObjectParameter("TypeID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("ProductMasterRate_Insert", productIDParameter, rateIDParameter, serviceIdParameter, rateParameter, createdByParameter, typeIDParameter);
+        }
+    
+        public virtual ObjectResult<GetInvoiceType_Result> GetInvoiceType()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<GetInvoiceType_Result>("GetInvoiceType");
+        }
     }
 }

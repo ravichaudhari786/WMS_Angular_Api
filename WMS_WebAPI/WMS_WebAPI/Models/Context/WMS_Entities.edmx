@@ -4204,6 +4204,7 @@ warning 6002: The table/view 'Demo.dbo.Warehouse_view' does not have a primary k
         <Function Name="GetExportDetailsByID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="ExportID" Type="int" Mode="In" />
         </Function>
+        <Function Name="GetInvoiceType" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
         <Function Name="GetInwardByLotNo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="LotNo" Type="varchar" Mode="In" />
           <Parameter Name="WareHouseID" Type="int" Mode="In" />
@@ -12365,13 +12366,13 @@ warning 6002: The table/view 'Demo.dbo.Warehouse_view' does not have a primary k
           </FunctionImport>
           <FunctionImport Name="Get_CustomerTypes" ReturnType="Collection(WMS_EntitiesModel.Get_CustomerTypes_Result)" />
           <FunctionImport Name="AllCustomerGroup" ReturnType="Collection(String)">
-            <Parameter Name="WarehousrID" Mode="In" Type="Int32" />
+          <Parameter Name="WarehousrID" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="GetProductMaster_Rate">
-            <Parameter Name="RateID" Mode="In" Type="Int32" />
+          <Parameter Name="RateID" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="GetserviceId_ByserviceName" ReturnType="Collection(Int32)">
-            <Parameter Name="Servicename" Mode="In" Type="String" />
+          <Parameter Name="Servicename" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="ProductMasterRate_Insert" ReturnType="Collection(String)">
             <Parameter Name="ProductID" Mode="In" Type="Int32" />
@@ -12381,6 +12382,7 @@ warning 6002: The table/view 'Demo.dbo.Warehouse_view' does not have a primary k
             <Parameter Name="CreatedBy" Mode="In" Type="Int32" />
             <Parameter Name="TypeID" Mode="In" Type="Int32" />
           </FunctionImport>
+          <FunctionImport Name="GetInvoiceType" ReturnType="Collection(WMS_EntitiesModel.GetInvoiceType_Result)" />
         </EntityContainer>
         <ComplexType Name="f_GetCustomer_Result">
           <Property Type="Int32" Name="CustomerID" Nullable="false" />
@@ -15598,6 +15600,10 @@ warning 6002: The table/view 'Demo.dbo.Warehouse_view' does not have a primary k
           <Property Type="DateTime" Name="CreatedDate" Nullable="true" Precision="23" />
           <Property Type="Int32" Name="ModifyBy" Nullable="true" />
           <Property Type="DateTime" Name="ModifyDate" Nullable="true" Precision="23" />
+        </ComplexType>
+        <ComplexType Name="GetInvoiceType_Result">
+          <Property Type="Int32" Name="InvoiceTypeID" Nullable="false" />
+          <Property Type="String" Name="InvoiceType" Nullable="true" MaxLength="50" />
         </ComplexType>
       </Schema>
     </edmx:ConceptualModels>
@@ -23159,6 +23165,14 @@ warning 6002: The table/view 'Demo.dbo.Warehouse_view' does not have a primary k
           <FunctionImportMapping FunctionImportName="GetProductMaster_Rate" FunctionName="WMS_EntitiesModel.Store.GetProductMaster_Rate" />
           <FunctionImportMapping FunctionImportName="GetserviceId_ByserviceName" FunctionName="WMS_EntitiesModel.Store.GetserviceId_ByserviceName" />
           <FunctionImportMapping FunctionImportName="ProductMasterRate_Insert" FunctionName="WMS_EntitiesModel.Store.ProductMasterRate_Insert" />
+          <FunctionImportMapping FunctionImportName="GetInvoiceType" FunctionName="WMS_EntitiesModel.Store.GetInvoiceType">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="WMS_EntitiesModel.GetInvoiceType_Result">
+                <ScalarProperty Name="InvoiceTypeID" ColumnName="InvoiceTypeID" />
+                <ScalarProperty Name="InvoiceType" ColumnName="InvoiceType" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>
