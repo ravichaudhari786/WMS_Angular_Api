@@ -14,4 +14,24 @@ namespace WMS_WebAPI.Models
         public Nullable<int> CreatedBy { get; set; }
         public Nullable<int> CustomerID { get; set; }
     }
+
+
+    public class Cls_ProductRates
+    {
+        public Nullable<int> RateID { get; set; }
+        public List<TD_CustomerReport> TD_CustomerReport { get; set; }
+        public List<TD_ProductReport> TD_ProductReport { get; set; }
+        public Nullable<DateTime> FromDate { get; set; }
+        public Nullable<DateTime> ToDate { get; set; }
+        public string LotNo { get; set; }
+    }
+    public class TD_CustomerReport
+    {
+        public Nullable<int> CustomerID { get; set; }
+    }
+    public class TD_ProductReport
+    {
+        public Nullable<int> ProductID { get; set; }
+
+    }
 }

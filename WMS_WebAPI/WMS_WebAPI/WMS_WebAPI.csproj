@@ -418,6 +418,7 @@
     <Compile Include="Models\cls_OutWard_Update.cs" />
     <Compile Include="Models\Cls_PackingType.cs" />
     <Compile Include="Models\Cls_ProcessServices.cs" />
+    <Compile Include="Models\Cls_ProductMasterrate.cs" />
     <Compile Include="Models\cls_ProductTaxDetails.cs" />
     <Compile Include="Models\cls_Rate.cs" />
     <Compile Include="Models\cls_RateMaster.cs" />

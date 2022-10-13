@@ -7551,5 +7551,17 @@
         </ComplexTypeMapping>
       </ResultMapping>
     </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="AllCustomerGroup" FunctionName="WMS_EntitiesModel.Store.AllCustomerGroup" />
+    <FunctionImportMapping FunctionImportName="GetProductMaster_Rate" FunctionName="WMS_EntitiesModel.Store.GetProductMaster_Rate" />
+    <FunctionImportMapping FunctionImportName="GetserviceId_ByserviceName" FunctionName="WMS_EntitiesModel.Store.GetserviceId_ByserviceName" />
+    <FunctionImportMapping FunctionImportName="ProductMasterRate_Insert" FunctionName="WMS_EntitiesModel.Store.ProductMasterRate_Insert" />
+    <FunctionImportMapping FunctionImportName="GetInvoiceType" FunctionName="WMS_EntitiesModel.Store.GetInvoiceType">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WMS_EntitiesModel.GetInvoiceType_Result">
+          <ScalarProperty Name="InvoiceTypeID" ColumnName="InvoiceTypeID" />
+          <ScalarProperty Name="InvoiceType" ColumnName="InvoiceType" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
   </EntityContainerMapping>
 </Mapping>

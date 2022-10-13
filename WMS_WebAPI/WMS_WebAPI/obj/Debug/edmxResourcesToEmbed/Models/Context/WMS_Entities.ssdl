@@ -3219,6 +3219,9 @@ warning 6002: The table/view 'Demo.dbo.Warehouse_view' does not have a primary k
     <Parameter Name="Mode" Type="varchar" Mode="In" />
   </Function>
   <Function Name="AdditionalServicesList" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="AllCustomerGroup" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="WarehousrID" Type="int" Mode="In" />
+  </Function>
   <Function Name="api_BillDetailLabour" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
     <Parameter Name="CustomerID" Type="int" Mode="In" />
     <Parameter Name="warehouseID" Type="int" Mode="In" />
@@ -4194,6 +4197,7 @@ warning 6002: The table/view 'Demo.dbo.Warehouse_view' does not have a primary k
   <Function Name="GetExportDetailsByID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
     <Parameter Name="ExportID" Type="int" Mode="In" />
   </Function>
+  <Function Name="GetInvoiceType" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
   <Function Name="GetInwardByLotNo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
     <Parameter Name="LotNo" Type="varchar" Mode="In" />
     <Parameter Name="WareHouseID" Type="int" Mode="In" />
@@ -4266,6 +4270,9 @@ warning 6002: The table/view 'Demo.dbo.Warehouse_view' does not have a primary k
     <Parameter Name="CustomerID" Type="int" Mode="In" />
     <Parameter Name="WarehouseID" Type="int" Mode="In" />
   </Function>
+  <Function Name="GetProductMaster_Rate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="RateID" Type="int" Mode="In" />
+  </Function>
   <Function Name="GetProductTempCategory" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
     <Parameter Name="ProductID" Type="int" Mode="In" />
   </Function>
@@ -4285,6 +4292,9 @@ warning 6002: The table/view 'Demo.dbo.Warehouse_view' does not have a primary k
   </Function>
   <Function Name="GetReports" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
   <Function Name="GetServiceID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="GetserviceId_ByserviceName" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Servicename" Type="varchar" Mode="In" />
+  </Function>
   <Function Name="GetServiceIDfor_AddServiceCharges" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
   <Function Name="GetServiceName" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
   <Function Name="GetStorageArea" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
@@ -4644,6 +4654,14 @@ warning 6002: The table/view 'Demo.dbo.Warehouse_view' does not have a primary k
     <Parameter Name="CreatedBy" Type="int" Mode="In" />
     <Parameter Name="ApproxValue" Type="int" Mode="In" />
     <Parameter Name="BillingCycleID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="ProductMasterRate_Insert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ProductID" Type="int" Mode="In" />
+    <Parameter Name="RateID" Type="int" Mode="In" />
+    <Parameter Name="serviceId" Type="int" Mode="In" />
+    <Parameter Name="Rate" Type="decimal" Mode="In" />
+    <Parameter Name="CreatedBy" Type="int" Mode="In" />
+    <Parameter Name="TypeID" Type="int" Mode="In" />
   </Function>
   <Function Name="ProductTaxCategory_Insert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
     <Parameter Name="ProductTaxCategoryID" Type="int" Mode="In" />
