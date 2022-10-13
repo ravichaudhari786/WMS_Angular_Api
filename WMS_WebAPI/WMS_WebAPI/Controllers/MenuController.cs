@@ -63,7 +63,7 @@ namespace WMS_WebAPI.Controllers
                 DataSet ds = new DataSet();
                 using (SqlConnection connection = new SqlConnection(connectionstring))
                 {
-                    using (SqlCommand command = new SqlCommand("GetUserMenus", connection))
+                    using (SqlCommand command = new SqlCommand("GetUserMenus_angular", connection))
                     {
                         command.CommandType = System.Data.CommandType.StoredProcedure;
                         SqlParameter[] param = new SqlParameter[1];
@@ -165,10 +165,10 @@ namespace WMS_WebAPI.Controllers
                                 if (dr != null && dr.Length > 0)
                                 {
 
-                                    MenuObj.route = Convert.ToString(ds.Tables[1].Rows[i]["MasterMenu"]);
-                                    MenuObj.name = Convert.ToString(ds.Tables[1].Rows[i]["MasterMenu"]);
+                                    MenuObj.route = Convert.ToString(ds.Tables[1].Rows[i]["AngularParentRoute"]);
+                                    MenuObj.name = Convert.ToString(ds.Tables[1].Rows[i]["AngularParentName"]);
                                     MenuObj.type = Convert.ToString(ds.Tables[1].Rows[i]["type"]);
-                                    MenuObj.icon = Convert.ToString(ds.Tables[1].Rows[i]["IconName"]);
+                                    MenuObj.icon = Convert.ToString(ds.Tables[1].Rows[i]["AngularIcon"]);
 
 
 
@@ -177,8 +177,8 @@ namespace WMS_WebAPI.Controllers
                                     {
                                         Child ChildObj = new Child();
 
-                                        ChildObj.route = Convert.ToString(dr[j]["UIName"]);
-                                        ChildObj.name = Convert.ToString(dr[j]["UIName"]);
+                                        ChildObj.route = Convert.ToString(dr[j]["AngularChildRoute"]);
+                                        ChildObj.name = Convert.ToString(dr[j]["AngularChildName"]);
                                         ChildObj.type = Convert.ToString(dr[j]["type"]);
                                         ChildList[j] = ChildObj;
 
