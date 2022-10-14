@@ -2535,6 +2535,9 @@ warning 6002: The table/view 'Demo.dbo.testingtable' does not have a primary key
           <Property Name="IsActive" Type="bit" />
           <Property Name="CreatedBy" Type="int" />
           <Property Name="CreatedDate" Type="datetime" />
+          <Property Name="AngularParentName" Type="varchar" MaxLength="500" />
+          <Property Name="AngularParentRoute" Type="varchar" MaxLength="500" />
+          <Property Name="AngularIcon" Type="varchar" MaxLength="500" />
         </EntityType>
         <EntityType Name="UIMaster">
           <Key>
@@ -2550,6 +2553,8 @@ warning 6002: The table/view 'Demo.dbo.testingtable' does not have a primary key
           <Property Name="IsActive" Type="bit" />
           <Property Name="CreatedBy" Type="int" />
           <Property Name="CreatedDate" Type="datetime" />
+          <Property Name="AngularChildName" Type="varchar" MaxLength="500" />
+          <Property Name="AngularChildRoute" Type="varchar" MaxLength="500" />
         </EntityType>
         <EntityType Name="UOM">
           <Key>
@@ -5520,6 +5525,11 @@ warning 6002: The table/view 'Demo.dbo.Warehouse_view' does not have a primary k
           <Parameter Name="ShiftingID" Type="int" Mode="In" />
           <Parameter Name="ShiftingDID" Type="int" Mode="In" />
           <Parameter Name="WarehouseID" Type="int" Mode="In" />
+        </Function>
+        <Function Name="ShiftingStatus_validation" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ShiftingID" Type="int" Mode="In" />
+          <Parameter Name="WarehouseID" Type="int" Mode="In" />
+          <Parameter Name="StatusID" Type="int" Mode="In" />
         </Function>
         <Function Name="SMS_Notification_Insert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="Process" Type="varchar" Mode="In" />
@@ -8723,6 +8733,9 @@ warning 6002: The table/view 'Demo.dbo.Warehouse_view' does not have a primary k
           <Property Name="IsActive" Type="Boolean" />
           <Property Name="CreatedBy" Type="Int32" />
           <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+          <Property Name="AngularParentName" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="AngularParentRoute" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="AngularIcon" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityType Name="UIMaster">
           <Key>
@@ -8738,6 +8751,8 @@ warning 6002: The table/view 'Demo.dbo.Warehouse_view' does not have a primary k
           <Property Name="IsActive" Type="Boolean" />
           <Property Name="CreatedBy" Type="Int32" />
           <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+          <Property Name="AngularChildName" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="AngularChildRoute" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityType Name="UOM">
           <Key>
@@ -12383,6 +12398,14 @@ warning 6002: The table/view 'Demo.dbo.Warehouse_view' does not have a primary k
             <Parameter Name="TypeID" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="GetInvoiceType" ReturnType="Collection(WMS_EntitiesModel.GetInvoiceType_Result)" />
+<<<<<<< HEAD
+          <FunctionImport Name="ShiftingStatus_validation" ReturnType="Collection(Int32)">
+            <Parameter Name="ShiftingID" Mode="In" Type="Int32" />
+            <Parameter Name="WarehouseID" Mode="In" Type="Int32" />
+            <Parameter Name="StatusID" Mode="In" Type="Int32" />
+          </FunctionImport>
+=======
+>>>>>>> ef8bcba584c805c8df8bdd2abcc7106da6d33030
         </EntityContainer>
         <ComplexType Name="f_GetCustomer_Result">
           <Property Type="Int32" Name="CustomerID" Nullable="false" />
@@ -18077,6 +18100,9 @@ warning 6002: The table/view 'Demo.dbo.Warehouse_view' does not have a primary k
           <EntitySetMapping Name="UIGroups">
             <EntityTypeMapping TypeName="WMS_EntitiesModel.UIGroup">
               <MappingFragment StoreEntitySet="UIGroups">
+                <ScalarProperty Name="AngularIcon" ColumnName="AngularIcon" />
+                <ScalarProperty Name="AngularParentRoute" ColumnName="AngularParentRoute" />
+                <ScalarProperty Name="AngularParentName" ColumnName="AngularParentName" />
                 <ScalarProperty Name="UIGroupID" ColumnName="UIGroupID" />
                 <ScalarProperty Name="GroupName" ColumnName="GroupName" />
                 <ScalarProperty Name="SequanceNo" ColumnName="SequanceNo" />
@@ -18090,6 +18116,8 @@ warning 6002: The table/view 'Demo.dbo.Warehouse_view' does not have a primary k
           <EntitySetMapping Name="UIMasters">
             <EntityTypeMapping TypeName="WMS_EntitiesModel.UIMaster">
               <MappingFragment StoreEntitySet="UIMaster">
+                <ScalarProperty Name="AngularChildRoute" ColumnName="AngularChildRoute" />
+                <ScalarProperty Name="AngularChildName" ColumnName="AngularChildName" />
                 <ScalarProperty Name="UIMasterID" ColumnName="UIMasterID" />
                 <ScalarProperty Name="UIGroupID" ColumnName="UIGroupID" />
                 <ScalarProperty Name="UIName" ColumnName="UIName" />
@@ -23173,6 +23201,11 @@ warning 6002: The table/view 'Demo.dbo.Warehouse_view' does not have a primary k
               </ComplexTypeMapping>
             </ResultMapping>
           </FunctionImportMapping>
+<<<<<<< HEAD
+          <FunctionImportMapping FunctionImportName="ShiftingStatus_validation" FunctionName="WMS_EntitiesModel.Store.ShiftingStatus_validation" />
+         
+=======
+>>>>>>> ef8bcba584c805c8df8bdd2abcc7106da6d33030
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>

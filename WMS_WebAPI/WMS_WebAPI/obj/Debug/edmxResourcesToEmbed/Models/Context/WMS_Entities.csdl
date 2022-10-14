@@ -6050,6 +6050,13 @@
       <Parameter Name="WarehouseID" Mode="In" Type="Int32" />
       <Parameter Name="StatusID" Mode="In" Type="Int32" />
     </FunctionImport>
+<<<<<<< HEAD
+    <FunctionImport Name="ShiftingStatus_validation" ReturnType="Collection(Int32)">
+      <Parameter Name="ShiftingID" Mode="In" Type="Int32" />
+      <Parameter Name="WarehouseID" Mode="In" Type="Int32" />
+      <Parameter Name="StatusID" Mode="In" Type="Int32" />
+    </FunctionImport>
+=======
     <FunctionImport Name="Get_CustomerTypes" ReturnType="Collection(WMS_EntitiesModel.Get_CustomerTypes_Result)" />
     <FunctionImport Name="AllCustomerGroup" ReturnType="Collection(String)">
       <Parameter Name="WarehousrID" Mode="In" Type="Int32" />
@@ -6069,6 +6076,7 @@
       <Parameter Name="TypeID" Mode="In" Type="Int32" />
     </FunctionImport>
     <FunctionImport Name="GetInvoiceType" ReturnType="Collection(WMS_EntitiesModel.GetInvoiceType_Result)" />
+>>>>>>> ef8bcba584c805c8df8bdd2abcc7106da6d33030
   </EntityContainer>
   <ComplexType Name="f_GetCustomer_Result">
     <Property Type="Int32" Name="CustomerID" Nullable="false" />

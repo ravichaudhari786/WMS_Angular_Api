@@ -16,5 +16,6 @@ namespace WMS_WebAPI.Models
         public Nullable<System.DateTime> shiftingDate{get;set;}
         public Nullable<int> loadingBy { get; set; }        
         public string LotNo { get; set; }
+        public Nullable<int> StatusID { get; set; }
     }
 }

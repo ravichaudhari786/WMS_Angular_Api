@@ -2528,6 +2528,9 @@ warning 6002: The table/view 'Demo.dbo.testingtable' does not have a primary key
     <Property Name="IsActive" Type="bit" />
     <Property Name="CreatedBy" Type="int" />
     <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="AngularParentName" Type="varchar" MaxLength="500" />
+    <Property Name="AngularParentRoute" Type="varchar" MaxLength="500" />
+    <Property Name="AngularIcon" Type="varchar" MaxLength="500" />
   </EntityType>
   <EntityType Name="UIMaster">
     <Key>
@@ -2543,6 +2546,8 @@ warning 6002: The table/view 'Demo.dbo.testingtable' does not have a primary key
     <Property Name="IsActive" Type="bit" />
     <Property Name="CreatedBy" Type="int" />
     <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="AngularChildName" Type="varchar" MaxLength="500" />
+    <Property Name="AngularChildRoute" Type="varchar" MaxLength="500" />
   </EntityType>
   <EntityType Name="UOM">
     <Key>
@@ -5513,6 +5518,11 @@ warning 6002: The table/view 'Demo.dbo.Warehouse_view' does not have a primary k
     <Parameter Name="ShiftingID" Type="int" Mode="In" />
     <Parameter Name="ShiftingDID" Type="int" Mode="In" />
     <Parameter Name="WarehouseID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="ShiftingStatus_validation" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ShiftingID" Type="int" Mode="In" />
+    <Parameter Name="WarehouseID" Type="int" Mode="In" />
+    <Parameter Name="StatusID" Type="int" Mode="In" />
   </Function>
   <Function Name="SMS_Notification_Insert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
     <Parameter Name="Process" Type="varchar" Mode="In" />

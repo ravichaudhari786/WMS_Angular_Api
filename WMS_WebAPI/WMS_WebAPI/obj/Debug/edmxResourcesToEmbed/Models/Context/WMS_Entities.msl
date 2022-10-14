@@ -7537,6 +7537,9 @@
         </ComplexTypeMapping>
       </ResultMapping>
     </FunctionImportMapping>
+<<<<<<< HEAD
+    <FunctionImportMapping FunctionImportName="ShiftingStatus_validation" FunctionName="WMS_EntitiesModel.Store.ShiftingStatus_validation" />
+=======
     <FunctionImportMapping FunctionImportName="Get_CustomerTypes" FunctionName="WMS_EntitiesModel.Store.Get_CustomerTypes">
       <ResultMapping>
         <ComplexTypeMapping TypeName="WMS_EntitiesModel.Get_CustomerTypes_Result">
@@ -7563,5 +7566,6 @@
         </ComplexTypeMapping>
       </ResultMapping>
     </FunctionImportMapping>
+>>>>>>> ef8bcba584c805c8df8bdd2abcc7106da6d33030
   </EntityContainerMapping>
 </Mapping>

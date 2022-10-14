@@ -95,6 +95,63 @@ namespace WMS_WebAPI.Controllers
             }
 
         }
+        [HttpPost]
+        [Route("api/Transfer/GetTransferProductList")]
+        public IHttpActionResult GetTransferProductList(cls_Transfer obj)
+        {
+            try
+            {
+                var data = _context.GetTransferProductList(obj.fromCustomerID,obj.wareHouseID,obj.financialYearID).ToList();
+                if (data == null)
+                {
+                    return NotFound();
+                }
+                return Ok(data);
+            }
+            catch (System.Exception)
+            {
+                return BadRequest();
+            }
+        }
+
+        [HttpPost]
+        [Route("api/Transfer/GetTransferServices")]
+        public IHttpActionResult GetTransferServices(cls_Inward obj)
+        {
+            try
+            {
+                var data = _context.GetTransferServices(obj.CustomerID,obj.ProductID,obj.WarehouseId).ToList();
+                if (data == null)
+                {
+                    return NotFound();
+                }
+                return Ok(data);
+            }
+            catch (System.Exception)
+            {
+                return BadRequest();
+            }
+        }
+        [HttpPost]
+        [Route("api/Transfer/GetStorageArea")]
+        public IHttpActionResult GetStorageArea(cls_Transfer obj)
+        {
+            try
+            {
+                var data = _context.GetStorageArea(obj.wareHouseID,obj.toCustomerID).ToList();
+                if (data == null)
+                {
+                    return NotFound();
+                }
+                return Ok(data);
+            }
+            catch (System.Exception)
+            {
+
+                return BadRequest();
+            }
+
+        }
 
     }
 }

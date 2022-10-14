@@ -9389,5 +9389,25 @@ namespace WMS_WebAPI.Models.Context
         {
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<GetInvoiceType_Result>("GetInvoiceType");
         }
+<<<<<<< HEAD
+    
+        public virtual ObjectResult<Nullable<int>> ShiftingStatus_validation(Nullable<int> shiftingID, Nullable<int> warehouseID, Nullable<int> statusID)
+        {
+            var shiftingIDParameter = shiftingID.HasValue ?
+                new ObjectParameter("ShiftingID", shiftingID) :
+                new ObjectParameter("ShiftingID", typeof(int));
+    
+            var warehouseIDParameter = warehouseID.HasValue ?
+                new ObjectParameter("WarehouseID", warehouseID) :
+                new ObjectParameter("WarehouseID", typeof(int));
+    
+            var statusIDParameter = statusID.HasValue ?
+                new ObjectParameter("StatusID", statusID) :
+                new ObjectParameter("StatusID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Nullable<int>>("ShiftingStatus_validation", shiftingIDParameter, warehouseIDParameter, statusIDParameter);
+        }
+=======
+>>>>>>> ef8bcba584c805c8df8bdd2abcc7106da6d33030
     }
 }

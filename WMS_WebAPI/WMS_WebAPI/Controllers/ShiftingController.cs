@@ -1,7 +1,19 @@
-﻿using System;
+﻿//using System;
+//using System.Data;
+//using System.Data.SqlClient;
+//using System.Linq;
+//using System.Web.Http;
+//using WMS_WebAPI.Models;
+//using WMS_WebAPI.Models.Context;
+//using System.Collections.Generic;
+
+using System;
+using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
+using System.Net;
+using System.Net.Http;
 using System.Web.Http;
 using WMS_WebAPI.Models;
 using WMS_WebAPI.Models.Context;
@@ -11,24 +23,53 @@ namespace WMS_WebAPI.Controllers
     public class ShiftingController : ApiController
     {
         WMS_Entities _context = new WMS_Entities();
-        CommanListToDataTableConverter ConvertDataTable = new CommanListToDataTableConverter();
+        CommanListToDataTableConverter CommanListToDataTableConverter = new CommanListToDataTableConverter();
         string connectionstring = System.Configuration.ConfigurationManager.ConnectionStrings["ConStr"].ConnectionString;
+
         [HttpPost]
         [Route("api/Shifting/Shifting_insert")]
-        public IHttpActionResult Shifting_insert(cls_Shifting obj)
+        public IHttpActionResult Shifting_insert([FromBody]ShiftingSaveModel ssm)
         {
             try
             {
-                var data = _context.Shifting_insert(obj.shiftingID,obj.warehouseID,obj.customerID,obj.createdBy,obj.shiftingDate,obj.loadingBy);
-               
+                DataTable dtShiftDetail = CommanListToDataTableConverter.ConvertToDataTable(ssm.TD_ShiftingDetails);
+                DataView dv = new DataView(dtShiftDetail);
+                DataTable dtDetail = dv.ToTable(false, "ShiftingDID","InwardLocationID","LotNo","InwardDID","FromLocationID","ToLocationID","Quantity","LabourContractorID");
+
+                DataTable dtOutCharges = CommanListToDataTableConverter.ConvertToDataTable(ssm.TD_ShiftingCharges);
+                DataView dvcharges = new DataView(dtOutCharges);
+                DataTable dtCharge = dvcharges.ToTable(false, "ShiftingDID","ServiceID","Rate","Rate_L");
+                DataSet ds = new DataSet();
+                using (SqlConnection connection = new SqlConnection(connectionstring))
+                {
+                    using (SqlCommand command = new SqlCommand("Shifting_insert", connection))
+                    {
+                        command.CommandType = System.Data.CommandType.StoredProcedure;
+                        SqlParameter[] param = new SqlParameter[8];
+                        param[0] = new SqlParameter("@ShiftingID", ssm.ShiftingID);
+                        param[1] = new SqlParameter("@WarehouseID", ssm.WarehouseID);
+                        param[2] = new SqlParameter("@CustomerID", ssm.CustomerID);
+                        param[3] = new SqlParameter("@CreatedBy", ssm.CreatedBy);
+                        param[4] = new SqlParameter("@TD_ShiftingDetails", dtDetail);
+                        param[5] = new SqlParameter("@TD_ShiftingCharges", dtCharge);
+                        param[6] = new SqlParameter("@ShiftingDate", Convert.ToDateTime(ssm.ShiftingDate));
+                        param[7] = new SqlParameter("@LoadingBy", Convert.ToInt32(ssm.LoadingBy));
+                        command.Parameters.AddRange(param);
+                        connection.Open();
+                        using (SqlDataAdapter da = new SqlDataAdapter(command))
+                        {
+                            da.Fill(ds);
+                        }
+                        connection.Close();
+                    }
+                }
+                var data = ds;
                 return Ok(data);
             }
             catch (System.Exception)
             {
-
                 return BadRequest();
             }
-
         }
 
 
@@ -158,6 +199,25 @@ namespace WMS_WebAPI.Controllers
             }
         }
 
+        [HttpPost]
+        [Route("api/Shifting/ShiftingStatus_validation")]
+        public IHttpActionResult ShiftingStatus_validation(cls_Shifting obj)
+        {
+            try
+            {
+                var data = _context.ShiftingStatus_validation(obj.shiftingID,obj.warehouseID,obj.StatusID).ToList();
+                if (data == null)
+                {
+                    return NotFound();
+                }
+                return Ok(data);
+            }
+            catch (System.Exception)
+            {
+
+                return BadRequest();
+            }
+        }
 
     }
 }

@@ -21,5 +21,8 @@ namespace WMS_WebAPI.Models.Context
         public Nullable<bool> IsActive { get; set; }
         public Nullable<int> CreatedBy { get; set; }
         public Nullable<System.DateTime> CreatedDate { get; set; }
+        public string AngularParentName { get; set; }
+        public string AngularParentRoute { get; set; }
+        public string AngularIcon { get; set; }
     }
 }

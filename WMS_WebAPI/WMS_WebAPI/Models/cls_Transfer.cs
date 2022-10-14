@@ -13,7 +13,7 @@ namespace WMS_WebAPI.Models
         public Nullable<int> fromCustomerID{get;set;}
         public Nullable<int> toCustomerID{get;set;}
         public Nullable<System.DateTime> transferDate{get;set;}
-      public  string orderGivenBy{get;set;}
+        public  string orderGivenBy{get;set;}
         public string remarks{get;set;}
         public Nullable<int> createdBy{get;set;}
         public Nullable<int> financialYearID{get;set;}
