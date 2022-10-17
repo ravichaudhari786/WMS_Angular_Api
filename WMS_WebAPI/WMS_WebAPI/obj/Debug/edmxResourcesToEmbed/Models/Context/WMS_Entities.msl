@@ -2467,6 +2467,9 @@
     <EntitySetMapping Name="UIGroups">
       <EntityTypeMapping TypeName="WMS_EntitiesModel.UIGroup">
         <MappingFragment StoreEntitySet="UIGroups">
+          <ScalarProperty Name="AngularIcon" ColumnName="AngularIcon" />
+          <ScalarProperty Name="AngularParentRoute" ColumnName="AngularParentRoute" />
+          <ScalarProperty Name="AngularParentName" ColumnName="AngularParentName" />
           <ScalarProperty Name="UIGroupID" ColumnName="UIGroupID" />
           <ScalarProperty Name="GroupName" ColumnName="GroupName" />
           <ScalarProperty Name="SequanceNo" ColumnName="SequanceNo" />
@@ -2480,6 +2483,8 @@
     <EntitySetMapping Name="UIMasters">
       <EntityTypeMapping TypeName="WMS_EntitiesModel.UIMaster">
         <MappingFragment StoreEntitySet="UIMaster">
+          <ScalarProperty Name="AngularChildRoute" ColumnName="AngularChildRoute" />
+          <ScalarProperty Name="AngularChildName" ColumnName="AngularChildName" />
           <ScalarProperty Name="UIMasterID" ColumnName="UIMasterID" />
           <ScalarProperty Name="UIGroupID" ColumnName="UIGroupID" />
           <ScalarProperty Name="UIName" ColumnName="UIName" />
@@ -7537,9 +7542,6 @@
         </ComplexTypeMapping>
       </ResultMapping>
     </FunctionImportMapping>
-<<<<<<< HEAD
-    <FunctionImportMapping FunctionImportName="ShiftingStatus_validation" FunctionName="WMS_EntitiesModel.Store.ShiftingStatus_validation" />
-=======
     <FunctionImportMapping FunctionImportName="Get_CustomerTypes" FunctionName="WMS_EntitiesModel.Store.Get_CustomerTypes">
       <ResultMapping>
         <ComplexTypeMapping TypeName="WMS_EntitiesModel.Get_CustomerTypes_Result">
@@ -7566,6 +7568,6 @@
         </ComplexTypeMapping>
       </ResultMapping>
     </FunctionImportMapping>
->>>>>>> ef8bcba584c805c8df8bdd2abcc7106da6d33030
+    <FunctionImportMapping FunctionImportName="ShiftingStatus_validation" FunctionName="WMS_EntitiesModel.Store.ShiftingStatus_validation" />
   </EntityContainerMapping>
 </Mapping>

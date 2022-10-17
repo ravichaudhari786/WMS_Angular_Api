@@ -89,10 +89,6 @@ namespace WMS_WebAPI.Controllers
                 return BadRequest(ex.Message);
             }
         }
-<<<<<<< HEAD
-
-=======
->>>>>>> ef8bcba584c805c8df8bdd2abcc7106da6d33030
         [HttpPost]
         [Route("api/Rate/Rate_Services")]
         public IHttpActionResult Rate_Services(cls_SpecialRates obj)
@@ -125,10 +121,5 @@ namespace WMS_WebAPI.Controllers
                 return BadRequest(ex.Message);
             }
         }
-<<<<<<< HEAD
-
-
-=======
->>>>>>> ef8bcba584c805c8df8bdd2abcc7106da6d33030
     }
 }

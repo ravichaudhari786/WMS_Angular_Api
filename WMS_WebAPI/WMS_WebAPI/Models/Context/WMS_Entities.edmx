@@ -12398,14 +12398,13 @@ warning 6002: The table/view 'Demo.dbo.Warehouse_view' does not have a primary k
             <Parameter Name="TypeID" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="GetInvoiceType" ReturnType="Collection(WMS_EntitiesModel.GetInvoiceType_Result)" />
-<<<<<<< HEAD
+
           <FunctionImport Name="ShiftingStatus_validation" ReturnType="Collection(Int32)">
             <Parameter Name="ShiftingID" Mode="In" Type="Int32" />
             <Parameter Name="WarehouseID" Mode="In" Type="Int32" />
             <Parameter Name="StatusID" Mode="In" Type="Int32" />
           </FunctionImport>
-=======
->>>>>>> ef8bcba584c805c8df8bdd2abcc7106da6d33030
+
         </EntityContainer>
         <ComplexType Name="f_GetCustomer_Result">
           <Property Type="Int32" Name="CustomerID" Nullable="false" />
@@ -23201,11 +23200,10 @@ warning 6002: The table/view 'Demo.dbo.Warehouse_view' does not have a primary k
               </ComplexTypeMapping>
             </ResultMapping>
           </FunctionImportMapping>
-<<<<<<< HEAD
+
           <FunctionImportMapping FunctionImportName="ShiftingStatus_validation" FunctionName="WMS_EntitiesModel.Store.ShiftingStatus_validation" />
          
-=======
->>>>>>> ef8bcba584c805c8df8bdd2abcc7106da6d33030
+
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>
