@@ -22,7 +22,7 @@ namespace WMS_WebAPI.Controllers
 
 
         [HttpGet]
-        [Route("")]
+        [Route("GetWarehouse")]
         public IHttpActionResult GetWarehouse()
         {
             var data = _context.Warehouses_Select().ToList();
@@ -35,7 +35,7 @@ namespace WMS_WebAPI.Controllers
         }
 
         [HttpPost]
-        [Route("api/Warehouse/GetWarehouses")]
+        [Route("GetWarehouseByID")]
         public IHttpActionResult GetWarehouseByID(cls_whinfo obj)
         {
             var data = _context.Warehouses_Select().Where(w => w.WareHouseID == obj.id).FirstOrDefault();
@@ -48,7 +48,7 @@ namespace WMS_WebAPI.Controllers
         }
 
         [HttpGet]
-        [Route("userWarehouse")]
+        [Route("GetUserWarehouses")]
         public IHttpActionResult GetUserWarehouses(int userid, int companyId)
         {
             var data = _context.UserCompanyWareHouseList_select(userid, companyId).ToList();

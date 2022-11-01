@@ -8,6 +8,7 @@ using WMS_WebAPI.Models.Context;
 
 namespace WMS_WebAPI.Controllers
 {
+    [RoutePrefix("api/Company_Select")]
     public class Company_SelectController : ApiController
     {
         WMS_Entities _context = new WMS_Entities();
@@ -15,7 +16,7 @@ namespace WMS_WebAPI.Controllers
         string connectionstring = System.Configuration.ConfigurationManager.ConnectionStrings["ConStr"].ConnectionString;
 
         [HttpPost]
-        [Route("api/Company_Select/Company_Insert_Update")]
+        [Route("Company_Insert_Update")]
         public IHttpActionResult Company_Insert_Update(cls_Company_Select obj)
         {
             try
@@ -38,8 +39,8 @@ namespace WMS_WebAPI.Controllers
         }
 
         [HttpGet]
-        [Route("api/Company_Select/Company_Select")]
-        public IHttpActionResult Company_Select()
+        [Route("Company_Select1")]
+        public IHttpActionResult Company_Select1()
         {
             try
             {
