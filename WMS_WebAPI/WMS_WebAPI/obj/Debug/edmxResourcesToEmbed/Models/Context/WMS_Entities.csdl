@@ -3857,7 +3857,6 @@
       <Parameter Name="UserName" Mode="In" Type="String" />
       <Parameter Name="password" Mode="In" Type="String" />
     </FunctionImport>
-    <FunctionImport Name="Customer_Select" ReturnType="Collection(WMS_EntitiesModel.Customer_Select_Result)" />
     <FunctionImport Name="CustomerActivation_Insert" ReturnType="Collection(String)">
       <Parameter Name="ActivationID" Mode="In" Type="Int32" />
       <Parameter Name="CustomerID" Mode="In" Type="Int32" />
@@ -6079,6 +6078,7 @@
       <Parameter Name="WarehouseID" Mode="In" Type="Int32" />
       <Parameter Name="StatusID" Mode="In" Type="Int32" />
     </FunctionImport>
+    <FunctionImport Name="Customer_Select" ReturnType="Collection(WMS_EntitiesModel.Customer_Select_Result)" />
   </EntityContainer>
   <ComplexType Name="f_GetCustomer_Result">
     <Property Type="Int32" Name="CustomerID" Nullable="false" />
@@ -6577,27 +6577,6 @@
     <Property Type="Boolean" Name="Result" Nullable="true" />
     <Property Type="Int32" Name="IsActive" Nullable="true" />
     <Property Type="Int32" Name="CustomerLoginID" Nullable="true" />
-  </ComplexType>
-  <ComplexType Name="Customer_Select_Result">
-    <Property Type="Int32" Name="CustomerID" Nullable="false" />
-    <Property Type="String" Name="Initials" Nullable="true" MaxLength="10" />
-    <Property Type="String" Name="CustomerName" Nullable="true" MaxLength="100" />
-    <Property Type="String" Name="CustomerCode" Nullable="true" MaxLength="100" />
-    <Property Type="String" Name="CustomerType" Nullable="true" MaxLength="50" />
-    <Property Type="String" Name="Address1" Nullable="true" MaxLength="500" />
-    <Property Type="String" Name="Address2" Nullable="true" MaxLength="500" />
-    <Property Type="String" Name="GroupName" Nullable="true" MaxLength="100" />
-    <Property Type="String" Name="EmailID" Nullable="true" MaxLength="100" />
-    <Property Type="String" Name="FICINo" Nullable="true" MaxLength="50" />
-    <Property Type="String" Name="GSTINNo" Nullable="true" MaxLength="20" />
-    <Property Type="String" Name="PANNo" Nullable="true" MaxLength="20" />
-    <Property Type="String" Name="City" Nullable="true" MaxLength="50" />
-    <Property Type="String" Name="State" Nullable="true" MaxLength="50" />
-    <Property Type="String" Name="PinCode" Nullable="true" MaxLength="50" />
-    <Property Type="Decimal" Name="StorageDiscount" Nullable="true" Precision="10" Scale="2" />
-    <Property Type="Decimal" Name="LabourDiscount" Nullable="true" Precision="10" Scale="2" />
-    <Property Type="String" Name="ReferredBy" Nullable="true" MaxLength="200" />
-    <Property Type="String" Name="GSTStateCode" Nullable="true" MaxLength="50" />
   </ComplexType>
   <ComplexType Name="CustomerActivation_Select_Result">
     <Property Type="String" Name="CustomerName" Nullable="true" MaxLength="100" />
@@ -9300,5 +9279,27 @@
   <ComplexType Name="GetInvoiceType_Result">
     <Property Type="Int32" Name="InvoiceTypeID" Nullable="false" />
     <Property Type="String" Name="InvoiceType" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="Customer_Select_Result">
+    <Property Type="Int32" Name="CustomerID" Nullable="false" />
+    <Property Type="String" Name="Initials" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="CustomerName" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="CustomerCode" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="CustomerType" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Address1" Nullable="true" MaxLength="500" />
+    <Property Type="String" Name="Address2" Nullable="true" MaxLength="500" />
+    <Property Type="String" Name="GroupName" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="EmailID" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="FICINo" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="GSTINNo" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="PANNo" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="City" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="State" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="PinCode" Nullable="true" MaxLength="50" />
+    <Property Type="Decimal" Name="StorageDiscount" Nullable="true" Precision="10" Scale="2" />
+    <Property Type="Decimal" Name="LabourDiscount" Nullable="true" Precision="10" Scale="2" />
+    <Property Type="String" Name="ReferredBy" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="GSTStateCode" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="RateID" Nullable="true" />
   </ComplexType>
 </Schema>

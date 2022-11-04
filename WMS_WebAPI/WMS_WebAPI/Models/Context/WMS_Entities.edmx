@@ -10181,7 +10181,6 @@ warning 6002: The table/view 'Demo.dbo.Warehouse_view' does not have a primary k
             <Parameter Name="UserName" Mode="In" Type="String" />
             <Parameter Name="password" Mode="In" Type="String" />
           </FunctionImport>
-          <FunctionImport Name="Customer_Select" ReturnType="Collection(WMS_EntitiesModel.Customer_Select_Result)" />
           <FunctionImport Name="CustomerActivation_Insert" ReturnType="Collection(String)">
             <Parameter Name="ActivationID" Mode="In" Type="Int32" />
             <Parameter Name="CustomerID" Mode="In" Type="Int32" />
@@ -12404,6 +12403,7 @@ warning 6002: The table/view 'Demo.dbo.Warehouse_view' does not have a primary k
             <Parameter Name="WarehouseID" Mode="In" Type="Int32" />
             <Parameter Name="StatusID" Mode="In" Type="Int32" />
           </FunctionImport>
+          <FunctionImport Name="Customer_Select" ReturnType="Collection(WMS_EntitiesModel.Customer_Select_Result)" />
 
         </EntityContainer>
         <ComplexType Name="f_GetCustomer_Result">
@@ -12903,27 +12903,6 @@ warning 6002: The table/view 'Demo.dbo.Warehouse_view' does not have a primary k
           <Property Type="Boolean" Name="Result" Nullable="true" />
           <Property Type="Int32" Name="IsActive" Nullable="true" />
           <Property Type="Int32" Name="CustomerLoginID" Nullable="true" />
-        </ComplexType>
-        <ComplexType Name="Customer_Select_Result">
-          <Property Type="Int32" Name="CustomerID" Nullable="false" />
-          <Property Type="String" Name="Initials" Nullable="true" MaxLength="10" />
-          <Property Type="String" Name="CustomerName" Nullable="true" MaxLength="100" />
-          <Property Type="String" Name="CustomerCode" Nullable="true" MaxLength="100" />
-          <Property Type="String" Name="CustomerType" Nullable="true" MaxLength="50" />
-          <Property Type="String" Name="Address1" Nullable="true" MaxLength="500" />
-          <Property Type="String" Name="Address2" Nullable="true" MaxLength="500" />
-          <Property Type="String" Name="GroupName" Nullable="true" MaxLength="100" />
-          <Property Type="String" Name="EmailID" Nullable="true" MaxLength="100" />
-          <Property Type="String" Name="FICINo" Nullable="true" MaxLength="50" />
-          <Property Type="String" Name="GSTINNo" Nullable="true" MaxLength="20" />
-          <Property Type="String" Name="PANNo" Nullable="true" MaxLength="20" />
-          <Property Type="String" Name="City" Nullable="true" MaxLength="50" />
-          <Property Type="String" Name="State" Nullable="true" MaxLength="50" />
-          <Property Type="String" Name="PinCode" Nullable="true" MaxLength="50" />
-          <Property Type="Decimal" Name="StorageDiscount" Nullable="true" Precision="10" Scale="2" />
-          <Property Type="Decimal" Name="LabourDiscount" Nullable="true" Precision="10" Scale="2" />
-          <Property Type="String" Name="ReferredBy" Nullable="true" MaxLength="200" />
-          <Property Type="String" Name="GSTStateCode" Nullable="true" MaxLength="50" />
         </ComplexType>
         <ComplexType Name="CustomerActivation_Select_Result">
           <Property Type="String" Name="CustomerName" Nullable="true" MaxLength="100" />
@@ -15626,6 +15605,28 @@ warning 6002: The table/view 'Demo.dbo.Warehouse_view' does not have a primary k
         <ComplexType Name="GetInvoiceType_Result">
           <Property Type="Int32" Name="InvoiceTypeID" Nullable="false" />
           <Property Type="String" Name="InvoiceType" Nullable="true" MaxLength="50" />
+        </ComplexType>
+        <ComplexType Name="Customer_Select_Result">
+          <Property Type="Int32" Name="CustomerID" Nullable="false" />
+          <Property Type="String" Name="Initials" Nullable="true" MaxLength="10" />
+          <Property Type="String" Name="CustomerName" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="CustomerCode" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="CustomerType" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Address1" Nullable="true" MaxLength="500" />
+          <Property Type="String" Name="Address2" Nullable="true" MaxLength="500" />
+          <Property Type="String" Name="GroupName" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="EmailID" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="FICINo" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="GSTINNo" Nullable="true" MaxLength="20" />
+          <Property Type="String" Name="PANNo" Nullable="true" MaxLength="20" />
+          <Property Type="String" Name="City" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="State" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="PinCode" Nullable="true" MaxLength="50" />
+          <Property Type="Decimal" Name="StorageDiscount" Nullable="true" Precision="10" Scale="2" />
+          <Property Type="Decimal" Name="LabourDiscount" Nullable="true" Precision="10" Scale="2" />
+          <Property Type="String" Name="ReferredBy" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="GSTStateCode" Nullable="true" MaxLength="50" />
+          <Property Type="Int32" Name="RateID" Nullable="true" />
         </ComplexType>
       </Schema>
     </edmx:ConceptualModels>
@@ -19309,31 +19310,6 @@ warning 6002: The table/view 'Demo.dbo.Warehouse_view' does not have a primary k
                 <ScalarProperty Name="Result" ColumnName="Result" />
                 <ScalarProperty Name="IsActive" ColumnName="IsActive" />
                 <ScalarProperty Name="CustomerLoginID" ColumnName="CustomerLoginID" />
-              </ComplexTypeMapping>
-            </ResultMapping>
-          </FunctionImportMapping>
-          <FunctionImportMapping FunctionImportName="Customer_Select" FunctionName="WMS_EntitiesModel.Store.Customer_Select">
-            <ResultMapping>
-              <ComplexTypeMapping TypeName="WMS_EntitiesModel.Customer_Select_Result">
-                <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
-                <ScalarProperty Name="Initials" ColumnName="Initials" />
-                <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
-                <ScalarProperty Name="CustomerCode" ColumnName="CustomerCode" />
-                <ScalarProperty Name="CustomerType" ColumnName="CustomerType" />
-                <ScalarProperty Name="Address1" ColumnName="Address1" />
-                <ScalarProperty Name="Address2" ColumnName="Address2" />
-                <ScalarProperty Name="GroupName" ColumnName="GroupName" />
-                <ScalarProperty Name="EmailID" ColumnName="EmailID" />
-                <ScalarProperty Name="FICINo" ColumnName="FICINo" />
-                <ScalarProperty Name="GSTINNo" ColumnName="GSTINNo" />
-                <ScalarProperty Name="PANNo" ColumnName="PANNo" />
-                <ScalarProperty Name="City" ColumnName="City" />
-                <ScalarProperty Name="State" ColumnName="State" />
-                <ScalarProperty Name="PinCode" ColumnName="PinCode" />
-                <ScalarProperty Name="StorageDiscount" ColumnName="StorageDiscount" />
-                <ScalarProperty Name="LabourDiscount" ColumnName="LabourDiscount" />
-                <ScalarProperty Name="ReferredBy" ColumnName="ReferredBy" />
-                <ScalarProperty Name="GSTStateCode" ColumnName="GSTStateCode" />
               </ComplexTypeMapping>
             </ResultMapping>
           </FunctionImportMapping>
@@ -23202,6 +23178,32 @@ warning 6002: The table/view 'Demo.dbo.Warehouse_view' does not have a primary k
           </FunctionImportMapping>
 
           <FunctionImportMapping FunctionImportName="ShiftingStatus_validation" FunctionName="WMS_EntitiesModel.Store.ShiftingStatus_validation" />
+          <FunctionImportMapping FunctionImportName="Customer_Select" FunctionName="WMS_EntitiesModel.Store.Customer_Select">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="WMS_EntitiesModel.Customer_Select_Result">
+                <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+                <ScalarProperty Name="Initials" ColumnName="Initials" />
+                <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+                <ScalarProperty Name="CustomerCode" ColumnName="CustomerCode" />
+                <ScalarProperty Name="CustomerType" ColumnName="CustomerType" />
+                <ScalarProperty Name="Address1" ColumnName="Address1" />
+                <ScalarProperty Name="Address2" ColumnName="Address2" />
+                <ScalarProperty Name="GroupName" ColumnName="GroupName" />
+                <ScalarProperty Name="EmailID" ColumnName="EmailID" />
+                <ScalarProperty Name="FICINo" ColumnName="FICINo" />
+                <ScalarProperty Name="GSTINNo" ColumnName="GSTINNo" />
+                <ScalarProperty Name="PANNo" ColumnName="PANNo" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="State" ColumnName="State" />
+                <ScalarProperty Name="PinCode" ColumnName="PinCode" />
+                <ScalarProperty Name="StorageDiscount" ColumnName="StorageDiscount" />
+                <ScalarProperty Name="LabourDiscount" ColumnName="LabourDiscount" />
+                <ScalarProperty Name="ReferredBy" ColumnName="ReferredBy" />
+                <ScalarProperty Name="GSTStateCode" ColumnName="GSTStateCode" />
+                <ScalarProperty Name="RateID" ColumnName="RateID" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
          
 
         </EntityContainerMapping>

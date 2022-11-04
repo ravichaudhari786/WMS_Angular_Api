@@ -1525,11 +1525,6 @@ namespace WMS_WebAPI.Models.Context
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Customer_Login_Result>("Customer_Login", userNameParameter, passwordParameter);
         }
     
-        public virtual ObjectResult<Customer_Select_Result> Customer_Select()
-        {
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Customer_Select_Result>("Customer_Select");
-        }
-    
         public virtual ObjectResult<string> CustomerActivation_Insert(Nullable<int> activationID, Nullable<int> customerID, string sRNo, string key)
         {
             var activationIDParameter = activationID.HasValue ?
@@ -9389,6 +9384,7 @@ namespace WMS_WebAPI.Models.Context
         {
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<GetInvoiceType_Result>("GetInvoiceType");
         }
+    
         public virtual ObjectResult<Nullable<int>> ShiftingStatus_validation(Nullable<int> shiftingID, Nullable<int> warehouseID, Nullable<int> statusID)
         {
             var shiftingIDParameter = shiftingID.HasValue ?
@@ -9404,6 +9400,11 @@ namespace WMS_WebAPI.Models.Context
                 new ObjectParameter("StatusID", typeof(int));
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Nullable<int>>("ShiftingStatus_validation", shiftingIDParameter, warehouseIDParameter, statusIDParameter);
+        }
+    
+        public virtual ObjectResult<Customer_Select_Result> Customer_Select()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Customer_Select_Result>("Customer_Select");
         }
     }
 }

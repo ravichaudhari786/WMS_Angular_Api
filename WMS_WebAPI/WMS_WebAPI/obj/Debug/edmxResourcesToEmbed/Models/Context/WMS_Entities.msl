@@ -3680,31 +3680,6 @@
         </ComplexTypeMapping>
       </ResultMapping>
     </FunctionImportMapping>
-    <FunctionImportMapping FunctionImportName="Customer_Select" FunctionName="WMS_EntitiesModel.Store.Customer_Select">
-      <ResultMapping>
-        <ComplexTypeMapping TypeName="WMS_EntitiesModel.Customer_Select_Result">
-          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
-          <ScalarProperty Name="Initials" ColumnName="Initials" />
-          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
-          <ScalarProperty Name="CustomerCode" ColumnName="CustomerCode" />
-          <ScalarProperty Name="CustomerType" ColumnName="CustomerType" />
-          <ScalarProperty Name="Address1" ColumnName="Address1" />
-          <ScalarProperty Name="Address2" ColumnName="Address2" />
-          <ScalarProperty Name="GroupName" ColumnName="GroupName" />
-          <ScalarProperty Name="EmailID" ColumnName="EmailID" />
-          <ScalarProperty Name="FICINo" ColumnName="FICINo" />
-          <ScalarProperty Name="GSTINNo" ColumnName="GSTINNo" />
-          <ScalarProperty Name="PANNo" ColumnName="PANNo" />
-          <ScalarProperty Name="City" ColumnName="City" />
-          <ScalarProperty Name="State" ColumnName="State" />
-          <ScalarProperty Name="PinCode" ColumnName="PinCode" />
-          <ScalarProperty Name="StorageDiscount" ColumnName="StorageDiscount" />
-          <ScalarProperty Name="LabourDiscount" ColumnName="LabourDiscount" />
-          <ScalarProperty Name="ReferredBy" ColumnName="ReferredBy" />
-          <ScalarProperty Name="GSTStateCode" ColumnName="GSTStateCode" />
-        </ComplexTypeMapping>
-      </ResultMapping>
-    </FunctionImportMapping>
     <FunctionImportMapping FunctionImportName="CustomerActivation_Insert" FunctionName="WMS_EntitiesModel.Store.CustomerActivation_Insert" />
     <FunctionImportMapping FunctionImportName="CustomerActivation_Select" FunctionName="WMS_EntitiesModel.Store.CustomerActivation_Select">
       <ResultMapping>
@@ -7569,5 +7544,31 @@
       </ResultMapping>
     </FunctionImportMapping>
     <FunctionImportMapping FunctionImportName="ShiftingStatus_validation" FunctionName="WMS_EntitiesModel.Store.ShiftingStatus_validation" />
+    <FunctionImportMapping FunctionImportName="Customer_Select" FunctionName="WMS_EntitiesModel.Store.Customer_Select">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WMS_EntitiesModel.Customer_Select_Result">
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="Initials" ColumnName="Initials" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="CustomerCode" ColumnName="CustomerCode" />
+          <ScalarProperty Name="CustomerType" ColumnName="CustomerType" />
+          <ScalarProperty Name="Address1" ColumnName="Address1" />
+          <ScalarProperty Name="Address2" ColumnName="Address2" />
+          <ScalarProperty Name="GroupName" ColumnName="GroupName" />
+          <ScalarProperty Name="EmailID" ColumnName="EmailID" />
+          <ScalarProperty Name="FICINo" ColumnName="FICINo" />
+          <ScalarProperty Name="GSTINNo" ColumnName="GSTINNo" />
+          <ScalarProperty Name="PANNo" ColumnName="PANNo" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="PinCode" ColumnName="PinCode" />
+          <ScalarProperty Name="StorageDiscount" ColumnName="StorageDiscount" />
+          <ScalarProperty Name="LabourDiscount" ColumnName="LabourDiscount" />
+          <ScalarProperty Name="ReferredBy" ColumnName="ReferredBy" />
+          <ScalarProperty Name="GSTStateCode" ColumnName="GSTStateCode" />
+          <ScalarProperty Name="RateID" ColumnName="RateID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
   </EntityContainerMapping>
 </Mapping>

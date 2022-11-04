@@ -32,5 +32,6 @@ namespace WMS_WebAPI.Models.Context
         public Nullable<decimal> LabourDiscount { get; set; }
         public string ReferredBy { get; set; }
         public string GSTStateCode { get; set; }
+        public Nullable<int> RateID { get; set; }
     }
 }
