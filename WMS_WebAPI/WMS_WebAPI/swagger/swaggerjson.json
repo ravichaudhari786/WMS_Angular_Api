@@ -4,9 +4,8 @@
         "version": "v1",
         "title": "WMS_WebAPI"
     },
-    //"host": "localhost:50191",
-    //"host": "localhost:50191",
-    "host": "localhost:50888",
+    "host": "localhost:50191",
+   
     "schemes": [ "http" ],
     "paths": {
         "/api/Login": {
