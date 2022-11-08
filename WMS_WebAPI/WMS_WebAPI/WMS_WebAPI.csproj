@@ -338,7 +338,6 @@
     <Compile Include="Controllers\DispatchController.cs" />
     <Compile Include="Controllers\DockMasterController.cs" />
     <Compile Include="Controllers\EmailScheduleController.cs" />
-    <Compile Include="Controllers\FileUplaodController.cs" />
     <Compile Include="Controllers\FinancialYearController.cs" />
     <Compile Include="Controllers\GenerateReportController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -2071,7 +2070,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Uploads\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
