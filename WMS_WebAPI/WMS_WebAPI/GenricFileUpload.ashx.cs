@@ -17,6 +17,9 @@ namespace WMS_WebAPI
 
         public void ProcessRequest(HttpContext context)
         {
+            context.Response.AddHeader("Access-Control-Allow-Origin", "*");
+            context.Response.AddHeader("Access-Control-Allow-Methods", "GET, POST");
+            context.Response.AddHeader("Access-Control-Allow-Headers", "Content-Type, Accept");
             //Check if Request is to Upload the File.
             if (context.Request.Files.Count > 0)
             {
