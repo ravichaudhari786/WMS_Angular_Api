@@ -508,5 +508,11 @@
             <param name="obj"></param>
             <returns></returns>
         </member>
+        <member name="T:WMS_WebAPI.GenricFileUpload">
+            <summary>
+            Summary description for GenricFileUpload
+            </summary>
+            
+        </member>
     </members>
 </doc>

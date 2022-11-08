@@ -296,3 +296,7 @@ D:\Dharmendra\GitHub\WMS_Angular_Api\WMS_WebAPI\WMS_WebAPI\obj\Debug\WMS_WebAPI.
 D:\Dharmendra\GitHub\WMS_Angular_Api\WMS_WebAPI\WMS_WebAPI\obj\Debug\WMS_WebAPI.csproj.CopyComplete
 D:\Dharmendra\GitHub\WMS_Angular_Api\WMS_WebAPI\WMS_WebAPI\obj\Debug\WMS_WebAPI.dll
 D:\Dharmendra\GitHub\WMS_Angular_Api\WMS_WebAPI\WMS_WebAPI\obj\Debug\WMS_WebAPI.pdb
+D:\Dharmendra\GitHub\WMS_Angular_Api\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.AspNetCore.Mvc.Abstractions.dll
+D:\Dharmendra\GitHub\WMS_Angular_Api\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.AspNetCore.Routing.Abstractions.dll
+D:\Dharmendra\GitHub\WMS_Angular_Api\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.AspNetCore.Mvc.Abstractions.xml
+D:\Dharmendra\GitHub\WMS_Angular_Api\WMS_WebAPI\WMS_WebAPI\bin\Microsoft.AspNetCore.Routing.Abstractions.xml
