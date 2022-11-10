@@ -25,6 +25,7 @@ namespace WMS_WebAPI.Controllers
             // obj1.info(obj);
 
 
+
             string path = System.Configuration.ConfigurationManager.AppSettings["FileUploadPath"].ToString() + obj.name;
             obj1.Base64ToImage(obj).Save(path);
             FileRes fro = new FileRes();
