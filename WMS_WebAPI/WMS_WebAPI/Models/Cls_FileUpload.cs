@@ -9,14 +9,15 @@ namespace WMS_WebAPI.Models
 {
     public class Cls_FileUpload
     {
-        public  Boolean info(FileInputData obj)
+        public  string info(FileInputData obj)
         {
             string[] s = obj.base64.ToString().Split(',');
             byte[] imageBytes = Convert.FromBase64String(s[1]);
 
             string path = System.Configuration.ConfigurationManager.AppSettings["FileUploadPath"].ToString() + obj.name;
             File.WriteAllBytes(path, imageBytes);
-            return true;
+            //return true;
+            return path;
         }
 
         public System.Drawing.Image Base64ToImage(FileInputData obj)

@@ -22,12 +22,12 @@ namespace WMS_WebAPI.Controllers
            
 
             Cls_FileUpload obj1 = new Cls_FileUpload();
-            // obj1.info(obj);
+           string path=  obj1.info(obj);
 
 
 
-            string path = System.Configuration.ConfigurationManager.AppSettings["FileUploadPath"].ToString() + obj.name;
-            obj1.Base64ToImage(obj).Save(path);
+          //  string path = System.Configuration.ConfigurationManager.AppSettings["FileUploadPath"].ToString() + obj.name;
+            //obj1.Base64ToImage(obj).Save(path);
             FileRes fro = new FileRes();
             fro.FileName = obj.name;
             fro.FilePath = path;
