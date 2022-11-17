@@ -4770,10 +4770,6 @@
       <Parameter Name="GSTNo" Mode="In" Type="String" />
     </FunctionImport>
     <FunctionImport Name="LabourContractors_Select" ReturnType="Collection(WMS_EntitiesModel.LabourContractors_Select_Result)" />
-    <FunctionImport Name="LotSearch_List" ReturnType="Collection(WMS_EntitiesModel.LotSearch_List_Result)">
-      <Parameter Name="LotNo" Mode="In" Type="String" />
-      <Parameter Name="WareHouseID" Mode="In" Type="Int32" />
-    </FunctionImport>
     <FunctionImport Name="Order_Select" ReturnType="Collection(WMS_EntitiesModel.Order_Select_Result)" />
     <FunctionImport Name="Ordering_Select" ReturnType="Collection(WMS_EntitiesModel.Ordering_Select_Result)" />
     <FunctionImport Name="OutWard_Cancelled" ReturnType="Collection(String)">
@@ -6079,6 +6075,10 @@
       <Parameter Name="StatusID" Mode="In" Type="Int32" />
     </FunctionImport>
     <FunctionImport Name="Customer_Select" ReturnType="Collection(WMS_EntitiesModel.Customer_Select_Result)" />
+    <FunctionImport Name="LotSearch_List" ReturnType="Collection(WMS_EntitiesModel.LotSearch_List_Result)">
+      <Parameter Name="LotNo" Mode="In" Type="String" />
+      <Parameter Name="WareHouseID" Mode="In" Type="Int32" />
+    </FunctionImport>
   </EntityContainer>
   <ComplexType Name="f_GetCustomer_Result">
     <Property Type="Int32" Name="CustomerID" Nullable="false" />
@@ -8080,19 +8080,6 @@
     <Property Type="String" Name="EmailID" Nullable="true" MaxLength="50" />
     <Property Type="String" Name="GSTNo" Nullable="true" MaxLength="50" />
   </ComplexType>
-  <ComplexType Name="LotSearch_List_Result">
-    <Property Type="String" Name="CustomerName" Nullable="true" MaxLength="100" />
-    <Property Type="String" Name="CustomerAddress" Nullable="true" MaxLength="1001" />
-    <Property Type="String" Name="WareHouseName" Nullable="true" MaxLength="50" />
-    <Property Type="DateTime" Name="InwardDate" Nullable="true" />
-    <Property Type="String" Name="ContactPerson" Nullable="true" MaxLength="100" />
-    <Property Type="String" Name="DockName" Nullable="true" MaxLength="50" />
-    <Property Type="String" Name="Unloadingby" Nullable="true" MaxLength="25" />
-    <Property Type="String" Name="ProductName" Nullable="true" MaxLength="50" />
-    <Property Type="String" Name="BrandName" Nullable="true" MaxLength="50" />
-    <Property Type="String" Name="ItemsInPacket" Nullable="true" MaxLength="50" />
-    <Property Type="String" Name="ReceiptNo" Nullable="true" MaxLength="15" />
-  </ComplexType>
   <ComplexType Name="Order_Select_Result">
     <Property Type="DateTime" Name="Date" Nullable="true" Precision="23" />
     <Property Type="String" Name="User" Nullable="true" MaxLength="100" />
@@ -9301,5 +9288,18 @@
     <Property Type="String" Name="ReferredBy" Nullable="true" MaxLength="200" />
     <Property Type="String" Name="GSTStateCode" Nullable="true" MaxLength="50" />
     <Property Type="Int32" Name="RateID" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="LotSearch_List_Result">
+    <Property Type="String" Name="CustomerName" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="CustomerAddress" Nullable="true" MaxLength="1001" />
+    <Property Type="String" Name="WareHouseName" Nullable="true" MaxLength="50" />
+    <Property Type="DateTime" Name="InwardDate" Nullable="true" />
+    <Property Type="String" Name="ContactPerson" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="DockName" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Unloadingby" Nullable="true" MaxLength="25" />
+    <Property Type="String" Name="ProductName" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="BrandName" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="ItemsInPacket" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="ReceiptNo" Nullable="true" MaxLength="15" />
   </ComplexType>
 </Schema>

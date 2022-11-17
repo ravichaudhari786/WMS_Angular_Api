@@ -107,7 +107,7 @@ namespace WMS_WebAPI.Controllers
 
 
 
-        [HttpGet]
+        [HttpPost]
         [Route("CustomerContact_Select")]
         public IHttpActionResult CustomerContact_Select(cls_CustomerUsers obj)
         {
@@ -130,7 +130,7 @@ namespace WMS_WebAPI.Controllers
         }
 
 
-        [HttpGet]
+        [HttpPost]
         [Route("CustomerDocument_Select")]
         public IHttpActionResult CustomerDocument_Select(cls_CustomerUsers obj)
         {

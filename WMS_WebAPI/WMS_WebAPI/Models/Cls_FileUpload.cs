@@ -17,6 +17,7 @@ namespace WMS_WebAPI.Models
             string path = System.Configuration.ConfigurationManager.AppSettings["FileUploadPath"].ToString() + obj.name;
             File.WriteAllBytes(path, imageBytes);
             //return true;
+            path = System.Configuration.ConfigurationManager.AppSettings["GetUploadFilePath"].ToString() + obj.name;
             return path;
         }
 

@@ -19,11 +19,33 @@ namespace WMS_WebAPI.Controllers
         {
             try
             {
-                var data = _context.LotSearch_List(obj.lotNo,obj.wareHouseID).ToList();
-                if (data == null)
+                //var data = _context.LotSearch_List(obj.lotNo,obj.wareHouseID).ToList();
+                //if (data == null)
+                //{
+                //    return NotFound();
+                //}
+                //return Ok(data);
+                DataSet ds = new DataSet();
+                using (SqlConnection connection = new SqlConnection(connectionstring))
                 {
-                    return NotFound();
+                    using (SqlCommand command = new SqlCommand("LotSearch_List", connection))
+                    {
+                        command.CommandType = System.Data.CommandType.StoredProcedure;
+                        SqlParameter[] param = new SqlParameter[2];
+                        param[0] = new SqlParameter("@LotNo", obj.lotNo);
+                        param[1] = new SqlParameter("@WareHouseID", obj.wareHouseID);
+                        command.Parameters.AddRange(param);
+                        connection.Open();
+                        using (SqlDataAdapter da = new SqlDataAdapter(command))
+                        {
+                            da.Fill(ds);
+
+                        }
+
+                        connection.Close();
+                    }
                 }
+                var data = ds;
                 return Ok(data);
             }
             catch (System.Exception)

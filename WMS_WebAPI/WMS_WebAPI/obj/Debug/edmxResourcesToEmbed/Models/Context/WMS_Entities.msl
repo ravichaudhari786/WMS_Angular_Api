@@ -5820,23 +5820,6 @@
         </ComplexTypeMapping>
       </ResultMapping>
     </FunctionImportMapping>
-    <FunctionImportMapping FunctionImportName="LotSearch_List" FunctionName="WMS_EntitiesModel.Store.LotSearch_List">
-      <ResultMapping>
-        <ComplexTypeMapping TypeName="WMS_EntitiesModel.LotSearch_List_Result">
-          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
-          <ScalarProperty Name="CustomerAddress" ColumnName="CustomerAddress" />
-          <ScalarProperty Name="WareHouseName" ColumnName="WareHouseName" />
-          <ScalarProperty Name="InwardDate" ColumnName="InwardDate" />
-          <ScalarProperty Name="ContactPerson" ColumnName="ContactPerson" />
-          <ScalarProperty Name="DockName" ColumnName="DockName" />
-          <ScalarProperty Name="Unloadingby" ColumnName="Unloadingby" />
-          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
-          <ScalarProperty Name="BrandName" ColumnName="BrandName" />
-          <ScalarProperty Name="ItemsInPacket" ColumnName="ItemsInPacket" />
-          <ScalarProperty Name="ReceiptNo" ColumnName="ReceiptNo" />
-        </ComplexTypeMapping>
-      </ResultMapping>
-    </FunctionImportMapping>
     <FunctionImportMapping FunctionImportName="Order_Select" FunctionName="WMS_EntitiesModel.Store.Order_Select">
       <ResultMapping>
         <ComplexTypeMapping TypeName="WMS_EntitiesModel.Order_Select_Result">
@@ -7567,6 +7550,23 @@
           <ScalarProperty Name="ReferredBy" ColumnName="ReferredBy" />
           <ScalarProperty Name="GSTStateCode" ColumnName="GSTStateCode" />
           <ScalarProperty Name="RateID" ColumnName="RateID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="LotSearch_List" FunctionName="WMS_EntitiesModel.Store.LotSearch_List">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WMS_EntitiesModel.LotSearch_List_Result">
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="CustomerAddress" ColumnName="CustomerAddress" />
+          <ScalarProperty Name="WareHouseName" ColumnName="WareHouseName" />
+          <ScalarProperty Name="InwardDate" ColumnName="InwardDate" />
+          <ScalarProperty Name="ContactPerson" ColumnName="ContactPerson" />
+          <ScalarProperty Name="DockName" ColumnName="DockName" />
+          <ScalarProperty Name="Unloadingby" ColumnName="Unloadingby" />
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="BrandName" ColumnName="BrandName" />
+          <ScalarProperty Name="ItemsInPacket" ColumnName="ItemsInPacket" />
+          <ScalarProperty Name="ReceiptNo" ColumnName="ReceiptNo" />
         </ComplexTypeMapping>
       </ResultMapping>
     </FunctionImportMapping>

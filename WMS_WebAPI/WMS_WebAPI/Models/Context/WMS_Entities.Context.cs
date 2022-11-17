@@ -4717,19 +4717,6 @@ namespace WMS_WebAPI.Models.Context
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<LabourContractors_Select_Result>("LabourContractors_Select");
         }
     
-        public virtual ObjectResult<LotSearch_List_Result> LotSearch_List(string lotNo, Nullable<int> wareHouseID)
-        {
-            var lotNoParameter = lotNo != null ?
-                new ObjectParameter("LotNo", lotNo) :
-                new ObjectParameter("LotNo", typeof(string));
-    
-            var wareHouseIDParameter = wareHouseID.HasValue ?
-                new ObjectParameter("WareHouseID", wareHouseID) :
-                new ObjectParameter("WareHouseID", typeof(int));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<LotSearch_List_Result>("LotSearch_List", lotNoParameter, wareHouseIDParameter);
-        }
-    
         public virtual ObjectResult<Order_Select_Result> Order_Select()
         {
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Order_Select_Result>("Order_Select");
@@ -9405,6 +9392,19 @@ namespace WMS_WebAPI.Models.Context
         public virtual ObjectResult<Customer_Select_Result> Customer_Select()
         {
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Customer_Select_Result>("Customer_Select");
+        }
+    
+        public virtual ObjectResult<LotSearch_List_Result> LotSearch_List(string lotNo, Nullable<int> wareHouseID)
+        {
+            var lotNoParameter = lotNo != null ?
+                new ObjectParameter("LotNo", lotNo) :
+                new ObjectParameter("LotNo", typeof(string));
+    
+            var wareHouseIDParameter = wareHouseID.HasValue ?
+                new ObjectParameter("WareHouseID", wareHouseID) :
+                new ObjectParameter("WareHouseID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<LotSearch_List_Result>("LotSearch_List", lotNoParameter, wareHouseIDParameter);
         }
     }
 }
