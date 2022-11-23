@@ -56,6 +56,26 @@ namespace WMS_WebAPI.Controllers
             }
             return Ok(data);
         }
+        [HttpGet]
+        [Route("Service_List")]
+        public IHttpActionResult GetService_List()
+        {
+            try
+            {
+                var data = _context.Services.ToList();
+                if (data == null)
+                {
+                    return NotFound();
+                }
+                return Ok(data);
+            }
+            catch (System.Exception)
+            {
+
+                return BadRequest();
+            }
+
+        }
 
     }
 }
