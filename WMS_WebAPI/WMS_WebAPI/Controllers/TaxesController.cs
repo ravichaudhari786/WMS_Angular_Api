@@ -79,5 +79,26 @@ namespace WMS_WebAPI.Controllers
             }
 
         }
+        [HttpGet]
+        [Route("api/Taxes/TaxList")]
+        public IHttpActionResult TaxList()
+        {
+            try
+            {
+                var data = _context.TaxMasters.ToList();
+                if (data == null)
+                {
+                    return NotFound();
+                }
+                return Ok(data);
+            }
+            catch (System.Exception)
+            {
+
+                return BadRequest();
+            }
+
+        }
+
     }
 }
