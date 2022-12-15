@@ -34,6 +34,26 @@ namespace WMS_WebAPI.Controllers
             }
 
         }
-       
+        [HttpPost]
+        [Route("api/OutWard_Update/OutwardUpdate_Search")]
+        public IHttpActionResult GetOutwardByOutwardNo(OutWardUpdateSearch obj)
+        {
+            try
+            {
+                var data = _context.GetOutwardByOutwardNo(obj.CustomerID,obj.OutWardNo).ToList();
+                if (data == null)
+                {
+                    return NotFound();
+                }
+                return Ok(data);
+            }
+            catch (System.Exception)
+            {
+
+                return BadRequest();
+            }
+
+        }
+
     }
 }

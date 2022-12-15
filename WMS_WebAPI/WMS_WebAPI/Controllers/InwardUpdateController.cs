@@ -34,5 +34,37 @@ namespace WMS_WebAPI.Controllers
             }
 
         }
+        [HttpPost]
+        [Route("api/InwardUpdate/GetInwardByLotNo")]
+        public IHttpActionResult GetInwardByLotNo(cls_GetInwardByLotNo obj)
+        {
+            try
+            {
+                DataSet ds = new DataSet();
+                using (SqlConnection connection = new SqlConnection(connectionstring))
+                {
+                    using (SqlCommand command = new SqlCommand("GetInwardByLotNo", connection))
+                    {
+                        command.CommandType = System.Data.CommandType.StoredProcedure;
+                        SqlParameter[] param = new SqlParameter[2];
+                        param[0] = new SqlParameter("@LotNo", obj.LotNo);
+                        param[1] = new SqlParameter("@WarehouseID", obj.WarehouseID);
+
+                        command.Parameters.AddRange(param);
+                        connection.Open();
+                        using (SqlDataAdapter da = new SqlDataAdapter(command))
+                        {
+                            da.Fill(ds);
+                        }
+                        connection.Close();
+                    }
+                }
+                return Ok(ds);
+            }
+            catch (System.Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
     }
 }

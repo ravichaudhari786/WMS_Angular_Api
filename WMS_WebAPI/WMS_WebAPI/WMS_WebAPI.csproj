@@ -423,6 +423,7 @@
     <Compile Include="Models\cls_FinancialYears.cs" />
     <Compile Include="Models\cls_GenerateReport.cs" />
     <Compile Include="Models\Cls_GetDeliveryOrderByID.cs" />
+    <Compile Include="Models\cls_GetInwardByLotNo.cs" />
     <Compile Include="Models\cls_GstStateCode.cs" />
     <Compile Include="Models\cls_Inward.cs" />
     <Compile Include="Models\cls_InwardUpdate.cs" />
@@ -1980,6 +1981,7 @@
     <Compile Include="Models\OutwardChargesModel.cs" />
     <Compile Include="Models\OutwardDetailModel.cs" />
     <Compile Include="Models\OutwardSaveModel.cs" />
+    <Compile Include="Models\OutWardUpdateSearch.cs" />
     <Compile Include="Models\ShiftingChargesModel.cs" />
     <Compile Include="Models\ShiftingDetailModel.cs" />
     <Compile Include="Models\ShiftingSaveModel.cs" />
