@@ -84,6 +84,7 @@ warning 6002: The table/view 'Demo.dbo._StockRegister' does not have a primary k
     <Property Name="Amount" Type="decimal" Precision="20" Scale="2" />
     <Property Name="PaidAmount" Type="decimal" Precision="20" Scale="2" />
     <Property Name="BalanceAmount" Type="decimal" Precision="20" Scale="2" />
+    <Property Name="TaxAmount" Type="decimal" Precision="20" Scale="2" />
   </EntityType>
   <EntityType Name="BankAccountDetail">
     <Key>
@@ -3697,11 +3698,6 @@ warning 6002: The table/view 'Demo.dbo.Warehouse_view' does not have a primary k
     <Parameter Name="CreatedBy" Type="int" Mode="In" />
   </Function>
   <Function Name="CustomerVerifiedDocuments_List" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
-  <Function Name="CustomerView_GetData" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
-    <Parameter Name="CustomerID" Type="int" Mode="In" />
-    <Parameter Name="WarehouseID" Type="int" Mode="In" />
-    <Parameter Name="LotNo" Type="varchar" Mode="In" />
-  </Function>
   <Function Name="CustomerWarehouseList" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
     <Parameter Name="CustomerID" Type="int" Mode="In" />
   </Function>
@@ -4900,6 +4896,7 @@ warning 6002: The table/view 'Demo.dbo.Warehouse_view' does not have a primary k
     <Parameter Name="ToDate" Type="date" Mode="In" />
     <Parameter Name="AsonDate" Type="date" Mode="In" />
     <Parameter Name="LotNo" Type="varchar" Mode="In" />
+    <Parameter Name="InvoiceTypeID" Type="int" Mode="In" />
   </Function>
   <Function Name="Rep_ExportReceipt" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
     <Parameter Name="ExportID" Type="int" Mode="In" />
@@ -4979,6 +4976,7 @@ warning 6002: The table/view 'Demo.dbo.Warehouse_view' does not have a primary k
     <Parameter Name="ToDate" Type="date" Mode="In" />
     <Parameter Name="AsonDate" Type="date" Mode="In" />
     <Parameter Name="LotNo" Type="varchar" Mode="In" />
+    <Parameter Name="InvoiceTypeID" Type="int" Mode="In" />
   </Function>
   <Function Name="Rep_InwardSend_Email" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
     <Parameter Name="WarehouseID" Type="int" Mode="In" />
@@ -5118,6 +5116,7 @@ warning 6002: The table/view 'Demo.dbo.Warehouse_view' does not have a primary k
     <Parameter Name="ToDate" Type="date" Mode="In" />
     <Parameter Name="AsonDate" Type="date" Mode="In" />
     <Parameter Name="LotNo" Type="varchar" Mode="In" />
+    <Parameter Name="InvoiceTypeID" Type="int" Mode="In" />
   </Function>
   <Function Name="Rep_OutwardSend_Email" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
     <Parameter Name="WarehouseID" Type="int" Mode="In" />
@@ -5143,6 +5142,7 @@ warning 6002: The table/view 'Demo.dbo.Warehouse_view' does not have a primary k
     <Parameter Name="Todate" Type="date" Mode="In" />
     <Parameter Name="AsonDate" Type="date" Mode="In" />
     <Parameter Name="LotNo" Type="varchar" Mode="In" />
+    <Parameter Name="InvoiceTypeID" Type="int" Mode="In" />
   </Function>
   <Function Name="Rep_PendingDOReport" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
     <Parameter Name="ReportID" Type="int" Mode="In" />

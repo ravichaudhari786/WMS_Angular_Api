@@ -27,5 +27,6 @@ namespace WMS_WebAPI.Models.Context
         public Nullable<decimal> Amount { get; set; }
         public Nullable<decimal> PaidAmount { get; set; }
         public Nullable<decimal> BalanceAmount { get; set; }
+        public Nullable<decimal> TaxAmount { get; set; }
     }
 }

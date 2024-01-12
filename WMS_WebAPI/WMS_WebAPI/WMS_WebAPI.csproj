@@ -337,6 +337,7 @@
     <Compile Include="Controllers\DesignationController.cs" />
     <Compile Include="Controllers\DispatchController.cs" />
     <Compile Include="Controllers\DockMasterController.cs" />
+    <Compile Include="Controllers\EditEntriesController.cs" />
     <Compile Include="Controllers\EmailScheduleController.cs" />
     <Compile Include="Controllers\FileUploadController.cs" />
     <Compile Include="Controllers\FinancialYearController.cs" />
@@ -788,9 +789,6 @@
       <DependentUpon>WMS_Entities.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Context\CustomerVerifiedDocuments_List_Result.cs">
-      <DependentUpon>WMS_Entities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Context\CustomerView_GetData_Result.cs">
       <DependentUpon>WMS_Entities.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Context\CustomerWarehouseList_Result.cs">
@@ -1969,8 +1967,13 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>WMS_Entities.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Models\CustomerModel.cs" />
     <Compile Include="Models\DeliveryOrderSaveModel.cs" />
     <Compile Include="Models\DispatchSaveModel.cs" />
+    <Compile Include="Models\EditEntriesData.cs" />
+    <Compile Include="Models\EditEntriesSelecet.cs" />
+    <Compile Include="Models\EditEntries_Save.cs" />
+    <Compile Include="Models\EmailScheduleSave.cs" />
     <Compile Include="Models\InwardChargesModel.cs" />
     <Compile Include="Models\InwardDetailModel.cs" />
     <Compile Include="Models\InwardGetAvailableStorageArea.cs" />

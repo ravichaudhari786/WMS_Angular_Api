@@ -90,6 +90,7 @@
     <Property Name="Amount" Type="Decimal" Precision="20" Scale="2" />
     <Property Name="PaidAmount" Type="Decimal" Precision="20" Scale="2" />
     <Property Name="BalanceAmount" Type="Decimal" Precision="20" Scale="2" />
+    <Property Name="TaxAmount" Type="Decimal" Precision="20" Scale="2" />
   </EntityType>
   <EntityType Name="BankAccountDetail">
     <Key>
@@ -4064,7 +4065,7 @@
     <FunctionImport Name="CustomersWithoutCustomerRate" ReturnType="Collection(WMS_EntitiesModel.CustomersWithoutCustomerRate_Result)">
       <Parameter Name="WareHouseID" Mode="In" Type="Int32" />
     </FunctionImport>
-    <FunctionImport Name="CustomerView_GetData" ReturnType="Collection(WMS_EntitiesModel.CustomerView_GetData_Result)">
+    <FunctionImport Name="CustomerView_GetData">
       <Parameter Name="CustomerID" Mode="In" Type="Int32" />
       <Parameter Name="WarehouseID" Mode="In" Type="Int32" />
       <Parameter Name="LotNo" Mode="In" Type="String" />
@@ -5130,6 +5131,7 @@
       <Parameter Name="ToDate" Mode="In" Type="DateTime" />
       <Parameter Name="AsonDate" Mode="In" Type="DateTime" />
       <Parameter Name="LotNo" Mode="In" Type="String" />
+      <Parameter Name="InvoiceTypeID" Mode="In" Type="Int32" />
     </FunctionImport>
     <FunctionImport Name="Rep_ExportReceipt" ReturnType="Collection(WMS_EntitiesModel.Rep_ExportReceipt_Result)">
       <Parameter Name="ExportID" Mode="In" Type="Int32" />
@@ -5214,6 +5216,7 @@
       <Parameter Name="ToDate" Mode="In" Type="DateTime" />
       <Parameter Name="AsonDate" Mode="In" Type="DateTime" />
       <Parameter Name="LotNo" Mode="In" Type="String" />
+      <Parameter Name="InvoiceTypeID" Mode="In" Type="Int32" />
     </FunctionImport>
     <FunctionImport Name="Rep_InwardSend_Email" ReturnType="Collection(WMS_EntitiesModel.Rep_InwardSend_Email_Result)">
       <Parameter Name="WarehouseID" Mode="In" Type="Int32" />
@@ -5361,6 +5364,7 @@
       <Parameter Name="ToDate" Mode="In" Type="DateTime" />
       <Parameter Name="AsonDate" Mode="In" Type="DateTime" />
       <Parameter Name="LotNo" Mode="In" Type="String" />
+      <Parameter Name="InvoiceTypeID" Mode="In" Type="Int32" />
     </FunctionImport>
     <FunctionImport Name="Rep_OutwardSend_Email" ReturnType="Collection(WMS_EntitiesModel.Rep_OutwardSend_Email_Result)">
       <Parameter Name="WarehouseID" Mode="In" Type="Int32" />
@@ -5386,6 +5390,7 @@
       <Parameter Name="Todate" Mode="In" Type="DateTime" />
       <Parameter Name="AsonDate" Mode="In" Type="DateTime" />
       <Parameter Name="LotNo" Mode="In" Type="String" />
+      <Parameter Name="InvoiceTypeID" Mode="In" Type="Int32" />
     </FunctionImport>
     <FunctionImport Name="Rep_PendingDOReport">
       <Parameter Name="ReportID" Mode="In" Type="Int32" />
@@ -6842,23 +6847,6 @@
   <ComplexType Name="CustomersWithoutCustomerRate_Result">
     <Property Type="Int32" Name="CustomerID" Nullable="false" />
     <Property Type="String" Name="CustomerName" Nullable="true" MaxLength="100" />
-  </ComplexType>
-  <ComplexType Name="CustomerView_GetData_Result">
-    <Property Type="String" Name="InwardDate" Nullable="true" MaxLength="30" />
-    <Property Type="String" Name="ReceiptNo" Nullable="true" MaxLength="15" />
-    <Property Type="String" Name="PersonName" Nullable="true" MaxLength="100" />
-    <Property Type="String" Name="StorageArea" Nullable="true" MaxLength="50" />
-    <Property Type="String" Name="LotNo" Nullable="true" MaxLength="15" />
-    <Property Type="String" Name="FirstLotNo" Nullable="true" MaxLength="15" />
-    <Property Type="String" Name="ProductName" Nullable="true" MaxLength="50" />
-    <Property Type="String" Name="Counts" Nullable="true" MaxLength="50" />
-    <Property Type="String" Name="BrandName" Nullable="true" MaxLength="50" />
-    <Property Type="Decimal" Name="InQuantity" Nullable="true" Precision="10" Scale="2" />
-    <Property Type="Decimal" Name="PendingDO" Nullable="true" Precision="10" Scale="2" />
-    <Property Type="Decimal" Name="OutQuantity" Nullable="true" Precision="10" Scale="2" />
-    <Property Type="Decimal" Name="BalanceQuantity" Nullable="true" Precision="10" Scale="2" />
-    <Property Type="String" Name="TruckNo" Nullable="true" MaxLength="200" />
-    <Property Type="String" Name="ContainerNo" Nullable="true" MaxLength="200" />
   </ComplexType>
   <ComplexType Name="CustomerWarehouseList_Result">
     <Property Type="Int32" Name="CustomerID" Nullable="true" />

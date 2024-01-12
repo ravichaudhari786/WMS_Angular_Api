@@ -39,6 +39,7 @@
     <EntitySetMapping Name="AdditionalServices">
       <EntityTypeMapping TypeName="WMS_EntitiesModel.AdditionalService">
         <MappingFragment StoreEntitySet="AdditionalServices">
+          <ScalarProperty Name="TaxAmount" ColumnName="TaxAmount" />
           <ScalarProperty Name="BalanceAmount" ColumnName="BalanceAmount" />
           <ScalarProperty Name="PaidAmount" ColumnName="PaidAmount" />
           <ScalarProperty Name="Amount" ColumnName="Amount" />
@@ -4054,27 +4055,6 @@
         <ComplexTypeMapping TypeName="WMS_EntitiesModel.CustomersWithoutCustomerRate_Result">
           <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
           <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
-        </ComplexTypeMapping>
-      </ResultMapping>
-    </FunctionImportMapping>
-    <FunctionImportMapping FunctionImportName="CustomerView_GetData" FunctionName="WMS_EntitiesModel.Store.CustomerView_GetData">
-      <ResultMapping>
-        <ComplexTypeMapping TypeName="WMS_EntitiesModel.CustomerView_GetData_Result">
-          <ScalarProperty Name="InwardDate" ColumnName="InwardDate" />
-          <ScalarProperty Name="ReceiptNo" ColumnName="ReceiptNo" />
-          <ScalarProperty Name="PersonName" ColumnName="PersonName" />
-          <ScalarProperty Name="StorageArea" ColumnName="StorageArea" />
-          <ScalarProperty Name="LotNo" ColumnName="LotNo" />
-          <ScalarProperty Name="FirstLotNo" ColumnName="FirstLotNo" />
-          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
-          <ScalarProperty Name="Counts" ColumnName="Counts" />
-          <ScalarProperty Name="BrandName" ColumnName="BrandName" />
-          <ScalarProperty Name="InQuantity" ColumnName="InQuantity" />
-          <ScalarProperty Name="PendingDO" ColumnName="PendingDO" />
-          <ScalarProperty Name="OutQuantity" ColumnName="OutQuantity" />
-          <ScalarProperty Name="BalanceQuantity" ColumnName="BalanceQuantity" />
-          <ScalarProperty Name="TruckNo" ColumnName="TruckNo" />
-          <ScalarProperty Name="ContainerNo" ColumnName="ContainerNo" />
         </ComplexTypeMapping>
       </ResultMapping>
     </FunctionImportMapping>

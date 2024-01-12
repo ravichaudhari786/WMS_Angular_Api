@@ -89,6 +89,7 @@ warning 6002: The table/view 'Demo.dbo._StockRegister' does not have a primary k
           <Property Name="Amount" Type="decimal" Precision="20" Scale="2" />
           <Property Name="PaidAmount" Type="decimal" Precision="20" Scale="2" />
           <Property Name="BalanceAmount" Type="decimal" Precision="20" Scale="2" />
+          <Property Name="TaxAmount" Type="decimal" Precision="20" Scale="2" />
         </EntityType>
         <EntityType Name="BankAccountDetail">
           <Key>
@@ -3704,11 +3705,7 @@ warning 6002: The table/view 'Demo.dbo.Warehouse_view' does not have a primary k
           <Parameter Name="CreatedBy" Type="int" Mode="In" />
         </Function>
         <Function Name="CustomerVerifiedDocuments_List" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
-        <Function Name="CustomerView_GetData" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
-          <Parameter Name="CustomerID" Type="int" Mode="In" />
-          <Parameter Name="WarehouseID" Type="int" Mode="In" />
-          <Parameter Name="LotNo" Type="varchar" Mode="In" />
-        </Function>
+        
         <Function Name="CustomerWarehouseList" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="CustomerID" Type="int" Mode="In" />
         </Function>
@@ -4907,6 +4904,7 @@ warning 6002: The table/view 'Demo.dbo.Warehouse_view' does not have a primary k
           <Parameter Name="ToDate" Type="date" Mode="In" />
           <Parameter Name="AsonDate" Type="date" Mode="In" />
           <Parameter Name="LotNo" Type="varchar" Mode="In" />
+          <Parameter Name="InvoiceTypeID" Type="int" Mode="In" />
         </Function>
         <Function Name="Rep_ExportReceipt" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="ExportID" Type="int" Mode="In" />
@@ -4986,6 +4984,7 @@ warning 6002: The table/view 'Demo.dbo.Warehouse_view' does not have a primary k
           <Parameter Name="ToDate" Type="date" Mode="In" />
           <Parameter Name="AsonDate" Type="date" Mode="In" />
           <Parameter Name="LotNo" Type="varchar" Mode="In" />
+          <Parameter Name="InvoiceTypeID" Type="int" Mode="In" />
         </Function>
         <Function Name="Rep_InwardSend_Email" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="WarehouseID" Type="int" Mode="In" />
@@ -5125,6 +5124,7 @@ warning 6002: The table/view 'Demo.dbo.Warehouse_view' does not have a primary k
           <Parameter Name="ToDate" Type="date" Mode="In" />
           <Parameter Name="AsonDate" Type="date" Mode="In" />
           <Parameter Name="LotNo" Type="varchar" Mode="In" />
+          <Parameter Name="InvoiceTypeID" Type="int" Mode="In" />
         </Function>
         <Function Name="Rep_OutwardSend_Email" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="WarehouseID" Type="int" Mode="In" />
@@ -5150,6 +5150,7 @@ warning 6002: The table/view 'Demo.dbo.Warehouse_view' does not have a primary k
           <Parameter Name="Todate" Type="date" Mode="In" />
           <Parameter Name="AsonDate" Type="date" Mode="In" />
           <Parameter Name="LotNo" Type="varchar" Mode="In" />
+          <Parameter Name="InvoiceTypeID" Type="int" Mode="In" />
         </Function>
         <Function Name="Rep_PendingDOReport" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="ReportID" Type="int" Mode="In" />
@@ -6414,6 +6415,7 @@ warning 6002: The table/view 'Demo.dbo.Warehouse_view' does not have a primary k
           <Property Name="Amount" Type="Decimal" Precision="20" Scale="2" />
           <Property Name="PaidAmount" Type="Decimal" Precision="20" Scale="2" />
           <Property Name="BalanceAmount" Type="Decimal" Precision="20" Scale="2" />
+          <Property Name="TaxAmount" Type="Decimal" Precision="20" Scale="2" />
         </EntityType>
         <EntityType Name="BankAccountDetail">
           <Key>
@@ -10388,7 +10390,7 @@ warning 6002: The table/view 'Demo.dbo.Warehouse_view' does not have a primary k
           <FunctionImport Name="CustomersWithoutCustomerRate" ReturnType="Collection(WMS_EntitiesModel.CustomersWithoutCustomerRate_Result)">
           <Parameter Name="WareHouseID" Mode="In" Type="Int32" />
           </FunctionImport>
-          <FunctionImport Name="CustomerView_GetData" ReturnType="Collection(WMS_EntitiesModel.CustomerView_GetData_Result)">
+          <FunctionImport Name="CustomerView_GetData">
             <Parameter Name="CustomerID" Mode="In" Type="Int32" />
             <Parameter Name="WarehouseID" Mode="In" Type="Int32" />
             <Parameter Name="LotNo" Mode="In" Type="String" />
@@ -11454,6 +11456,7 @@ warning 6002: The table/view 'Demo.dbo.Warehouse_view' does not have a primary k
             <Parameter Name="ToDate" Mode="In" Type="DateTime" />
             <Parameter Name="AsonDate" Mode="In" Type="DateTime" />
             <Parameter Name="LotNo" Mode="In" Type="String" />
+            <Parameter Name="InvoiceTypeID" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="Rep_ExportReceipt" ReturnType="Collection(WMS_EntitiesModel.Rep_ExportReceipt_Result)">
           <Parameter Name="ExportID" Mode="In" Type="Int32" />
@@ -11538,6 +11541,7 @@ warning 6002: The table/view 'Demo.dbo.Warehouse_view' does not have a primary k
             <Parameter Name="ToDate" Mode="In" Type="DateTime" />
             <Parameter Name="AsonDate" Mode="In" Type="DateTime" />
             <Parameter Name="LotNo" Mode="In" Type="String" />
+            <Parameter Name="InvoiceTypeID" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="Rep_InwardSend_Email" ReturnType="Collection(WMS_EntitiesModel.Rep_InwardSend_Email_Result)">
             <Parameter Name="WarehouseID" Mode="In" Type="Int32" />
@@ -11685,6 +11689,7 @@ warning 6002: The table/view 'Demo.dbo.Warehouse_view' does not have a primary k
             <Parameter Name="ToDate" Mode="In" Type="DateTime" />
             <Parameter Name="AsonDate" Mode="In" Type="DateTime" />
             <Parameter Name="LotNo" Mode="In" Type="String" />
+            <Parameter Name="InvoiceTypeID" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="Rep_OutwardSend_Email" ReturnType="Collection(WMS_EntitiesModel.Rep_OutwardSend_Email_Result)">
             <Parameter Name="WarehouseID" Mode="In" Type="Int32" />
@@ -11710,6 +11715,7 @@ warning 6002: The table/view 'Demo.dbo.Warehouse_view' does not have a primary k
             <Parameter Name="Todate" Mode="In" Type="DateTime" />
             <Parameter Name="AsonDate" Mode="In" Type="DateTime" />
             <Parameter Name="LotNo" Mode="In" Type="String" />
+            <Parameter Name="InvoiceTypeID" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="Rep_PendingDOReport">
             <Parameter Name="ReportID" Mode="In" Type="Int32" />
@@ -13168,23 +13174,6 @@ warning 6002: The table/view 'Demo.dbo.Warehouse_view' does not have a primary k
         <ComplexType Name="CustomersWithoutCustomerRate_Result">
           <Property Type="Int32" Name="CustomerID" Nullable="false" />
           <Property Type="String" Name="CustomerName" Nullable="true" MaxLength="100" />
-        </ComplexType>
-        <ComplexType Name="CustomerView_GetData_Result">
-          <Property Type="String" Name="InwardDate" Nullable="true" MaxLength="30" />
-          <Property Type="String" Name="ReceiptNo" Nullable="true" MaxLength="15" />
-          <Property Type="String" Name="PersonName" Nullable="true" MaxLength="100" />
-          <Property Type="String" Name="StorageArea" Nullable="true" MaxLength="50" />
-          <Property Type="String" Name="LotNo" Nullable="true" MaxLength="15" />
-          <Property Type="String" Name="FirstLotNo" Nullable="true" MaxLength="15" />
-          <Property Type="String" Name="ProductName" Nullable="true" MaxLength="50" />
-          <Property Type="String" Name="Counts" Nullable="true" MaxLength="50" />
-          <Property Type="String" Name="BrandName" Nullable="true" MaxLength="50" />
-          <Property Type="Decimal" Name="InQuantity" Nullable="true" Precision="10" Scale="2" />
-          <Property Type="Decimal" Name="PendingDO" Nullable="true" Precision="10" Scale="2" />
-          <Property Type="Decimal" Name="OutQuantity" Nullable="true" Precision="10" Scale="2" />
-          <Property Type="Decimal" Name="BalanceQuantity" Nullable="true" Precision="10" Scale="2" />
-          <Property Type="String" Name="TruckNo" Nullable="true" MaxLength="200" />
-          <Property Type="String" Name="ContainerNo" Nullable="true" MaxLength="200" />
         </ComplexType>
         <ComplexType Name="CustomerWarehouseList_Result">
           <Property Type="Int32" Name="CustomerID" Nullable="true" />
@@ -15672,6 +15661,7 @@ warning 6002: The table/view 'Demo.dbo.Warehouse_view' does not have a primary k
           <EntitySetMapping Name="AdditionalServices">
             <EntityTypeMapping TypeName="WMS_EntitiesModel.AdditionalService">
               <MappingFragment StoreEntitySet="AdditionalServices">
+                <ScalarProperty Name="TaxAmount" ColumnName="TaxAmount" />
                 <ScalarProperty Name="BalanceAmount" ColumnName="BalanceAmount" />
                 <ScalarProperty Name="PaidAmount" ColumnName="PaidAmount" />
                 <ScalarProperty Name="Amount" ColumnName="Amount" />
@@ -19687,27 +19677,6 @@ warning 6002: The table/view 'Demo.dbo.Warehouse_view' does not have a primary k
               <ComplexTypeMapping TypeName="WMS_EntitiesModel.CustomersWithoutCustomerRate_Result">
                 <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
                 <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
-              </ComplexTypeMapping>
-            </ResultMapping>
-          </FunctionImportMapping>
-          <FunctionImportMapping FunctionImportName="CustomerView_GetData" FunctionName="WMS_EntitiesModel.Store.CustomerView_GetData">
-            <ResultMapping>
-              <ComplexTypeMapping TypeName="WMS_EntitiesModel.CustomerView_GetData_Result">
-                <ScalarProperty Name="InwardDate" ColumnName="InwardDate" />
-                <ScalarProperty Name="ReceiptNo" ColumnName="ReceiptNo" />
-                <ScalarProperty Name="PersonName" ColumnName="PersonName" />
-                <ScalarProperty Name="StorageArea" ColumnName="StorageArea" />
-                <ScalarProperty Name="LotNo" ColumnName="LotNo" />
-                <ScalarProperty Name="FirstLotNo" ColumnName="FirstLotNo" />
-                <ScalarProperty Name="ProductName" ColumnName="ProductName" />
-                <ScalarProperty Name="Counts" ColumnName="Counts" />
-                <ScalarProperty Name="BrandName" ColumnName="BrandName" />
-                <ScalarProperty Name="InQuantity" ColumnName="InQuantity" />
-                <ScalarProperty Name="PendingDO" ColumnName="PendingDO" />
-                <ScalarProperty Name="OutQuantity" ColumnName="OutQuantity" />
-                <ScalarProperty Name="BalanceQuantity" ColumnName="BalanceQuantity" />
-                <ScalarProperty Name="TruckNo" ColumnName="TruckNo" />
-                <ScalarProperty Name="ContainerNo" ColumnName="ContainerNo" />
               </ComplexTypeMapping>
             </ResultMapping>
           </FunctionImportMapping>

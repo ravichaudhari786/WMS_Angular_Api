@@ -2255,7 +2255,7 @@ namespace WMS_WebAPI.Models.Context
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<CustomersWithoutCustomerRate_Result>("CustomersWithoutCustomerRate", wareHouseIDParameter);
         }
     
-        public virtual ObjectResult<CustomerView_GetData_Result> CustomerView_GetData(Nullable<int> customerID, Nullable<int> warehouseID, string lotNo)
+        public virtual int CustomerView_GetData(Nullable<int> customerID, Nullable<int> warehouseID, string lotNo)
         {
             var customerIDParameter = customerID.HasValue ?
                 new ObjectParameter("CustomerID", customerID) :
@@ -2269,7 +2269,7 @@ namespace WMS_WebAPI.Models.Context
                 new ObjectParameter("LotNo", lotNo) :
                 new ObjectParameter("LotNo", typeof(string));
     
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<CustomerView_GetData_Result>("CustomerView_GetData", customerIDParameter, warehouseIDParameter, lotNoParameter);
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("CustomerView_GetData", customerIDParameter, warehouseIDParameter, lotNoParameter);
         }
     
         public virtual ObjectResult<CustomerWarehouseList_Result> CustomerWarehouseList(Nullable<int> customerID)
@@ -5999,7 +5999,7 @@ namespace WMS_WebAPI.Models.Context
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Rep_Dispatch_Result>("Rep_Dispatch", dispatchIDParameter);
         }
     
-        public virtual int Rep_EmailNotificationReport(Nullable<int> reportID, Nullable<int> warehouseID, Nullable<System.DateTime> fromDate, Nullable<System.DateTime> toDate, Nullable<System.DateTime> asonDate, string lotNo)
+        public virtual int Rep_EmailNotificationReport(Nullable<int> reportID, Nullable<int> warehouseID, Nullable<System.DateTime> fromDate, Nullable<System.DateTime> toDate, Nullable<System.DateTime> asonDate, string lotNo, Nullable<int> invoiceTypeID)
         {
             var reportIDParameter = reportID.HasValue ?
                 new ObjectParameter("ReportID", reportID) :
@@ -6025,7 +6025,11 @@ namespace WMS_WebAPI.Models.Context
                 new ObjectParameter("LotNo", lotNo) :
                 new ObjectParameter("LotNo", typeof(string));
     
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("Rep_EmailNotificationReport", reportIDParameter, warehouseIDParameter, fromDateParameter, toDateParameter, asonDateParameter, lotNoParameter);
+            var invoiceTypeIDParameter = invoiceTypeID.HasValue ?
+                new ObjectParameter("InvoiceTypeID", invoiceTypeID) :
+                new ObjectParameter("InvoiceTypeID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("Rep_EmailNotificationReport", reportIDParameter, warehouseIDParameter, fromDateParameter, toDateParameter, asonDateParameter, lotNoParameter, invoiceTypeIDParameter);
         }
     
         public virtual ObjectResult<Rep_ExportReceipt_Result> Rep_ExportReceipt(Nullable<int> exportID)
@@ -6290,7 +6294,7 @@ namespace WMS_WebAPI.Models.Context
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("Rep_InwardReports", reportIDParameter, warehouseIDParameter, fromDateParameter, toDateParameter, asonDateParameter, lotNoParameter, invoiceTypeIDParameter);
         }
     
-        public virtual int Rep_InwardReports_Email(Nullable<int> reportID, Nullable<int> warehouseID, Nullable<System.DateTime> fromDate, Nullable<System.DateTime> toDate, Nullable<System.DateTime> asonDate, string lotNo)
+        public virtual int Rep_InwardReports_Email(Nullable<int> reportID, Nullable<int> warehouseID, Nullable<System.DateTime> fromDate, Nullable<System.DateTime> toDate, Nullable<System.DateTime> asonDate, string lotNo, Nullable<int> invoiceTypeID)
         {
             var reportIDParameter = reportID.HasValue ?
                 new ObjectParameter("ReportID", reportID) :
@@ -6316,7 +6320,11 @@ namespace WMS_WebAPI.Models.Context
                 new ObjectParameter("LotNo", lotNo) :
                 new ObjectParameter("LotNo", typeof(string));
     
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("Rep_InwardReports_Email", reportIDParameter, warehouseIDParameter, fromDateParameter, toDateParameter, asonDateParameter, lotNoParameter);
+            var invoiceTypeIDParameter = invoiceTypeID.HasValue ?
+                new ObjectParameter("InvoiceTypeID", invoiceTypeID) :
+                new ObjectParameter("InvoiceTypeID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("Rep_InwardReports_Email", reportIDParameter, warehouseIDParameter, fromDateParameter, toDateParameter, asonDateParameter, lotNoParameter, invoiceTypeIDParameter);
         }
     
         public virtual ObjectResult<Rep_InwardSend_Email_Result> Rep_InwardSend_Email(Nullable<int> warehouseID, Nullable<int> customerID)
@@ -6818,7 +6826,7 @@ namespace WMS_WebAPI.Models.Context
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("Rep_OutwardRegister", reportIDParameter, warehouseIDParameter, fromDateParameter, toDateParameter, asonDateParameter, lotNoParameter);
         }
     
-        public virtual int Rep_OutwardRegister_Email(Nullable<int> reportID, Nullable<int> warehouseID, Nullable<System.DateTime> fromDate, Nullable<System.DateTime> toDate, Nullable<System.DateTime> asonDate, string lotNo)
+        public virtual int Rep_OutwardRegister_Email(Nullable<int> reportID, Nullable<int> warehouseID, Nullable<System.DateTime> fromDate, Nullable<System.DateTime> toDate, Nullable<System.DateTime> asonDate, string lotNo, Nullable<int> invoiceTypeID)
         {
             var reportIDParameter = reportID.HasValue ?
                 new ObjectParameter("ReportID", reportID) :
@@ -6844,7 +6852,11 @@ namespace WMS_WebAPI.Models.Context
                 new ObjectParameter("LotNo", lotNo) :
                 new ObjectParameter("LotNo", typeof(string));
     
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("Rep_OutwardRegister_Email", reportIDParameter, warehouseIDParameter, fromDateParameter, toDateParameter, asonDateParameter, lotNoParameter);
+            var invoiceTypeIDParameter = invoiceTypeID.HasValue ?
+                new ObjectParameter("InvoiceTypeID", invoiceTypeID) :
+                new ObjectParameter("InvoiceTypeID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("Rep_OutwardRegister_Email", reportIDParameter, warehouseIDParameter, fromDateParameter, toDateParameter, asonDateParameter, lotNoParameter, invoiceTypeIDParameter);
         }
     
         public virtual ObjectResult<Rep_OutwardSend_Email_Result> Rep_OutwardSend_Email(Nullable<int> warehouseID, Nullable<int> customerID)
@@ -6906,7 +6918,7 @@ namespace WMS_WebAPI.Models.Context
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Rep_PaymentReceiptReport_Result>("Rep_PaymentReceiptReport", receiptIDParameter, warehouseIDParameter);
         }
     
-        public virtual int Rep_PendingDO_Email(Nullable<int> reportID, Nullable<int> warehouseID, Nullable<System.DateTime> fromdate, Nullable<System.DateTime> todate, Nullable<System.DateTime> asonDate, string lotNo)
+        public virtual int Rep_PendingDO_Email(Nullable<int> reportID, Nullable<int> warehouseID, Nullable<System.DateTime> fromdate, Nullable<System.DateTime> todate, Nullable<System.DateTime> asonDate, string lotNo, Nullable<int> invoiceTypeID)
         {
             var reportIDParameter = reportID.HasValue ?
                 new ObjectParameter("ReportID", reportID) :
@@ -6932,7 +6944,11 @@ namespace WMS_WebAPI.Models.Context
                 new ObjectParameter("LotNo", lotNo) :
                 new ObjectParameter("LotNo", typeof(string));
     
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("Rep_PendingDO_Email", reportIDParameter, warehouseIDParameter, fromdateParameter, todateParameter, asonDateParameter, lotNoParameter);
+            var invoiceTypeIDParameter = invoiceTypeID.HasValue ?
+                new ObjectParameter("InvoiceTypeID", invoiceTypeID) :
+                new ObjectParameter("InvoiceTypeID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("Rep_PendingDO_Email", reportIDParameter, warehouseIDParameter, fromdateParameter, todateParameter, asonDateParameter, lotNoParameter, invoiceTypeIDParameter);
         }
     
         public virtual int Rep_PendingDOReport(Nullable<int> reportID, Nullable<int> warehouseID, Nullable<System.DateTime> fromdate, Nullable<System.DateTime> todate, Nullable<System.DateTime> asonDate, string lotNo)
