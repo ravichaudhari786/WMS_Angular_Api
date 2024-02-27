@@ -14,17 +14,8 @@ namespace WMS_WebAPI.Models.Context
     
     public partial class ReceiptTypeMaster
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public ReceiptTypeMaster()
-        {
-            this.Receipts = new HashSet<Receipt>();
-        }
-    
         public int ReceiptTypeID { get; set; }
         public string ReceiptType { get; set; }
         public Nullable<bool> IsActive { get; set; }
-    
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Receipt> Receipts { get; set; }
     }
 }

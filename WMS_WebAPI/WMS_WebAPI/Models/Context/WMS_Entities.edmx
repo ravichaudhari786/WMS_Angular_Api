@@ -8154,7 +8154,6 @@ warning 6002: The table/view 'Demo.dbo.Warehouse_view' does not have a primary k
           <Property Name="ReceiptTypeID" Type="Int32" Nullable="false" />
           <Property Name="ReceiptType" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="IsActive" Type="Boolean" />
-          <NavigationProperty Name="Receipts" Relationship="Self.FK_Receipt_ReceiptTypeMaster" FromRole="ReceiptTypeMaster" ToRole="Receipt" />
         </EntityType>
         <EntityType Name="Remark">
           <Key>

@@ -54,5 +54,27 @@ namespace WMS_WebAPI.Controllers
             }
 
         }
+        [HttpGet]
+        [Route("api/Remarks/ProcessList")]
+        public IHttpActionResult ProcessList()
+        {
+            try
+            {
+                var data = _context.GetProcess().ToList();
+                if (data == null)
+                {
+                    return NotFound();
+                }
+                return Ok(data);
+            }
+            catch (System.Exception)
+            {
+                return BadRequest();
+            }
+
+        }
+
+
+
     }
 }

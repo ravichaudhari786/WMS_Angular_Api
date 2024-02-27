@@ -64,21 +64,40 @@ namespace WMS_WebAPI.Controllers
 
         }
 
-        [HttpPost]
+        [HttpGet]
         [Route("api/Receipt/GetPaymentReceiptList")]
-        public IHttpActionResult GetPaymentReceiptList(Cls_Receipt obj)
+        public IHttpActionResult GetPaymentReceiptList(int WarehouseID)
         {
             try
             {
-                var data = _context.GetPaymentReceiptList(obj.WarehouseID).ToList();
-                if (data == null)
+                //var data = _context.GetPaymentReceiptList(WarehouseID).ToList();
+                //if (data == null)
+                //{
+                //    return NotFound();
+                //}
+                //return Ok(data);
+                DataSet ds = new DataSet();
+                using (SqlConnection connection = new SqlConnection(connectionstring))
                 {
-                    return NotFound();
-                }
+                    using (SqlCommand command = new SqlCommand("GetPaymentReceiptList", connection))
+                    {
 
-                return Ok(data);
+                        command.CommandType = System.Data.CommandType.StoredProcedure;
+                        SqlParameter[] param = new SqlParameter[1];
+                        param[0] = new SqlParameter("@WarehouseID", Convert.ToInt32(WarehouseID));
+                        
+                        command.Parameters.AddRange(param);
+                        connection.Open();
+                        using (SqlDataAdapter da = new SqlDataAdapter(command))
+                        {
+                            da.Fill(ds);
+                        }
+                        connection.Close();
+                    }
+                    return Ok(ds.Tables[0]);
+                }
             }
-            catch (System.Exception)
+            catch (System.Exception ex)
             {
 
                 return BadRequest();
@@ -97,7 +116,6 @@ namespace WMS_WebAPI.Controllers
                 {
                     return NotFound();
                 }
-
                 return Ok(data);
             }
             catch (System.Exception)
@@ -135,17 +153,35 @@ namespace WMS_WebAPI.Controllers
         {
             try
             {
-                var data = _context.Receipt_Detail_Edit(obj.ReceiptID,obj.WarehouseID,obj.ReceiptTypeID).ToList();
-                if (data == null)
+                //var data = _context.Receipt_Detail_Edit(obj.ReceiptID,obj.WarehouseID,obj.ReceiptTypeID).ToList();
+                //if (data == null)
+                //{
+                //    return NotFound();
+                //}
+                //return Ok(data);
+                DataSet ds = new DataSet();
+                using (SqlConnection connection = new SqlConnection(connectionstring))
                 {
-                    return NotFound();
+                    using (SqlCommand command = new SqlCommand("Receipt_Detail_Edit", connection))
+                    {
+                        command.CommandType = System.Data.CommandType.StoredProcedure;
+                        SqlParameter[] param = new SqlParameter[3];
+                        param[0] = new SqlParameter("@WarehouseID", obj.WarehouseID);
+                        param[1] = new SqlParameter("@ReceiptID", obj.ReceiptID);
+                        param[2] = new SqlParameter("@ReceiptTypeID", obj.ReceiptTypeID);
+                        command.Parameters.AddRange(param);
+                        connection.Open();
+                        using (SqlDataAdapter da = new SqlDataAdapter(command))
+                        {
+                            da.Fill(ds);
+                        }
+                        connection.Close();
+                    }
                 }
-
-                return Ok(data);
+                return Ok(ds);
             }
             catch (System.Exception)
             {
-
                 return BadRequest();
             }
         }
@@ -157,7 +193,61 @@ namespace WMS_WebAPI.Controllers
         {
             try
             {
-                var data = _context.Receipt_SelectInvoice(obj.customerID, obj.WarehouseID, obj.ReceiptTypeID).ToList();
+                DataSet ds = new DataSet();
+                using (SqlConnection connection = new SqlConnection(connectionstring))
+                {
+                    using (SqlCommand command = new SqlCommand("Receipt_SelectInvoice", connection))
+                    {
+                        command.CommandType = System.Data.CommandType.StoredProcedure;
+                        SqlParameter[] param = new SqlParameter[3];
+                        param[0] = new SqlParameter("@WarehouseID", obj.WarehouseID);
+                        param[1] = new SqlParameter("@CustomerID", obj.customerID);
+                        param[2] = new SqlParameter("@ReceiptType", obj.ReceiptTypeID);
+                        command.Parameters.AddRange(param);
+                        connection.Open();
+                        using (SqlDataAdapter da = new SqlDataAdapter(command))
+                        {
+                            da.Fill(ds);
+                        }
+                        connection.Close();
+                    }
+                }
+
+                return Ok(ds.Tables[0]);
+            }
+            catch (System.Exception ex)
+            {
+                string str = ex.Message;
+                return BadRequest();
+            }
+        }
+
+        
+        [HttpGet]
+        [Route("api/Receipt/ReceiptTypeMasters")]
+        public IHttpActionResult ReceiptTypeMasters()
+        {
+            try
+            {
+                var data = _context.ReceiptTypeMasters.ToList();
+                if (data == null)
+                {
+                    return NotFound();
+                }
+                return Ok(data);
+            }
+            catch (System.Exception)
+            {
+                return BadRequest();
+            }
+        }
+        [HttpGet]
+        [Route("api/Receipt/PaymentModes")]
+        public IHttpActionResult PaymentModes(Cls_Receipt obj)
+        {
+            try
+            {
+                var data = _context.View_PaymentModes.ToList();
                 if (data == null)
                 {
                     return NotFound();
@@ -171,8 +261,6 @@ namespace WMS_WebAPI.Controllers
                 return BadRequest();
             }
         }
-
-
 
     }
 }

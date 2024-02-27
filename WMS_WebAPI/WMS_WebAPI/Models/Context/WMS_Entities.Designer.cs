@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'E:\Ravi\Project\Development\Angular\Dharmendra_Wms_Api\WMS_Angular_Api\WMS_WebAPI\WMS_WebAPI\Models\Context\WMS_Entities.edmx'. 
+﻿// T4 code generation is enabled for model 'E:\Ravi\Project\Development\Angular\WMS_ANGULAR_API\WMS_Angular_Api\WMS_WebAPI\WMS_WebAPI\Models\Context\WMS_Entities.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.
