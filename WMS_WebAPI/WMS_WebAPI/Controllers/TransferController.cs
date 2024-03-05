@@ -1,6 +1,8 @@
-﻿using System;
+﻿using DevExpress.XtraReports.UI;
+using System;
 using System.Data;
 using System.Data.SqlClient;
+using System.IO;
 using System.Linq;
 using System.Web.Http;
 using WMS_WebAPI.Models;
@@ -150,8 +152,72 @@ namespace WMS_WebAPI.Controllers
 
                 return BadRequest();
             }
-
         }
+        [HttpGet]
+        [Route("api/Transfer/TransferReceipt")]
+        public IHttpActionResult TransferReceipt(int TransferID)
+        {
+            try
+            {
+                DataTable dtReports = new DataTable();
+                DataSet ds = new DataSet();
+                using (SqlConnection connection = new SqlConnection(connectionstring))
+                {
+                    using (SqlCommand command = new SqlCommand("Rep_TransferReport", connection))
+                    {
+                        command.CommandType = System.Data.CommandType.StoredProcedure;
+                        SqlParameter[] param = new SqlParameter[1];
+                        param[0] = new SqlParameter("@TransferID", TransferID);
+                        command.Parameters.AddRange(param);
+                        connection.Open();
+                        using (SqlDataAdapter da = new SqlDataAdapter(command))
+                        {
+                            da.Fill(ds);
+                            DevExpress.XtraReports.UI.XtraReport report = GetSelectedReport("TransferReport");
+                            if (report != null)
+                            {
+                                report.DataSource = ds.Tables[0];
+                                report.DataMember = ds.Tables[0].TableName;
+
+                                MemoryStream ms = new MemoryStream();
+                                report.ExportToPdf(ms);
+                                byte[] bytes;
+                                bytes = ms.ToArray();
+                                string base64 = Convert.ToBase64String(bytes);
+
+                                dtReports.Columns.AddRange(new DataColumn[1]{
+                                        new DataColumn("Base64Str",typeof(string))
+                                    });
+                                dtReports.Rows.Add(base64);
+                            }
+                        }
+                        connection.Close();
+                    }
+                }
+                return Ok(dtReports);
+            }
+            catch (System.Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+        XtraReport GetSelectedReport(string ReportName1)
+        {
+            if (string.IsNullOrEmpty(ReportName1))
+                return null;
+            SqlConnection con1 = new SqlConnection(connectionstring);
+            string com1 = "Select ReportBuffer from ReportDesigner where ReportName=" + "'" + ReportName1 + "'";
+            SqlDataAdapter adpt1 = new SqlDataAdapter(com1, con1);
+            DataTable dt1 = new DataTable();
+            adpt1.Fill(dt1);
+            byte[] buffer1 = (byte[])dt1.Rows[0][0];
+            using (MemoryStream stream1 = new MemoryStream(buffer1))
+            {
+                return XtraReport.FromStream(stream1, true);
+            }
+        }
+
 
     }
 }

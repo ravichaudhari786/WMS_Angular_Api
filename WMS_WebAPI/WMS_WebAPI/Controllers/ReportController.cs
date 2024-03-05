@@ -13,6 +13,7 @@ using WMS_WebAPI.Models.Context;
 using DevExpress.XtraReports.UI;
 using System.IO;
 using DevExpress.XtraPrinting;
+using System.Text;
 
 
 //using DevExpress.Xpf.WindowsUI;
@@ -343,19 +344,24 @@ namespace WMS_WebAPI.Controllers
                                         report.DataMember = ds.Tables[0].TableName;
 
                                         //string reportPath = @"E:\\Ravi\\RND\\Test.pdf";
-                                        PdfExportOptions pdfOptions = report.ExportOptions.Pdf;
-                                        pdfOptions.ConvertImagesToJpeg = false;
-                                        pdfOptions.ImageQuality = PdfJpegImageQuality.Medium;
-                                        pdfOptions.PdfACompatibility = PdfACompatibility.PdfA3b;
-                                        report.ExportToPdf(reportPath, pdfOptions);
+                                        //PdfExportOptions pdfOptions = report.ExportOptions.pdf;                                        
+                                        //pdfOptions.ConvertImagesToJpeg = false;
+                                        //pdfOptions.ImageQuality = PdfJpegImageQuality.Medium;
+                                        //pdfOptions.PdfACompatibility = PdfACompatibility.PdfA3b;
+                                        //report.ExportToPdf(reportPath, pdfOptions);
+                                        //Byte[] fileBytes = File.ReadAllBytes(reportPath);
+                                        //var content = Convert.ToBase64String(fileBytes);
 
-                                        Byte[] fileBytes = File.ReadAllBytes(reportPath);
-                                        var content = Convert.ToBase64String(fileBytes);
+                                        MemoryStream ms = new MemoryStream();
+                                        report.ExportToPdf(ms);
+                                        byte[] bytes;
+                                        bytes = ms.ToArray();
+                                        string base64 = Convert.ToBase64String(bytes);
+                                        
                                         dtReports.Columns.AddRange(new DataColumn[1]{
                                         new DataColumn("Base64Str",typeof(string))
                                     });
-                                        dtReports.Rows.Add(content);
-
+                                    dtReports.Rows.Add(base64);
                                     }
                                 }
                                 else
@@ -394,5 +400,7 @@ namespace WMS_WebAPI.Controllers
                 return XtraReport.FromStream(stream1, true);
             }
         }
+
+       
     }
 }
