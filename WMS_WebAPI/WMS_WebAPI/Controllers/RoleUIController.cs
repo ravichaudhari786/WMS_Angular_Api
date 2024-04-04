@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
@@ -66,20 +66,50 @@ namespace WMS_WebAPI.Controllers
 
         [HttpPost]
         [Route("api/RoleUI/RoleUI_Select")]
-        public IHttpActionResult RoleUI_Select(cls_RoleUI obj)
+        public IHttpActionResult RoleUI_Select(cls_TD_RoleList obj)
         {
             try
             {
-                var data = _context.RoleUI_Select(obj.RoleID);
-                
+                //var data = _context.RoleUI_Select(obj.RoleID);                
+                //return Ok(data);
+                DataSet dsSelect = new DataSet();
+                using (SqlConnection connection = new SqlConnection(connectionstring))
+                {
+                    using (SqlCommand command = new SqlCommand("RoleUI_Select", connection))
+                    {
+
+                        command.CommandType = System.Data.CommandType.StoredProcedure;
+                        SqlParameter[] param = new SqlParameter[1];
+                        param[0] = new SqlParameter("@RoleID", obj.RoleID);
+                        command.Parameters.AddRange(param);
+                        connection.Open();
+                        using (SqlDataAdapter da = new SqlDataAdapter(command))
+                        {
+                            da.Fill(dsSelect);
+                        }
+                        connection.Close();
+                    }
+                    return Ok(dsSelect);
+                }
+            }
+            catch (System.Exception)
+            {
+                return BadRequest();
+            }
+        }
+        [HttpGet]
+        [Route("api/RoleUI/RolesList")]
+        public IHttpActionResult RolesList()
+        {
+            try
+            {
+                var data = _context.Roles.ToList();
                 return Ok(data);
             }
             catch (System.Exception)
             {
-
                 return BadRequest();
             }
-
         }
 
     }
