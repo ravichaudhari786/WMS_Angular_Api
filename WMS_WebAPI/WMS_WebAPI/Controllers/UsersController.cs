@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
@@ -19,12 +19,34 @@ namespace WMS_WebAPI.Controllers
         {
             try
             {
-                var data = _context.Users_Select().ToList();
-                if (data == null)
+                //var data = _context.Users_Select().ToList();
+                //if (data == null)
+                //{
+                //    return NotFound();
+                //}
+                //return Ok(data);
+                DataSet ds = new DataSet();
+                try
                 {
-                    return NotFound();
+                    using (SqlConnection connection = new SqlConnection(connectionstring))
+                    {
+                        using (SqlCommand command = new SqlCommand("Users_Select", connection))
+                        {
+                            command.CommandType = System.Data.CommandType.StoredProcedure;
+                            connection.Open();
+                            using (SqlDataAdapter da = new SqlDataAdapter(command))
+                            {
+                                da.Fill(ds);
+                            }
+                            connection.Close();
+                        }
+                        return Ok(ds.Tables[0]);
+                    }
                 }
-                return Ok(data);
+                catch (System.Exception ex)
+                {
+                    return BadRequest(ex.Message);
+                }
             }
             catch (System.Exception)
             {
@@ -153,5 +175,39 @@ namespace WMS_WebAPI.Controllers
                 return BadRequest();
             }
         }
+        [HttpGet]
+        [Route("api/Users/Get_UserDetail")]
+        public IHttpActionResult Get_UserDetail(int UserID)
+        {
+            DataSet ds = new DataSet();
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(connectionstring))
+                {
+                    using (SqlCommand command = new SqlCommand("Get_UserDetail", connection))
+                    {
+
+                        command.CommandType = System.Data.CommandType.StoredProcedure;
+                        SqlParameter[] param = new SqlParameter[1];
+                        param[0] = new SqlParameter("@UserID", Convert.ToInt32(UserID));
+                        command.Parameters.AddRange(param);
+                        connection.Open();
+                        using (SqlDataAdapter da = new SqlDataAdapter(command))
+                        {
+                            da.Fill(ds);
+                        }
+                        connection.Close();
+                    }
+                    return Ok(ds.Tables[0]);
+                }
+            }
+            catch (System.Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+
+        }
+
+
     }
 }
