@@ -1,10 +1,13 @@
-﻿using System;
+using System;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Web.Http;
 using WMS_WebAPI.Models;
 using WMS_WebAPI.Models.Context;
+//using Twilio;
+//using Twilio.Rest.Api.V2010.Account;
+//using Twilio.Rest.Api.V2010;
 
 namespace WMS_WebAPI.Controllers
 {
@@ -18,7 +21,6 @@ namespace WMS_WebAPI.Controllers
         [Route("api/UserCompany/UserCompany_Insert")]
         public IHttpActionResult UserCompany_Insert(cls_UserCompany obj)
         {
-
             DataTable dtLTD_UserCompany = new DataTable();
             dtLTD_UserCompany = ConvertDataTable.ConvertToDataTable(obj.LTD_UserCompany);
           
@@ -57,7 +59,33 @@ namespace WMS_WebAPI.Controllers
             }
 
         }
-
+        [HttpGet]
+        [Route("api/UserCompany/UserCompanyList_select")]
+        public IHttpActionResult UserCompanyList_select()
+        {
+            DataSet ds1 = new DataSet();
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(connectionstring))
+                {
+                    using (SqlCommand command = new SqlCommand("UserCompanyList_select", connection))
+                    {
+                        command.CommandType = System.Data.CommandType.StoredProcedure;
+                        connection.Open();
+                        using (SqlDataAdapter da = new SqlDataAdapter(command))
+                        {
+                            da.Fill(ds1);
+                        }
+                        connection.Close();
+                    }
+                    return Ok(ds1.Tables[0]);
+                }
+            }
+            catch (System.Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
 
         [HttpPost]
         [Route("api/UserCompany/UserCompanyWareHouseList_select")]
@@ -77,8 +105,6 @@ namespace WMS_WebAPI.Controllers
 
                 return BadRequest();
             }
-
         }
-
     }
 }
