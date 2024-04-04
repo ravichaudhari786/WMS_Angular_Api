@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -30,5 +30,10 @@ namespace WMS_WebAPI.Models
     {
         public Nullable<int> ReportID { get; set; }
         public Nullable<Boolean> isAssigned { get; set; }
+    }
+    public class cls_TD_RoleList
+    {
+        public Nullable<int> RoleID { get; set; }
+        public Nullable<int> WarehouseID { get; set; }
     }
 }
