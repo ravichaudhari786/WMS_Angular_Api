@@ -35,7 +35,7 @@ namespace WMS_WebAPI.Controllers
 
         }
 
-        [HttpPost]
+        [HttpGet]
         [Route("api/FinancialYear/Finacialyear_Select")]
         public IHttpActionResult Finacialyear_Select()
         {

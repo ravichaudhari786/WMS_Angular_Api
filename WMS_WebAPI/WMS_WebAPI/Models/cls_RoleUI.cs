@@ -23,7 +23,7 @@ namespace WMS_WebAPI.Models
         public Nullable<Boolean> Delete_flg { get; set; }
         public Nullable<Boolean> Print_flg { get; set; }
         public Nullable<Boolean> Export_flg { get; set; }
-       
+
 
     }
     public class cls_TD_RoleReport

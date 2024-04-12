@@ -23,7 +23,7 @@ namespace WMS_WebAPI.Controllers
         {
             DataTable dtLTD_UserCompany = new DataTable();
             dtLTD_UserCompany = ConvertDataTable.ConvertToDataTable(obj.LTD_UserCompany);
-          
+
             DataSet ds = new DataSet();
             try
             {
@@ -38,9 +38,9 @@ namespace WMS_WebAPI.Controllers
 
                         param[1] = new SqlParameter("@UserCompany", dtLTD_UserCompany);
                         param[2] = new SqlParameter("@CreatedBy", Convert.ToInt32(obj.CreatedBy));
-                       
+
                         param[1].SqlDbType = SqlDbType.Structured;
-                      
+
 
                         command.Parameters.AddRange(param);
                         connection.Open();
@@ -93,7 +93,7 @@ namespace WMS_WebAPI.Controllers
         {
             try
             {
-                var data = _context.UserCompanyWareHouseList_select(obj.UserID,obj.CompanyID).ToList();
+                var data = _context.UserCompanyWareHouseList_select(obj.UserID, obj.CompanyID).ToList();
                 if (data == null)
                 {
                     return NotFound();
@@ -105,6 +105,8 @@ namespace WMS_WebAPI.Controllers
 
                 return BadRequest();
             }
+
         }
+
     }
 }

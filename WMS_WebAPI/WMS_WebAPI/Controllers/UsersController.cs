@@ -64,7 +64,7 @@ namespace WMS_WebAPI.Controllers
 
             DataTable dtLcls_TD_Users = new DataTable();
             dtLcls_TD_Users = ConvertDataTable.ConvertToDataTable(obj.Lcls_TD_Users);
-           
+
             DataSet ds = new DataSet();
             try
             {
@@ -81,10 +81,10 @@ namespace WMS_WebAPI.Controllers
                         param[3] = new SqlParameter("@Password", Convert.ToString(obj.Password));
                         param[4] = new SqlParameter("@RoleID", Convert.ToInt32(obj.RoleID));
                         param[5] = new SqlParameter("@UserTypeID", Convert.ToInt32(obj.UserTypeID));
-                        param[6] = new SqlParameter("@CreatedBy", Convert.ToInt32(obj.CreatedBy));                      
+                        param[6] = new SqlParameter("@CreatedBy", Convert.ToInt32(obj.CreatedBy));
                         param[7] = new SqlParameter("@UserCompany", dtLcls_TD_Users);
                         param[7].SqlDbType = SqlDbType.Structured;
-                      
+
 
                         command.Parameters.AddRange(param);
                         connection.Open();

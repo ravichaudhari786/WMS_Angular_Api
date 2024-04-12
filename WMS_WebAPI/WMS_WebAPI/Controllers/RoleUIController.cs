@@ -39,7 +39,7 @@ namespace WMS_WebAPI.Controllers
                         param[2] = new SqlParameter("@TD_RoleReport", dtLTD_RoleReport);
 
                         param[3] = new SqlParameter("@CreatedBy", Convert.ToInt32(obj.CreatedBy));
-                       
+
 
                         param[0].SqlDbType = SqlDbType.Structured;
                         param[2].SqlDbType = SqlDbType.Structured;
