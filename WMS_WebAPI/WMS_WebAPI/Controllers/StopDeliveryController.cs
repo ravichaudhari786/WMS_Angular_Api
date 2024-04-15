@@ -69,7 +69,7 @@ namespace WMS_WebAPI.Controllers
                 }
                 return Ok(data);
             }
-            catch (System.Exception)
+            catch (System.Exception ex)
             {
 
                 return BadRequest();
