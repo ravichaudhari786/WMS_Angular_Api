@@ -63,7 +63,7 @@ namespace WMS_WebAPI.Controllers
         }
 
 
-        [HttpPost]
+        [HttpGet]
         [Route("api/Inward/BindSericeType")]
         public IHttpActionResult BindSericeType()
         {
@@ -257,9 +257,8 @@ namespace WMS_WebAPI.Controllers
                 return BadRequest(ex.Message);
             }
         }
-
-        [Route("api/Inward/GetServiceId")]
-        [HttpGet]
+        [HttpPost]
+        [Route("api/Inward/GetServiceId")]        
         public IHttpActionResult GetServiceId(cls_Inward obj)
         {
             try
