@@ -1,12 +1,19 @@
-﻿using DevExpress.XtraReports.UI;
+﻿//using DevExpress.XtraReports.UI;
+//using DevExpress.XtraPrinting;
+using DevExpress.ReportServer.ServiceModel.DataContracts;
+using DevExpress.XtraPrinting;
+using DevExpress.XtraReports.Services;
+using DevExpress.XtraReports.UI;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.Design;
+//using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.IO;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
+//using System.Linq;
+//using System.Net;
+//using System.Net.Http;
 using System.Web.Http;
 using WMS_WebAPI.Models;
 using WMS_WebAPI.Models.Context;
@@ -236,7 +243,7 @@ namespace WMS_WebAPI.Controllers
                 DataSet ds = new DataSet();
                 using (SqlConnection connection = new SqlConnection(connectionstring))
                 {
-                    using (SqlCommand command = new SqlCommand("Rep_RepackingReport", connection))
+                    using (SqlCommand command = new SqlCommand("Rep_RepackingReport_Angular", connection))
                     {
                         command.CommandType = System.Data.CommandType.StoredProcedure;
                         SqlParameter[] param = new SqlParameter[1];
@@ -246,18 +253,26 @@ namespace WMS_WebAPI.Controllers
                         using (SqlDataAdapter da = new SqlDataAdapter(command))
                         {
                             da.Fill(ds);
-                            DevExpress.XtraReports.UI.XtraReport report = GetSelectedReport("RepackingReport");
-                            if (report != null)
+                            DevExpress.XtraReports.UI.XtraReport report12 = GetSelectedReport("RepackingReport_Angular");
+                            //DevExpress.XtraReports.UI.XtraReport report13 = GetSelectedReport("Subreport");
+                            
+                            if (report12 != null)
                             {
-                                report.DataSource = ds.Tables[0];
-                                report.DataMember = ds.Tables[0].TableName;
+                                //report13.DataSource = ds.Tables[0];
+                                //report13.DataMember = ds.Tables[0].TableName;
+                                //report13.Parameters["RepcID"].Value = ds.Tables[0].Rows[0][0];
+                                report12.DataSource = ds.Tables[0];
+                                report12.DataMember = ds.Tables[0].TableName;
 
-                                MemoryStream ms = new MemoryStream();
-                                report.ExportToPdf(ms);
+
+                                System.IO.MemoryStream ms12 = new System.IO.MemoryStream();
+                                report12.ExportToPdf(ms12);
+                                //report12.ExportToPdf(ms12, new PdfExportOptions() { ShowPrintDialogOnOpen = true });
+                                //DevExpress.XtraReports.UI.ReportPrintTool printTool = new DevExpress.XtraReports.UI.ReportPrintTool(report12);
+                                //printTool.ShowRibbonPreview();
                                 byte[] bytes;
-                                bytes = ms.ToArray();
+                                bytes = ms12.ToArray();
                                 string base64 = Convert.ToBase64String(bytes);
-
                                 dtReports.Columns.AddRange(new DataColumn[1]{
                                         new DataColumn("Base64Str",typeof(string))
                                     });
@@ -271,26 +286,42 @@ namespace WMS_WebAPI.Controllers
             }
             catch (System.Exception ex)
             {
+               
                 return BadRequest(ex.Message);
             }
         }
 
-        XtraReport GetSelectedReport(string ReportName1)
+        //DevExpress.XtraReports.UI.XtraReport GetSelectedReport(string ReportName1)
+        //{
+        //    if (string.IsNullOrEmpty(ReportName1))
+        //        return null;
+        //    SqlConnection con1 = new SqlConnection(connectionstring);
+        //    string com1 = "Select ReportBuffer from ReportDesigner where ReportName=" + "'" + ReportName1 + "'";
+        //    SqlDataAdapter adpt1 = new SqlDataAdapter(com1, con1);
+        //    DataTable dt1 = new DataTable();
+        //    adpt1.Fill(dt1);
+        //    byte[] buffer12 = (byte[])dt1.Rows[0][0];
+        //    using (MemoryStream stream12 = new MemoryStream(buffer12))
+        //    {
+        //        return DevExpress.XtraReports.UI.XtraReport.FromStream(stream12, true);
+        //    }
+        //}
+        DevExpress.XtraReports.UI.XtraReport GetSelectedReport(string ReportName)
         {
-            if (string.IsNullOrEmpty(ReportName1))
+            if (string.IsNullOrEmpty(ReportName))
                 return null;
-            SqlConnection con1 = new SqlConnection(connectionstring);
-            string com1 = "Select ReportBuffer from ReportDesigner where ReportName=" + "'" + ReportName1 + "'";
-            SqlDataAdapter adpt1 = new SqlDataAdapter(com1, con1);
+
+            SqlConnection con = new SqlConnection(connectionstring);
+            string com = "Select ReportBuffer from ReportDesigner where ReportName=" + "'" + ReportName + "'";
+            SqlDataAdapter adpt = new SqlDataAdapter(com, con);
             DataTable dt1 = new DataTable();
-            adpt1.Fill(dt1);
-            byte[] buffer1 = (byte[])dt1.Rows[0][0];
-            using (MemoryStream stream1 = new MemoryStream(buffer1))
+            adpt.Fill(dt1);
+            byte[] buffer = (byte[])dt1.Rows[0][0];
+            using (MemoryStream stream = new MemoryStream(buffer))
             {
-                return XtraReport.FromStream(stream1, true);
+                return DevExpress.XtraReports.UI.XtraReport.FromStream(stream, true);
             }
         }
-
-
+        
     }
 }
