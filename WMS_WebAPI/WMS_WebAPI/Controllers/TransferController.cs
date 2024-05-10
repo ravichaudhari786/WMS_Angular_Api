@@ -14,23 +14,57 @@ namespace WMS_WebAPI.Controllers
     {
 
         WMS_Entities _context = new WMS_Entities();
-        CommanListToDataTableConverter ConvertDataTable = new CommanListToDataTableConverter();
+        CommanListToDataTableConverter CommanListToDataTableConverter = new CommanListToDataTableConverter();
         string connectionstring = System.Configuration.ConfigurationManager.ConnectionStrings["ConStr"].ConnectionString;
+
         [HttpPost]
         [Route("api/Transfer/Transfer_Insert")]
-        public IHttpActionResult Transfer_Insert(cls_Transfer obj)
+        public IHttpActionResult Transfer_Insert([FromBody] TransferSaveModel obj)
         {
             try
             {
-                var data = _context.Transfer_Insert(obj.transferID,obj.wareHouseID,obj.companyID,obj.fromCustomerID,obj.toCustomerID,
-                    obj.transferDate,obj.orderGivenBy,obj.remarks,obj.createdBy,obj.financialYearID,obj.storageAreaMasterID);
+                //var data = _context.Transfer_Insert(obj.transferID,obj.wareHouseID,obj.companyID,obj.fromCustomerID,obj.toCustomerID,
+                //    obj.transferDate,obj.orderGivenBy,obj.remarks,obj.createdBy,obj.financialYearID,obj.storageAreaMasterID);
+                DataTable dtTransferDetail = CommanListToDataTableConverter.ConvertToDataTable(obj.TD_TransferDetail);
+                DataTable dtTransferCharges = CommanListToDataTableConverter.ConvertToDataTable(obj.TD_TransferCharges);
                
-                return Ok(data);
-            }
-            catch (System.Exception)
-            {
+                DataSet ds = new DataSet();
+                using (SqlConnection connection = new SqlConnection(connectionstring))
+                {
+                    using (SqlCommand command = new SqlCommand("Transfer_Insert", connection))
+                    {
 
-                return BadRequest();
+                        command.CommandType = System.Data.CommandType.StoredProcedure;
+                        SqlParameter[] param = new SqlParameter[13];
+                        param[0] = new SqlParameter("@TransferID", Convert.ToInt32(0));
+                        param[1] = new SqlParameter("@WareHouseID", obj.WareHouseID);
+                        param[2] = new SqlParameter("@CompanyID", obj.CompanyID);
+                        param[3] = new SqlParameter("@FromCustomerID", Convert.ToInt32(obj.FromCustomerID));
+                        param[4] = new SqlParameter("@ToCustomerID", Convert.ToInt32(obj.ToCustomerID));
+                        param[5] = new SqlParameter("@TransferDate", Convert.ToDateTime(obj.TransferDate));
+                        param[6] = new SqlParameter("@OrderGivenBy", obj.OrderGivenBy);
+                        param[7] = new SqlParameter("@Remarks", obj.Remarks);
+                        param[8] = new SqlParameter("@CreatedBy", obj.CreatedBy);
+                        param[9] = new SqlParameter("@TD_TransferDetail", dtTransferDetail);
+                        param[10] = new SqlParameter("@TD_TransferCharges", dtTransferCharges);
+                        param[11] = new SqlParameter("@FinancialYearID", obj.FinancialYearID);
+                        param[12] = new SqlParameter("@StorageAreaMasterID", obj.StorageAreaMasterID);
+                        param[9].SqlDbType = SqlDbType.Structured;
+                        param[10].SqlDbType = SqlDbType.Structured;
+                        command.Parameters.AddRange(param);
+                        connection.Open();
+                        using (SqlDataAdapter da = new SqlDataAdapter(command))
+                        {
+                            da.Fill(ds);
+                        }
+                        connection.Close();
+                    }
+                    return Ok(ds);
+                }                   
+            }
+            catch (System.Exception ex)
+            {
+                return BadRequest(ex.Message);
             }
 
         }

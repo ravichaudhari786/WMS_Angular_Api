@@ -34,5 +34,6 @@ namespace WMS_WebAPI.Models
         public Nullable<Boolean> IsNew { get; set; }
         public string Country { get; set; }
         public Nullable<int> ServiceID { get; set; }
+        public string ClassName { get; set; }
     }
 }
